@@ -1,20 +1,21 @@
 """Models for 52 Weeks Journal App."""
 
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import ForeignKey
-from sqlalchemy.sql import func
+from datetime import date
 
 db = SQLAlchemy()
 
-class User(db.model):
+class User(db.Model):
 
     __tablename__='users'
 
     id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-    email = db.Column(db.String(), Unique = True, nullable = False)
+    email = db.Column(db.String(), unique = True, nullable = False)
+    fname = db.Column(db.String(), nullable =False)
+    lname = db.Column(db.String())
     password = db.Column(db.String(), nullable = False)
     profile_pic = db.Column(db.String())
-    sign_up = db.Column(db.DateTime)
+    sign_up = db.Column(db.Date, default = date.today())
 
     #entries = db.relationship('JournalEntry', backref = 'user')
 
@@ -22,17 +23,17 @@ class User(db.model):
         return f"<User email = {self.email} sign_up={self.sign_up} >"
 
 
-class JournalEntry(db.model):
+class JournalEntry(db.Model):
 
     __tablename__='entries'
 
     id = db.Column(db.Integer, primary_key = True, autoincrement = True)
-    user_id = db.Column(db.Integer, ForeignKey('user.id'), nullable = False)
-    journal_id = db.Columb(db.Integer, ForeignKey('journal.id'), nullable = False)
-    entry_date = db.Column(db.DateTime, default = func.now())
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable = False)
+    week = db.Column(db.Integer, db.ForeignKey('prompts.week'), nullable = False)
+    entry_date = db.Column(db.Date, default = date.today())
     user_entry = db.Column(db.Text)
-    entry_modified = db.Column(db.Bool, default = False)
-    modified_date = db.Column(db.DateTime, default = None, onupdate = func.current_timestamp())
+    entry_modified = db.Column(db.Boolean, default = False)
+    modified_date = db.Column(db.Date, default = None, onupdate = date.today())
     visibility = db.Column(db.String(), default = 'Private')
 
     prompt = db.relationship('JournalPrompt', backref = 'entries')
@@ -41,13 +42,13 @@ class JournalEntry(db.model):
     def __repr__(self):
         return f"<JournalEntry user_id = {self.user_id} journal_id = {self.journal_id} entry_date = {self.entry_date} user_entry = {self.user_entry} visibility = {self.visibility}>"
 
-class JournalPrompt(db.model):
+class JournalPrompt(db.Model):
 
     __tablename__="prompts"
 
-    id = db.Column(db.Integer, primary_key = True, autoincrement = True)    
+    week = db.Column(db.Integer, primary_key = True)    
     prompt = db.Column(db.Text)
-    release_date= db.Column(db.DateTime, nullable = False)
+    
 
     #entries = db.relationship('JournalEntry', backref = 'prompt')
 
@@ -75,4 +76,5 @@ if __name__ == "__main__":
     # query it executes.
 
     connect_to_db(app)
+    db.create_all()
     #connects database to flask

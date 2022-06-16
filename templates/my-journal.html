@@ -1,7 +1,26 @@
 {% extends 'base.html' %}
 
-{% block title %} Journal Login {% endblock %}
+{% block title %} {{user.fname}}'s Journal {% endblock %}
 
 {% block content %}     
+<h1><u>{{user.fname}}'s Journal</u></h1>
 
+<h1>Replace with week {{ session['week'] }} prompt</h1>
+<form id = entry action="entry" method="POST">
+  
+    <label for="journal_entry"></label>
+
+    <textarea id="journal_entry" name="entry" rows="20" cols="100">
+
+    </textarea><br>
+    
+    <button type="submit">Save</button>
+  
+</form>
+{% endblock %}
+
+{% block footer %}
+<p>Current day: {{session['date']}}</p>
+<p>Current week: {{session['week']}}</p>
+<p>Active since {{user.sign_up}}</p>
 {% endblock %}

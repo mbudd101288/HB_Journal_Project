@@ -3,22 +3,34 @@
 
 
 import schedule
+import datetime
 import time 
 from model import db, User, JournalPrompt, JournalEntry, connect_to_db
 
-def create_user(email, password):
+def create_user(email, password, fname, lname):
     """Create and return a new user."""
 
-    user = User(email=email, password=password)
+    user = User(email = email, password = password, fname = fname, lname = lname)
 
     return user
 
 def get_user_by_email(email):
 
-    return User.query.filter_by(email=email).first()
+    return User.query.filter_by(email = email).first()
 
-def show_prompt():
-    """Display prompt on user page scheduled weekly"""
+def create_weekly_prompt(prompt, week):
+    """Create and return a prompt"""
+    
+    weekly_prompt = JournalPrompt(prompt = prompt, week = week)
+
+    return weekly_prompt
+
+def get_prompt_by_week(week):
+    """Create and return a prompt"""
+    
+    current_prompt = JournalPrompt.query.get(week)
+
+    return current_prompt
 
     
 

@@ -2,14 +2,14 @@ html {
     background-color: lightskyblue;
 }
 
-h1 {
+h1, p, #entry {
     color: navy;
     font-weight: bolder;
     font-family: cursive;
     text-align: center;
 }
 
- input, label{
+form, h3, .flash-msg {
     color: navy;
     font-weight: bolder;
     font-family: cursive;
@@ -26,10 +26,11 @@ img {
     box-shadow: 10px 10px 10px 15px navy;
    }
 
-  button {
+button {
     background-color: white;
     border: solid 4px navy;
     font-weight: bold;
     color: navy;
     font-family: cursive;
   }
+
