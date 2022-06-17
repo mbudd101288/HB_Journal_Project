@@ -72,7 +72,8 @@ def show_user_journal():
         return render_template("homepage.html")
     else:
         session['date'] = date.today()
-        session['week'] = strftime("%U")
+        # session['week'] = strftime("%U")
+        session['week'] = 1
         user = crud.get_user_by_email(session['user'])
         current_prompt = crud.get_prompt_by_week(session['week'])
         return render_template("my-journal.html", prompt = current_prompt, user = user)

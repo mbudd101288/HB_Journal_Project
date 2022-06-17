@@ -1,0 +1,26 @@
+[
+    {
+    "email": "mbudd101288@gmail.com", 
+    "fname": "Molli", 
+    "lname": "Budd.", 
+    "password": "1234", 
+    "profile_pic": "", 
+    "sign_up": "2022-04-02"
+    },
+    {
+    "email": "kellibudd@test.com", 
+    "fname": "Kelli", 
+    "lname": "Holland", 
+    "password": "1234", 
+    "profile_pic": "", 
+    "sign_up": "2022-01-01"
+    },
+    {
+    "email": "erinlavery@test.com", 
+    "fname": "Erin", 
+    "lname": "Lavery", 
+    "password": "1234", 
+    "profile_pic": "", 
+    "sign_up": "2022-01-09" 
+    }
+] 

@@ -14,7 +14,7 @@ class User(db.Model):
     fname = db.Column(db.String(), nullable =False)
     lname = db.Column(db.String())
     password = db.Column(db.String(), nullable = False)
-    profile_pic = db.Column(db.String())
+    profile_pic = db.Column(db.String(), default = None)
     sign_up = db.Column(db.Date, default = date.today())
 
     #entries = db.relationship('JournalEntry', backref = 'user')
@@ -48,6 +48,8 @@ class JournalPrompt(db.Model):
 
     week = db.Column(db.Integer, primary_key = True)    
     prompt = db.Column(db.Text)
+  
+
     
 
     #entries = db.relationship('JournalEntry', backref = 'prompt')

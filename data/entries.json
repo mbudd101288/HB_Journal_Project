@@ -1,0 +1,85 @@
+[
+    {
+    "user_id": "1", 
+    "week": "14", 
+    "entry_date": "2022-04-03", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Public"
+    },
+    {
+    "user_id": "1", 
+    "week": "18", 
+    "entry_date": "2022-05-03", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Public"
+    },
+    {
+    "user_id": "1", 
+    "week": "24", 
+    "entry_date": "2022-06-16", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Public"
+    },
+    {
+    "user_id": "2", 
+    "week": "2", 
+    "entry_date": "2022-01-11", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Private"
+    },
+    {
+    "user_id": "2", 
+    "week": "7", 
+    "entry_date": "2022-02-14", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Private"
+    },
+    {
+    "user_id": "2", 
+    "week": "10", 
+    "entry_date": "2022-03-10", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Private"
+    },
+    {
+    "user_id": "3", 
+    "week": "2", 
+    "entry_date": "2022-01-15", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Private"
+    },
+    {
+    "user_id": "3", 
+    "week": "5", 
+    "entry_date": "2022-02-04", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Friends"
+    },
+    {
+    "user_id": "3", 
+    "week": "7", 
+    "entry_date": "2022-02-19", 
+    "user_entry": "1234", 
+    "entry_modified": false, 
+    "modified_date": null,
+    "visibility": "Private"
+    }
+] 
+
+

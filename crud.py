@@ -9,10 +9,10 @@ import datetime
 import time 
 from model import db, User, JournalPrompt, JournalEntry, connect_to_db
 
-def create_user(email, password, fname, lname):
+def create_user(email, password, fname, lname, sign_up, profile_pic):
     """Create and return a new user."""
 
-    user = User(email = email, password = password, fname = fname, lname = lname)
+    user = User(email = email, password = password, fname = fname, lname = lname, sign_up = sign_up, profile_pic = profile_pic)
 
     return user
 
@@ -42,11 +42,10 @@ def get_prompt_by_week(week):
     
     return current_prompt
 
-def save_new_entry(user_id, week, user_entry, entry_date, visibility):
+def save_new_entry(user_id, week, user_entry, entry_date, entry_modified, modified_date, visibility):
 
-    entry = JournalEntry (user_id = user_id, week = week, user_entry = user_entry, entry_date = entry_date, visibility = visibility) 
-    # entry = JournalEntry (user_entry = user_entry, entry_date = entry_date, entry_modified = entry_modified, modified_date = modified_date, visibility = visibility) 
-
+    entry = JournalEntry (user_id = user_id, week = week, user_entry = user_entry, entry_date = entry_date, entry_modified = entry_modified, modified_date = modified_date, visibility = visibility) 
+    # entry = JournalEntry (user_id = user_id, week = week, user_entry = user_entry, entry_date = entry_date, visibility = visibility) 
     return entry
 
 def get_entry_by_prompt():
