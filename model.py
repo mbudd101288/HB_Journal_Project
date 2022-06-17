@@ -53,7 +53,7 @@ class JournalPrompt(db.Model):
     #entries = db.relationship('JournalEntry', backref = 'prompt')
 
     def __repr__(self):
-         return f"<JournalPrompt prompt = {self.prompt}: release_date = {self.release_date}>"
+         return f"<JournalPrompt prompt = {self.prompt}: release_week= {self.week}>"
 
 
 def connect_to_db(flask_app, db_uri="postgresql:///journals", echo=True):

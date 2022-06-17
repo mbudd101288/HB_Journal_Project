@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
-{% block title %} {{user.fname}}'s Journal {% endblock %}
+{% block title %} My Journal {% endblock %}
 
 {% block content %}     
 <h1><u>{{user.fname}}'s Journal</u></h1>
 
-<h1>Replace with week {{ session['week'] }} prompt</h1>
-<form id = entry action="entry" method="POST">
+<h1>{{prompt.prompt}}</h1>
+<form id = entry action="/entry" method="POST">
   
     <label for="journal_entry"></label>
 
@@ -14,7 +14,20 @@
 
     </textarea><br>
     
+    <label for="visibility">Entry Visibility</label>
+  <select name="visibility" required>
+      <option value="Private">Keep this entry private</option>
+      <option value="Friends">Share this entry with friends</option>
+      <option value="Public">Share this entry with everyone</option>
+  </select>
     <button type="submit">Save</button>
+
+
+</form>
+
+<form id = logout action="/logout">
+    
+    <button type="submit">Log Out</button>
   
 </form>
 {% endblock %}

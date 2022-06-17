@@ -46,15 +46,17 @@ def get_login_info():
 
     email = request.form.get("email")
     password = request.form.get("password") 
-    session['date'] = date.today()
-    session['week'] = strftime("%U")
+    
 
     user = crud.get_user_by_email(email)
     
     if user:
         if password == user.password:
             session['user']= user.email
-            return render_template ('my-journal.html', user = user)
+            return redirect ("/my-journal")
+            # week = session['week']
+            # current_prompt = crud.get_prompt_by_week(week)
+            # return render_template ("my-journal.html", user = user, prompt = current_prompt)
              
         else:
             flash('Incorrect password. Try again.')
@@ -64,25 +66,38 @@ def get_login_info():
     return redirect("/")
     
 @app.route("/my-journal")
-def not_in_session():
-    if 'user' not in session.values():
+def show_user_journal():
+    if 'user' not in session:
+        print('not in session')
         return render_template("homepage.html")
-  
+    else:
+        session['date'] = date.today()
+        session['week'] = strftime("%U")
+        user = crud.get_user_by_email(session['user'])
+        current_prompt = crud.get_prompt_by_week(session['week'])
+        return render_template("my-journal.html", prompt = current_prompt, user = user)
 
-@app.route("/my-journal", methods=["POST"])
-def get_name():
+@app.route("/entry", methods=["POST"])
+def create_current_entry():
     
-
-    week = session['week']
-
-    current_prompt = crud.get_prompt_by_week(week)
+    entry = request.form.get('entry')
+    visibility = request.form.get('visibility')
+    user = crud.get_user_by_email(session['user'])
+    new_entry = crud.save_new_entry(user.id, session['week'], entry, session['date'], visibility)
     
-    # if require to insert a name per the form
-    #  username = request.args['name']
-    # can call this way instead of with .get because it was required input by the homepage
+    db.session.add(new_entry)
+    db.session.commit()
+    
+    flash(f'Journal Entry saved. Visibility: {visibility}')
+    return render_template('user-page.html', new_entry = new_entry, user = user)
 
+@app.route("/logout")
+def logout ():
 
-    # return render_template("my-journal.html", prompt = current_prompt)
+    session.pop('user')
+
+    return redirect ("/")
+   
 
 if __name__ == "__main__":
     connect_to_db(app)

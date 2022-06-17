@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} My Journal Entries {% endblock %}
+
+{% block content %}     
+<h1><u>{{user.fname}}'s Journal Entries</u></h1>
+
+<h1>{{new_entry.user_entry}}</h1>
+
+<form id = logout action="/logout">
+    
+    <button type="submit">Log Out</button>
+  
+</form>
+{% endblock %}
+
+{% block footer %}
+<p>Current day: {{session['date']}}</p>
+<p>Current week: {{session['week']}}</p>
+<p>Active since {{user.sign_up}}</p>
+{% endblock %}
