@@ -11,10 +11,13 @@ const displaySharedEntries = () => {
         
             const entryDiv = `
                 <div>
-                    <p> ${entry['fname']}: ${entry['entry'].slice(0,100)}</p>
-                    
+                    <h3> 
+                        <a id=${entry.user_id} href="/entry/${entry.user_id}">${entry.fname}</a> : Week ${entry.prompt}
+                    </h3> <br> 
+                    <p>
+                        ${entry['entry']}
+                    </p>
                     <button class='view-entry' id="${entry.week}">View Entry</button>
-    
                 </div>
             `
             

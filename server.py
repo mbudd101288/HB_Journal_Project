@@ -80,9 +80,19 @@ def show_user_journal():
 @app.route("/get-user-entries.json")
 def get_user_entries():
 
-    prompts = crud.get_all_prompts()
+    user = crud.get_user_by_email(session['user'])
+    user_id = user.id
+    prompts = crud.prompts_available_to_user_json(user_id)
     
     return jsonify(prompts)
+
+@app.route("/entry/<user_id>")
+def get_additional_entries_by_user(user_id):
+    """Can complete or edit and prompt which will render on the my-journal.html"""
+    user = crud.get_user_by_id(user_id)
+    entries = crud.get_all_user_entries(user_id)
+
+    return render_template('user-page.html', user = user, entries = entries)
 
 @app.route("/entry/<week>")
 def access_entry_by_prompt(week):

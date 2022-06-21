@@ -21,8 +21,11 @@ const displayPrompts = () => {
             // promptsContainer.appendChild(promptDiv)
 
             // do this instead
+
+            //turn into expanding list? or if else 
             const promptDiv = `
                 <div>
+
                     <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
                     <button class='create-entry' id="${prompt.week}">Create Entry</button>
     
