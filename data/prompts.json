@@ -3,7 +3,7 @@
     "prompt": "List the things you only want to do if they can be done perfectly. What is one thing on your list you are willing to put time and effort into, even if you never reach perfection?", 
     "week": 1, 
     "book": "52 Lists for Bravery by Moorea Seal; pg 76-77.", 
-    "bonus_text": "WBN to add these so that user can click a button for an affirmation if they want it on the user_journal page"
+    "bonus_text": "The fact is, we often have to try something multiple times to get anywhere close to doing it well. Perseverance is more valuable than talent. Remember that. Some estimate that is takes ten thousand hours of practice to master something, and while enherent talent does make it easier, no one is talented in every area of life. What is one thing you are willing to put time and effort into, even if you never reach perfection?"
     },
     {
     "prompt": "What is a boundary you need to draw in your life?",
@@ -27,7 +27,7 @@
     "prompt": "List the assets in your life that you would benefit from investing more time into, whether it be people, physical rebooks, activities, or skills.",
     "week": 5,
     "book":"52 Lists for Bravery by Moorea Seal; pg 58-59.",
-    "bonus_text": ""
+    "bonus_text": "Pick the easiest thing on your list you can invest in this week. Put an asterisk next to it. Once you pursure it, writte down what you feel you gained from redirecting attention to something you already have."
     },
     {
     "prompt": "What are 3-5 memories that would help someone understand who you are as a person? What emotions do you associate with each memory?",
@@ -36,22 +36,22 @@
     "bonus_text": null 
     },
     {
-    "prompt": "",
+    "prompt": "List the things you visualize having, doing, and being in your dream life",
     "week": 7, 
-    "book": "", 
-    "bonus_text": ""
+    "book": "52 Lists for Bravery by Moorea Seal; pg 28-29.", 
+    "bonus_text": "Next to each of the things that you don't have in your life currently, write 'not yet.' Because that is the truth. You have time. You may not have the things you want and need right now, but in life, you have the chance to pursure that which you need and want - if not now, soon - with bravery. You are NEVER a failure if you allow yourself to try again."
+    },
+    {
+    "prompt": "List the things you once dreamt of having in your life that you DO have now",
+    "week": 8, 
+    "book": "52 Lists for Bravery by Moorea Seal; pg 30-31.",
+    "bonus_text": "How did each of these things come into being? Put an asterisk next to things that required bravery to attain"
     },
     {
     "prompt": "Write about a favoite memory of being recognized for something you did.",
-    "week": 8, 
+    "week": 9, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 27", 
     "bonus_text": null 
-    },
-    {
-    "prompt": "",
-    "week": 9, 
-    "book": "", 
-    "bonus_text": ""
     },
     {
     "prompt": "What is a reminder that you would like to tell yourself next time you are in a downward spiral?",

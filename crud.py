@@ -5,8 +5,8 @@ from multiprocessing.context import ForkContext
 from nturl2path import url2pathname
 from flask import Blueprint, jsonify
 import schedule
-import datetime
-import time 
+from datetime import datetime
+import time
 from model import db, User, JournalPrompt, JournalEntry, connect_to_db
 
 
@@ -31,6 +31,7 @@ def create_weekly_prompt(prompt, week, book, bonus_text):
 
 def get_all_prompts():
     
+    
     prompts = JournalPrompt.query.all()
     json = []
     for prompt in prompts:
@@ -50,10 +51,11 @@ def get_all_prompts():
 # def prompts_available_to_user(user_id):
 #     """Return all prompts that user has access to"""
     
-#     user = User.query.filter(User.id == user_id).all()
-#     user_json = jsonify(user) 
-#     sign_up_date = user_json.sign_up
-#     print(sign_up_date)
+#     user = User.query.get(user_id)
+    
+#     sign_up_date = datetime.strftime(user.sign_up, ("%Y-%b-%d (%H:%M:%S.%f)"))
+    
+#     print("***", sign_up_date)
 #     sign_up_week = datetime.strptime(sign_up_date, "%U")
 
 #     available_prompts= JournalPrompt.query.filter(JournalPrompt.week >= sign_up_week).all()

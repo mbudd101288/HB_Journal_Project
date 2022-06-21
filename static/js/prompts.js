@@ -24,13 +24,10 @@ const displayPrompts = () => {
             const promptDiv = `
                 <div>
                     <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
-                    {% if ${prompt['week']} > 20 %}
                     <button class='create-entry' id="${prompt.week}">Create Entry</button>
     
-                    // {% else %}
                     <<button class='edit-entry' id="${prompt.week}">Edit Entry</button>
     
-                    // {% end if %}
                 </div>
             `
             

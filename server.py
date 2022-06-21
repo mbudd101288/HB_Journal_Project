@@ -86,8 +86,7 @@ def get_user_entries():
 
 @app.route("/entry/<week>")
 def access_entry_by_prompt(week):
-
-    # crud.get journal entry if it already exists and display
+    """Can complete or edit and prompt which will render on the my-journal.html"""
     user = crud.get_user_by_email(session['user'])
     prompt = crud.get_prompt_by_week(week)
 
