@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Journal Community {% endblock %}
+
+{% block content %}   
+
+<ul><h1><u>Community</u></h1></ul>
+<div class="row">
+    <div id="shared-entries" class="col"></div>
+
+
+<script type='module' src='/static/js/sharedEntries.js'></script>
+{% endblock %}
+
+{% block footer %}
+<p>Current day: {{session['date']}}</p>
+<p>Active since {{user.sign_up}}</p>
+{% endblock %}

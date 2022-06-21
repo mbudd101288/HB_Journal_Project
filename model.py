@@ -47,7 +47,9 @@ class JournalPrompt(db.Model):
     __tablename__="prompts"
 
     week = db.Column(db.Integer, primary_key = True)    
-    prompt = db.Column(db.Text)
+    prompt = db.Column(db.String)
+    book = db.Column(db.String(), default = None)
+    bonus_text = db.Column(db.String(), default = None)
   
 
     

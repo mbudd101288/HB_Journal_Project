@@ -2,16 +2,24 @@
 
 {% block title %} My Journal Entries {% endblock %}
 
-{% block content %}     
-<h1><u>{{user.fname}}'s Journal Entries</u></h1>
+{% block content %} 
+<div class="container"></div> 
+<div class="row">
+    <div class="col">   
+    <h1><u>{{user.fname}}'s Journal Entries</u></h1>
 
-<h1>{{new_entry.user_entry}}</h1>
-
-<form id = logout action="/logout">
+<div class="row">
+    <div id="user-prompts" class="col"></div>
     
-    <button type="submit">Log Out</button>
+<form id="logout" action="/logout">
+    <div class="row">
+        <div class="col">
+            <button type="submit">Log Out</button>
+        </div>
+    </div>
   
 </form>
+<script type='module' src='/static/js/prompts.js'></script>
 {% endblock %}
 
 {% block footer %}

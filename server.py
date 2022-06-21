@@ -1,6 +1,6 @@
 from datetime import date
 from time import strftime, time
-from flask import Flask, redirect, request, render_template, session, flash
+from flask import Flask, redirect, request, render_template, session, flash, jsonify
 from jinja2 import StrictUndefined
 import os
 import crud
@@ -72,26 +72,66 @@ def show_user_journal():
         return render_template("homepage.html")
     else:
         session['date'] = date.today()
-        # session['week'] = strftime("%U")
-        session['week'] = 1
+        session['week'] = strftime("%U")
         user = crud.get_user_by_email(session['user'])
         current_prompt = crud.get_prompt_by_week(session['week'])
         return render_template("my-journal.html", prompt = current_prompt, user = user)
 
-@app.route("/entry", methods=["POST"])
-def create_current_entry():
+@app.route("/get-user-entries.json")
+def get_user_entries():
+
+    prompts = crud.get_all_prompts()
     
+    return jsonify(prompts)
+
+@app.route("/entry/<week>")
+def access_entry_by_prompt(week):
+
+    # crud.get journal entry if it already exists and display
+    user = crud.get_user_by_email(session['user'])
+    prompt = crud.get_prompt_by_week(week)
+
+    return render_template('my-journal.html', user = user, prompt = prompt)
+
+@app.route("/entry", methods=['GET'])
+def show_user_entries ():
+    user = crud.get_user_by_email(session['user'])
+
+    return render_template ('user-page.html', user = user)
+
+
+@app.route('/entry', methods=['POST'])
+def create_current_entry():
+
     entry = request.form.get('entry')
     visibility = request.form.get('visibility')
+    entry_modified = False
+    date_modified = None
     user = crud.get_user_by_email(session['user'])
-    new_entry = crud.save_new_entry(user.id, session['week'], entry, session['date'], visibility)
+    new_entry = crud.save_new_entry(user.id, session['week'], entry, session['date'], entry_modified, date_modified, visibility)
     
     db.session.add(new_entry)
     db.session.commit()
     
     flash(f'Journal Entry saved. Visibility: {visibility}')
-    return render_template('user-page.html', new_entry = new_entry, user = user)
+    return redirect('/entry')
+    # return render_template('user-page.html', new_entry = new_entry, user = user)
 
+@app.route("/get-shared-entries.json")
+def get_community_journal_entries ():
+
+    shared_entries = crud.get_public_entries_json()
+
+    return jsonify(shared_entries)
+   
+@app.route("/shared-entries", methods=['GET'])
+def view_community_journal_entries ():
+
+    user = crud.get_user_by_email(session['user'])
+   
+    return render_template ('shared-entries.html', user = user)
+
+    
 @app.route("/logout")
 def logout ():
 

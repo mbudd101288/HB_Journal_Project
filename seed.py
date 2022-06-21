@@ -23,8 +23,10 @@ for prompt in prompt_data:
 
     journal_prompt = prompt["prompt"]
     week = prompt["week"]
+    book = prompt["book"]
+    bonus_text = prompt["bonus_text"]
     
-    db_prompt = crud.create_weekly_prompt(journal_prompt, week)
+    db_prompt = crud.create_weekly_prompt(journal_prompt, week, book, bonus_text)
     #Should db_prompt by db_JournalPrompt? 
     prompts_in_db.append(db_prompt)
 

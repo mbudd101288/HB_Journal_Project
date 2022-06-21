@@ -9,7 +9,7 @@ h1, p, #entry {
     text-align: center;
 }
 
-form, h3, .flash-msg {
+form, h3, .flash-msg, a {
     color: navy;
     font-weight: bolder;
     font-family: cursive;

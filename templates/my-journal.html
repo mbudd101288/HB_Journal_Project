@@ -6,6 +6,12 @@
 <h1><u>{{user.fname}}'s Journal</u></h1>
 
 <h1>{{prompt.prompt}}</h1>
+<button type="button"
+onclick="document.getElementById('additional_info').innerHTML = prompt.bonus_text">
+Additional Prompt info.</button>
+
+<p id="additional_info"></p>
+
 <form id = entry action="/entry" method="POST">
   
     <label for="journal_entry"></label>
@@ -20,6 +26,7 @@
       <option value="Friends">Share this entry with friends</option>
       <option value="Public">Share this entry with everyone</option>
   </select>
+  
     <button type="submit">Save</button>
 
 
@@ -29,7 +36,13 @@
     
     <button type="submit">Log Out</button>
   
-</form>
+ <div class="col">
+    <a href="/entry">My Entries</a> 
+</div>
+<div class="col">
+    <a href="/shared-entries">My Journal Community</a> 
+</div>
+
 {% endblock %}
 
 {% block footer %}

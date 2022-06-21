@@ -2,215 +2,313 @@
     {
     "prompt": "List the things you only want to do if they can be done perfectly. What is one thing on your list you are willing to put time and effort into, even if you never reach perfection?", 
     "week": 1, 
-    "source": "52 Lists for Bravery by Moorea Seal; pg 76-77.", 
-    "affirmation": "WBN to add these so that user can click a button for an affirmation if they want it on the user_journal page"
+    "book": "52 Lists for Bravery by Moorea Seal; pg 76-77.", 
+    "bonus_text": "WBN to add these so that user can click a button for an affirmation if they want it on the user_journal page"
     },
     {
     "prompt": "What is a boundary you need to draw in your life?",
-    "week": 2
+    "week": 2, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 33", 
+    "bonus_text": null 
     },
     {
     "prompt": "How would your friends describe you? How do you feel about those descriptions", 
-    "week": 3
+    "week": 3,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 3", 
+    "bonus_text": null 
     },
     {
     "prompt": "What is a made-up rule about your life that you are applying to yourself? How has this held you back and how might you change it?",
-    "week": 4
+    "week": 4,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 15", 
+    "bonus_text": null 
     },
     {
-    "prompt": "List the assets in your life that you would benefit from investing more time into, whether it be people, physical resources, activities, or skills.",
+    "prompt": "List the assets in your life that you would benefit from investing more time into, whether it be people, physical rebooks, activities, or skills.",
     "week": 5,
-    "source":"52 Lists for Bravery by Moorea Seal; pg 58-59."
+    "book":"52 Lists for Bravery by Moorea Seal; pg 58-59.",
+    "bonus_text": ""
+    },
+    {
+    "prompt": "What are 3-5 memories that would help someone understand who you are as a person? What emotions do you associate with each memory?",
+    "week": 6,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 70", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 6
-    },
-    {
-    "prompt": "",
-    "week": 7
+    "week": 7, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "Write about a favoite memory of being recognized for something you did.",
-    "week": 8
+    "week": 8, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 27", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 9
+    "week": 9, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "What is a reminder that you would like to tell yourself next time you are in a downward spiral?",
-    "week": 10
+    "week": 10, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 2", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 11
+    "week": 11, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "Write about a mistake that taught you something about yourself",
-    "week": 12
+    "week": 12, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 28", 
+    "bonus_text": null 
     },
     {
     "prompt": "List the people who make you feel at ease and the spaces where you can relax",
     "week": 13,
-    "source": "52 Lists for Bravery by Moorea Seal; pg 128-129."
+    "book": "52 Lists for Bravery by Moorea Seal; pg 128-129.", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 14
+    "week": 14, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "List the times you have had to disappoint someone to do what you believed was right for you?",
     "week": 15,
-    "source": "52 Lists for Bravery by Moorea Seal; pg 78-79."
+    "book": "52 Lists for Bravery by Moorea Seal; pg 78-79.", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "What is something that you recently blamed yourself for? Now that some time has passed, how do you think about it differently",
+    "week": 16,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 348", 
+    "bonus_text": null 
+    },
+    {
+    "prompt": "How do you take praise? How do you take criticism?",
+    "week": 17,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 157", 
+    "bonus_text": null 
+    },
+    {
+    "prompt": "Write about a time you felt that you deserved an apology and never received one. What would you have liked that person to say?",
+    "week": 18, 
+    "book": null,
+    "bonus_text": null
+    },
+    {
+    "prompt": "Write 10 qualities that you appreciate in yourself (push youself to get to 10) and 2 that you'd like to change or work on.",
+    "week": 19, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 345", 
+    "bonus_text": null 
+    },
+    {
+    "prompt": "When you were a child, how did you imagine your adult life? How does that compare to the way it is now?",
+    "week": 20, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 180", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 16
+    "week": 21, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
-    "prompt": "",
-    "week": 17
+    "prompt": "React to the following quote from Jim Butcher: 'When everything goes to hell, the people who stand by you wihtout flinching - they are your family'",
+    "week": 22,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 205", 
+    "bonus_text": "Having trouble getting started? List 3-5 difficult experiences in your life. List who was there to support you through those experiences and how they supported you."
     },
     {
-    "prompt": "",
-    "week": 18
-    },
-    {
-    "prompt": "",
-    "week": 19
-    },
-    {
-    "prompt": "",
-    "week": 20
-    },
-    {
-    "prompt": "",
-    "week": 21
-    },
-    {
-    "prompt": "",
-    "week": 22
-    },
-    {
-    "prompt": "",
-    "week": 23
+    "prompt": "List 20 things that make you happy",
+    "week": 23,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 225", 
+    "bonus_text": "Make space in your life for the people, places, and activities that bring you joy. Consider if any activities on your list can be turned into healthful habits."
     },
     {
     "prompt": "List the people you compare yourself to. Next to each person's name, write the emotion you typically feel when comparing yourself to them. How can you reframe how you view each person, from comparing to feeling empowered by observing the incredible people they are?",
     "week": 24,
-    "source":"52 Lists for Bravery by Moorea Seal; pg 70-71."
+    "book":"52 Lists for Bravery by Moorea Seal; pg 70-71.",
+    "bonus_text": ""
+    },
+    {
+    "prompt": "What is something you have a hard time being honest about, even to those you trust the most? Why?",
+    "week": 25, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 225", 
+    "bonus_text": null
     },
     {
     "prompt": "",
-    "week": 25
+    "week": 26, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "Write about a time that your own strength surprised you",
+    "week": 27, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 418", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 26
+    "week": 28, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "How do you know when it is time to let something (or someone) go?",
+    "week": 29, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 302", 
+    "bonus_text": "Feeling stuck? Write about a time you have let something (or someone) go. How did you feel about it at the time? How do you feel about it now?"
     },
     {
     "prompt": "",
-    "week": 27
+    "week": 30, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 28
+    "week": 31, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "What is something that you are insecure about? What is something that you are confident in?",
+    "week": 32,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 427", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 29
+    "week": 33, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 30
+    "week": 34, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "If you could talk to someone that you have lost for just five more minutes, what would you say?",
+    "week": 35,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 449", 
+    "bonus_text": "Loss may refer to someone who has passed away or someone who abruptly/unexpectedly is no longer in your life."
     },
     {
     "prompt": "",
-    "week": 31
+    "week": 36, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 32
+    "week": 37, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "What standards do you apply to yourself that you would never aply to others? ",
+    "week": 38,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 458", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 33
+    "week": 39, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 34
+    "week": 40, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "Write about something for which you would like to forgive yourself",
+    "week": 41,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 460", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 35
+    "week": 42, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 36
+    "week": 43, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "What are your main coping mechanisms right now? How are they serving you?",
+    "week": 44,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 473", 
+    "bonus_text": "Give it a try! List 3-5 coping mechanisms you would like to try. What steps are needed to implement these coping mechanisms?"
     },
     {
     "prompt": "",
-    "week": 37
+    "week": 45, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 38
+    "week": 46, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 39
+    "week": 47, 
+    "book": "", 
+    "bonus_text": ""
+    },
+    {
+    "prompt": "How do you tend to respond to crises? Write about your response to one you can remember. How do you feel about that?",
+    "week": 48, 
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 478", 
+    "bonus_text": null 
     },
     {
     "prompt": "",
-    "week": 40
+    "week": 49, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 41
+    "week": 50, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
-    "week": 42
+    "week": 51,
+    "book": "", 
+    "bonus_text": ""
     },
     {
-    "prompt": "",
-    "week": 43
-    },
-    {
-    "prompt": "",
-    "week": 44
-    },
-    {
-    "prompt": "",
-    "week": 45
-    },
-    {
-    "prompt": "",
-    "week": 46
-    },
-    {
-    "prompt": "",
-    "week": 47
-    },
-    {
-    "prompt": "",
-    "week": 48
-    },
-    {
-    "prompt": "",
-    "week": 49
-    },
-    {
-    "prompt": "",
-    "week": 50
-    },
-    {
-    "prompt": "",
-    "week": 51
-    },
-    {
-    "prompt": "",
-    "week": 52
+    "prompt": "React to the following quote from The Perks of Being a Wallflower by Stephen Chbosky: 'We accept the love we think we deserve.",
+    "week": 52,
+    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 464", 
+    "bonus_text": "What emotions does this bring up for you. Does this make you think of a specific person and/or situation?"
     }
 ]
