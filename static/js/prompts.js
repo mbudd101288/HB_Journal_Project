@@ -20,39 +20,21 @@ const displayPrompts = () => {
             // promptDiv.appendChild(createPromptEntryButton)
             // promptsContainer.appendChild(promptDiv)
 
-            // do this instead
-            //turn into expanding list? or if else 
             if (prompt.entry === null) {
                 promptData +=
                 `<div>
-
                     <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
-                    <button class='create-entry' id="${prompt.week}">Create Entry</button>
-    
-                </div>
-            `
+                    <button onclick="location.href='/create-prompt-entry/${prompt['week']}'">Create Entry</button>
+                </div>`
             } else {
                 promptData +=
                 `<div>
-
                     <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
-    
-                    <button class='edit-entry' id="${prompt.week}">Edit Entry</button>
-    
-                </div>
-            `
-            }
-            
+                    <button onclick="location.href='/edit-prompt-entry/${prompt['week']}'">Edit Entry</button>
+                </div>`
+            } 
         }
         promptsContainer.innerHTML = promptData
-    });
-    
+    }); 
 }
 displayPrompts()
-
-// const createEntryButton = document.querySelector("button.create-entry");
-
-// function createEntry () {
-
-
-// create event handler for button for entry<week> route - use the class for query selector - use the id to give to the route

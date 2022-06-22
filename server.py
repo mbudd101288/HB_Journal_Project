@@ -77,6 +77,7 @@ def show_user_journal():
         current_prompt = crud.get_prompt_by_week(session['week'])
         return render_template("my-journal.html", prompt = current_prompt, user = user)
 
+
 @app.route("/get-user-entries.json")
 def get_user_entries():
 
@@ -96,8 +97,16 @@ def get_additional_entries_by_user(user_id):
     else:
         return render_template ('user-page.html', user = user, entries = entries)
 
-@app.route("/prompt/<week>")
-def access_entry_by_prompt(week):
+@app.route("/edit-prompt-entry/<week>")
+def edit_entry(week):
+    """Can complete or edit and prompt which will render on the my-journal.html"""
+    user = crud.get_user_by_email(session['user'])
+    prompt = crud.get_prompt_by_week(week)
+
+    return render_template('my-journal.html', user = user, prompt = prompt)
+
+@app.route("/create-prompt-entry/<week>")
+def create_entry(week):
     """Can complete or edit and prompt which will render on the my-journal.html"""
     user = crud.get_user_by_email(session['user'])
     prompt = crud.get_prompt_by_week(week)

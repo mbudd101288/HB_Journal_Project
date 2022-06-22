@@ -24,7 +24,7 @@
     "bonus_text": null 
     },
     {
-    "prompt": "List the assets in your life that you would benefit from investing more time into, whether it be people, physical rebooks, activities, or skills.",
+    "prompt": "List the assets in your life that you would benefit from investing more time into, whether it be people, physical resources, activities, or skills.",
     "week": 5,
     "book":"52 Lists for Bravery by Moorea Seal; pg 58-59.",
     "bonus_text": "Pick the easiest thing on your list you can invest in this week. Put an asterisk next to it. Once you pursure it, writte down what you feel you gained from redirecting attention to something you already have."
@@ -66,10 +66,10 @@
     "bonus_text": null 
     },
     {
-    "prompt": "",
+    "prompt": "Think about a typical day for you. Every day I face the challenge of:____ And every day I show I am brave by: _____",
     "week": 12, 
-    "book": "", 
-    "bonus_text": ""
+    "book": "52 Lists for Bravery by Moorea Seal; pg 118-119.",  
+    "bonus_text": "Look back on this list when you're facing a bigger challenge to remind yourself of all the ways you problem-solve, push through, and rise to the occasion on a day-to-day basis. You are so capable."
     },
     {
     "prompt": "Write about a mistake that taught you something about yourself",
@@ -156,10 +156,10 @@
     "bonus_text": null
     },
     {
-    "prompt": "",
+    "prompt": "List the things you would say if you were speaking your truth. Under each truth, list what you assume might happen if you spoke those truths.",
     "week": 28, 
     "book": "52 Lists for Bravery by Moorea Seal; pg 64-65.", 
-    "bonus_text": ""
+    "bonus_text": "On a scale of 1( not likely) and 10 (very likely), next to each assumption write the likelihood of your assumption coming true if you are truly open and honest. Know that when you take the risk of being open and honest with others, you gain power of influence. And no matter how they respond to your truth, by speaking openly and honesly, you are changing the world for good. Your risk, no matter the outcome, gains purpose."
     },
     {
     "prompt": "Write about a time that your own strength surprised you",
