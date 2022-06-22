@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %} My Journal Entries {% endblock %}
+{% block title %} {{user.fname}} Journal Entries {% endblock %}
 
 {% block content %} 
 <div class="container"></div> 
@@ -8,8 +8,11 @@
     <div class="col">   
     <h1><u>{{user.fname}}'s Journal Entries</u></h1>
 
-<div class="row">
-    <div id="user-prompts" class="col"></div>
+{%for entry in entries %}
+<h3>{{user.fname}} : Week {{entry.prompt.week}}</h3>
+<p>{{entry.user_entry}}</p>
+
+{% endfor %}
 
 <form id="logout" action="/logout">
     <div class="row">
@@ -19,7 +22,7 @@
     </div>
   
 </form>
-<script src='/static/js/prompts.js'></script>
+
 {% endblock %}
 
 {% block footer %}

@@ -1,4 +1,4 @@
-"use script"
+"use strict"
 
 const displayPrompts = () => {
 
@@ -21,20 +21,28 @@ const displayPrompts = () => {
             // promptsContainer.appendChild(promptDiv)
 
             // do this instead
-
             //turn into expanding list? or if else 
-            const promptDiv = `
-                <div>
+            if (prompt.entry === null) {
+                promptData +=
+                `<div>
 
                     <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
                     <button class='create-entry' id="${prompt.week}">Create Entry</button>
     
-                    <<button class='edit-entry' id="${prompt.week}">Edit Entry</button>
+                </div>
+            `
+            } else {
+                promptData +=
+                `<div>
+
+                    <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
+    
+                    <button class='edit-entry' id="${prompt.week}">Edit Entry</button>
     
                 </div>
             `
+            }
             
-            promptData += promptDiv
         }
         promptsContainer.innerHTML = promptData
     });

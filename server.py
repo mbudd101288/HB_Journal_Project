@@ -88,13 +88,15 @@ def get_user_entries():
 
 @app.route("/entry/<user_id>")
 def get_additional_entries_by_user(user_id):
-    """Can complete or edit and prompt which will render on the my-journal.html"""
+    """Can view more entries from a specific user on their user-page"""
     user = crud.get_user_by_id(user_id)
     entries = crud.get_all_user_entries(user_id)
+    if user.email != session['user']:
+        return render_template('shared-user-page.html', user = user, entries = entries)
+    else:
+        return render_template ('user-page.html', user = user, entries = entries)
 
-    return render_template('user-page.html', user = user, entries = entries)
-
-@app.route("/entry/<week>")
+@app.route("/prompt/<week>")
 def access_entry_by_prompt(week):
     """Can complete or edit and prompt which will render on the my-journal.html"""
     user = crud.get_user_by_email(session['user'])

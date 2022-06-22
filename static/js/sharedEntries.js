@@ -1,14 +1,14 @@
-"use script"
+"use strict"
 
 const displaySharedEntries = () => {
-
+    
     fetch("/get-shared-entries.json")
     .then((response) => response.json())
     .then((sharedEntries) => {
         const sharedEntriesContainer = document.querySelector('#shared-entries');
         let sharedEntryData = ''
         for (const entry of sharedEntries) {
-        
+           
             const entryDiv = `
                 <div>
                     <h3> 

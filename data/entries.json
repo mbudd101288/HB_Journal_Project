@@ -51,7 +51,7 @@
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam. At imperdiet dui accumsan sit amet. Sit amet luctus venenatis lectus magna fringilla urna. Facilisis gravida neque convallis a cras semper auctor. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Id consectetur purus ut faucibus pulvinar elementum. Risus nullam eget felis eget nunc lobortis. Ac tortor vitae purus faucibus. Ultricies leo integer malesuada nunc vel risus. Aliquam etiam erat velit scelerisque. Tempor orci dapibus ultrices in iaculis nunc sed. Integer malesuada nunc vel risus commodo viverra maecenas accumsan. Et netus et malesuada fames ac turpis egestas. Lectus mauris ultrices eros in cursus turpis massa tincidunt. Non diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Tellus mauris a diam maecenas sed enim ut sem. Egestas congue quisque egestas diam in arcu cursus euismod quis. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Pellentesque diam volutpat commodo sed. Quis viverra nibh cras pulvinar mattis. Ut pharetra sit amet aliquam id. Nibh nisl condimentum id venenatis a. Nunc congue nisi vitae suscipit. Tristique magna sit amet purus gravida quis blandit turpis. Purus faucibus ornare suspendisse sed nisi lacus sed. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Et malesuada fames ac turpis egestas sed. Erat imperdiet sed euismod nisi porta. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Vitae suscipit tellus mauris a diam maecenas. At quis risus sed vulputate odio ut enim. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Risus feugiat in ante metus. Euismod lacinia at quis risus sed vulputate. Cursus mattis molestie a iaculis at. Adipiscing diam donec adipiscing tristique risus nec. Habitant morbi tristique senectus et netus et.", 
     "entry_modified": false, 
     "modified_date": null,
-    "visibility": "Private"
+    "visibility": "Public"
     },
     {
     "user_id": "3", 
@@ -78,7 +78,7 @@
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
     "entry_modified": false, 
     "modified_date": null,
-    "visibility": "Private"
+    "visibility": "Public"
     }
 ] 
 

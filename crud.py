@@ -43,9 +43,11 @@ def get_all_prompts():
             "week": prompt.week,
             "prompt": prompt.prompt,
             "book": prompt.book,
-            "bonus_text":prompt.bonus_text
-        }
+            "bonus_text":prompt.bonus_text,
+            }
         json.append(prompt_dict)
+   
+ 
     return json
 
     # WBN
@@ -65,8 +67,7 @@ def prompts_available_to_user(user_id):
     return available_prompts
 
 def prompts_available_to_user_json(user_id):
-    """Return all prompts that user has access to"""
-    
+    """Return all prompts that user has access to"""    
     user = User.query.get(user_id)
     
     current_week = session['week']
@@ -79,9 +80,15 @@ def prompts_available_to_user_json(user_id):
             "week": prompt.week,
             "prompt": prompt.prompt,
             "book": prompt.book,
-            "bonus_text":prompt.bonus_text
-        }
+            "bonus_text": prompt.bonus_text,
+            "entry": None
+            }
+        entries_by_user= [entry for entry in prompt.entries if entry.user_id == user_id]
+        if entries_by_user:
+            prompt_dict['entry'] = entries_by_user[0].user_entry
         json.append(prompt_dict)
+    
+        # print("***", json)
     return json
     
 
@@ -101,7 +108,7 @@ def save_new_entry(user_id, week, user_entry, entry_date, entry_modified, modifi
 
 def get_all_user_entries(user_id):
     
-    all_entries = JournalEntry.query.filter(JournalEntry.user_id == user_id).all()
+    all_entries = JournalEntry.query.filter((JournalEntry.user_id == user_id) & (JournalEntry.visibility == 'Public') & (JournalEntry.user_entry != None)).all()
 
     return all_entries
 
