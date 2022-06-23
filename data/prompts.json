@@ -66,7 +66,7 @@
     "bonus_text": null 
     },
     {
-    "prompt": "Think about a typical day for you. Every day I face the challenge of:____ And every day I show I am brave by: _____",
+    "prompt": "Think about a typical day for you. \nEvery day I face the challenge of:____ \nAnd every day I show I am brave by: _____",
     "week": 12, 
     "book": "52 Lists for Bravery by Moorea Seal; pg 118-119.",  
     "bonus_text": "Look back on this list when you're facing a bigger challenge to remind yourself of all the ways you problem-solve, push through, and rise to the occasion on a day-to-day basis. You are so capable."

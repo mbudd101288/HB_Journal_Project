@@ -6,29 +6,30 @@
 <h1><u>{{user.fname}}'s Journal</u></h1>
 
 <h1>{{prompt.prompt}}</h1>
-<button type="button"
-onclick="document.getElementById('additional_info').innerHTML = prompt.bonus_text">
-Additional Prompt info.</button>
+
+<button id="bonus_text_button" type="button">Additional Prompt info.</button>
 
 <p id="additional_info"></p>
 
 <form id = entry action="/entry" method="POST">
-  
+
+    {% if prompt.entries %}
     <label for="journal_entry"></label>
+    <textarea  id="journal_entry" name="entry" rows="20" cols="100"> {{prompt.entries[0].user_entry}}</textarea><br>
+    <input type="hidden" name="entry_id" value={{prompt.entries[0].id}}>
+    {% else %}
+    <label for="journal_entry"></label>
+    <textarea  id="journal_entry" name="entry" rows="20" cols="100" ></textarea><br>
+    {% endif %}
 
-    <textarea id="journal_entry" name="entry" rows="20" cols="100">
-
-    </textarea><br>
-    
     <label for="visibility">Entry Visibility</label>
   <select name="visibility">
       <option value="Private">Keep this entry private</option>
       <option value="Friends">Share this entry with friends</option>
       <option value="Public">Share this entry with everyone</option>
   </select>
-  
-    <button type="submit">Save</button>
-
+ 
+  <button class="save_entry" id="entry_button" >Save</button>
 
 </form>
 
@@ -43,6 +44,14 @@ Additional Prompt info.</button>
     <a href="/shared-entries">My Journal Community</a> 
 </div>
 
+<script> 
+    const targetBtn = document.querySelector("#bonus_text_button");
+    targetBtn.addEventListener('click', (evt) => {
+        document.querySelector('#additional_info').innerHTML = `{{prompt.bonus_text}}`;
+        });
+</script>
+
+<script src='/static/js/button.js'></script>
 {% endblock %}
 
 {% block footer %}

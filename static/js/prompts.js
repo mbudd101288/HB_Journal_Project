@@ -24,13 +24,13 @@ const displayPrompts = () => {
                 promptData +=
                 `<div>
                     <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
-                    <button onclick="location.href='/create-prompt-entry/${prompt['week']}'">Create Entry</button>
+                    <button onclick="location.href='/update-prompt-entry/${prompt['week']}'">Create Entry</button>
                 </div>`
             } else {
                 promptData +=
                 `<div>
                     <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
-                    <button onclick="location.href='/edit-prompt-entry/${prompt['week']}'">Edit Entry</button>
+                    <button onclick="location.href='/update-prompt-entry/${prompt['week']}'">Edit Entry</button>
                 </div>`
             } 
         }

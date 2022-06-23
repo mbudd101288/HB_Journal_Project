@@ -105,12 +105,24 @@ def save_new_entry(user_id, week, user_entry, entry_date, entry_modified, modifi
     # entry = JournalEntry (user_id = user_id, week = week, user_entry = user_entry, entry_date = entry_date, visibility = visibility) 
     return entry
 
+def get_entry_by_id(id):
+
+    entry_id = JournalEntry.query.get(id)
+
+    return entry_id
+
 
 def get_all_user_entries(user_id):
     
     all_entries = JournalEntry.query.filter((JournalEntry.user_id == user_id) & (JournalEntry.visibility == 'Public') & (JournalEntry.user_entry != None)).order_by(JournalEntry.week.desc()).all()
 
     return all_entries
+
+def get_entry_by_user_and_week(user_id, week):
+
+    entry = JournalEntry.query.filter((JournalEntry.user_id == user_id) & (JournalEntry.week == week)).first()
+
+    return entry
 
 
 def get_public_entries():
