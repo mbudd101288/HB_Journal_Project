@@ -7,23 +7,25 @@
 
 <h1>{{prompt.prompt}}</h1>
 
-<button id="bonus_text_button" type="button">Additional Prompt info.</button>
+{% if prompt.bonus_text %}
+    <button id="bonus_text_button" type="button">Additional Prompt info.</button>
 
-<p id="additional_info"></p>
+    <p id="additional_info"></p>
+{% endif %}
 
 <form id = entry action="/entry" method="POST">
 
     {% if prompt.entries %}
-    <label for="journal_entry"></label>
-    <textarea  id="journal_entry" name="entry" rows="20" cols="100"> {{prompt.entries[0].user_entry}}</textarea><br>
-    <input type="hidden" name="entry_id" value={{prompt.entries[0].id}}>
+        <label for="journal_entry"></label>
+        <textarea  id="journal_entry" name="entry" rows="20" cols="100"> {{prompt.entries[0].user_entry}}</textarea><br>
+        <input type="hidden" name="entry_id" value={{prompt.entries[0].id}}>
     {% else %}
-    <label for="journal_entry"></label>
-    <textarea  id="journal_entry" name="entry" rows="20" cols="100" ></textarea><br>
+        <label for="journal_entry"></label>
+        <textarea  id="journal_entry" name="entry" rows="20" cols="100" ></textarea><br>
     {% endif %}
 
-    <label for="visibility">Entry Visibility</label>
-  <select name="visibility">
+    <label for="entry_visibility">Entry Visibility</label>
+  <select id= "entry_visibility" name="visibility">
       <option value="Private">Keep this entry private</option>
       <option value="Friends">Share this entry with friends</option>
       <option value="Public">Share this entry with everyone</option>
