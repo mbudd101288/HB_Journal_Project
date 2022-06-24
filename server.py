@@ -34,12 +34,13 @@ def new_user():
     if user:
         flash("Email already exists. Try again.")
     else:
-        user = crud.create_user(email, password, fname, lname)
+        user = crud.create_user(email, password, fname, lname, sign_up= date.today(), profile_pic = None)
+        session['user'] = user.email
         db.session.add(user)
         db.session.commit()
-        flash("User created. Please log in.")
+        flash(f"User created. Welcome {user.fname}")
     
-    return redirect('/')
+    return redirect('/my-journal')
 
 @app.route('/login', methods=['POST'])
 def get_login_info():
