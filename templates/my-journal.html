@@ -35,6 +35,13 @@
 
 </form>
 
+
+{% if prompt.book %}
+    <button id="source_button" type="button">Journal Prompt Source</button>
+
+    <p id="source"></p>
+{% endif %}
+
 <form id = logout action="/logout">
     
     <button type="submit">Log Out</button>
@@ -52,6 +59,13 @@
         document.querySelector('#additional_info').innerHTML = `{{prompt.bonus_text}}`;
         });
 </script>
+<script> 
+    const sourceBtn = document.querySelector("#source_button");
+    sourceBtn.addEventListener('click', (evt) => {
+        document.querySelector('#source').innerHTML = `{{prompt.book}}`;
+        });
+</script>
+
 
 <script src='/static/js/button.js'></script>
 {% endblock %}

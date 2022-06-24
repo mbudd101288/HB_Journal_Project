@@ -143,7 +143,8 @@ def get_public_entries_json():
             "user_id":entry.user.id,
             "entry": entry.user_entry,
             "week": entry.week,
-            "prompt": entry.prompt.week,
+            "prompt_week": entry.prompt.week,
+            "prompt": entry.prompt.prompt,
             "visibility": entry.visibility
         }
         json.append(entry_dict)
