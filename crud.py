@@ -99,9 +99,9 @@ def get_prompt_by_week(week):
     
     return current_prompt
 
-def save_new_entry(user_id, week, user_entry, entry_date, entry_modified, modified_date, visibility):
+def save_new_entry(user_id, week, user_entry, entry_date, visibility, entry_modified, modified_date):
 
-    entry = JournalEntry(user_id = user_id, week = week, user_entry = user_entry, entry_date = entry_date, entry_modified = entry_modified, modified_date = modified_date, visibility = visibility) 
+    entry = JournalEntry(user_id = user_id, week = week, user_entry = user_entry, entry_date = entry_date, visibility = visibility, entry_modified = entry_modified, modified_date = modified_date) 
     # entry = JournalEntry (user_id = user_id, week = week, user_entry = user_entry, entry_date = entry_date, visibility = visibility) 
     return entry
 

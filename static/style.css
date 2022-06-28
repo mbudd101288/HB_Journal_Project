@@ -1,22 +1,24 @@
 html {
-    background-color: lightskyblue;
+    background-image: url(static/images/forest.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1, p, #entry, li {
-    color: navy;
+h1, p, #entry {
+    color: black;
     font-weight: bolder;
     font-family: cursive;
     text-align: center;
 }
 
-form, h3, .flash-msg, a , #journal_entry {
-    color: navy;
+form, h3, .flash-msg, #journal_entry {
+    color: black;
     font-weight: bolder;
     font-family: cursive;
-    border-color: solid,  navy;
+    border-color: solid,  black;
     }
 
-img {
+/* #mountain {
     height: 400px;
     width: 75%;
     display: block;
@@ -24,27 +26,71 @@ img {
     margin-right: auto;
     margin-bottom: 2em;
     box-shadow: 10px 10px 10px 15px navy;
-   }
+   } */
 
-button, #entry_visibility {
+  #icon {
+    width: 70px;
+    height: 80px;;
+  } 
+
+#navbar_supported_content { 
+  font-family: cursive;
+  font-weight: bolder; 
+  color: black;
+  font-size: medium;
+  font-weight: bolder;
+  background-image: url(/static/images/dropdown_sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background-image: url(/static/images/sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.active, .collapsible:hover {
+  background-image: url(/static/images/dropdown_sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homepage_button {
+  background-color: white;
+  border: solid 4px navy;
+  font-weight: bold;
+  color: navy;
+  font-family: cursive;
+}
+
+#entry_visibility {
     background-color: white;
-    border: solid 4px navy;
+    border: solid 4px maroon;
     font-weight: bold;
-    color: navy;
+    color: black;
     font-family: cursive;
   }
 
 #bonus_text_button {
     background-color: white;
-    border: solid 2px navy;
+    border: solid 2px black;
     font-weight: bold;
-    color: navy;
+    color: maroon;
     font-family: cursive;
-    
+}
+
+#display_entry_text, #link_to_author_user_page {
+  white-space: pre-line; 
+  text-align: left;
+  padding-left: 15px; 
 }
 
 .collapsible {
-    background-color: navy;
+    background-color: coral;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -55,9 +101,9 @@ button, #entry_visibility {
     font-size: 15px;
   }
   
-  .active, .collapsible:hover {
-    background-color: blue;
-  }
+  /* .active, .collapsible:hover {
+    background-color: gray;
+  } */
   
   .content {
     padding: 0 18px;

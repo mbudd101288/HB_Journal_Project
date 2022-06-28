@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %} My Journal Entries {% endblock %}
+{% block navbar %}
+    <span class="navbar-text">
+        <h1><u>{{user.fname}}'s Entries</u></h1>
+    </span>
+{% endblock %}
+
+{% block title %} {{user.fname}}'s Entries {% endblock %}
 
 {% block content %} 
 <div class="container"></div> 
-<div class="row">
-    <div class="col">   
-    <h1><u>{{user.fname}}'s Journal Entries</u></h1>
 
 <div class="row">
     <div id="user-prompts" class="col"></div>

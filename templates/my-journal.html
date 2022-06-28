@@ -1,27 +1,27 @@
 {% extends 'base.html' %}
 
-{% block title %} My Journal {% endblock %}
+
+{% block title %} {{user.fname}}'s Journal {% endblock %}
 
 {% block content %}     
-<h1><u>{{user.fname}}'s Journal</u></h1>
 
 <h1>{{prompt.prompt}}</h1>
 
 {% if prompt.bonus_text %}
-    <button id="bonus_text_button" type="button">Additional Prompt info.</button>
+    <button id="bonus_text_button" type="button">Final Thoughts</button>
 
     <p id="additional_info"></p>
 {% endif %}
 
 <form id = entry action="/entry" method="POST">
 
-    {% if prompt.entries %}
+    {% if entry%}
         <label for="journal_entry"></label>
-        <textarea  id="journal_entry" name="entry" rows="20" cols="100"> {{prompt.entries[0].user_entry}}</textarea><br>
-        <input type="hidden" name="entry_id" value={{prompt.entries[0].id}}>
+        <textarea  class="entry" id="journal_entry" name="entry" rows="20" cols="100"> {{entry.user_entry}}</textarea><br>
+        <input type="hidden" name="entry_id" value={{entry.id}}>
     {% else %}
         <label for="journal_entry"></label>
-        <textarea  id="journal_entry" name="entry" rows="20" cols="100" ></textarea><br>
+        <textarea  class="entry" id="journal_entry" name="entry" rows="20" cols="100" ></textarea><br>
     {% endif %}
 
     <label for="entry_visibility">Entry Visibility</label>
@@ -37,21 +37,17 @@
 
 
 {% if prompt.book %}
+<!-- <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content={{prompt.book}}>Journal Prompt Source</button> -->
     <button id="source_button" type="button">Journal Prompt Source</button>
 
     <p id="source"></p>
 {% endif %}
 
-<form id = logout action="/logout">
+<!-- <form id = logout action="/logout">
     
-    <button type="submit">Log Out</button>
+    <button type="submit">Log Out</button> -->
   
- <div class="col">
-    <a href="/entry">My Entries</a> 
-</div>
-<div class="col">
-    <a href="/shared-entries">My Journal Community</a> 
-</div>
+
 
 <script> 
     const targetBtn = document.querySelector("#bonus_text_button");

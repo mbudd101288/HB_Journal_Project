@@ -1,27 +1,19 @@
 {% extends 'base.html' %}
 
+
 {% block title %} {{user.fname}} Journal Entries {% endblock %}
 
+{% block navbar %} {{user.fname}}'s' Journal Entries {% endblock %}
+
 {% block content %} 
-<div class="container"></div> 
-<div class="row">
-    <div class="col">   
-    <h1><u>{{user.fname}}'s Journal Entries</u></h1>
+
 
 {%for entry in entries %}
-<h3>{{user.fname}} : Week {{entry.prompt.week}}</h3>
+<h3>Week {{entry.prompt.week}}: {{entry.prompt.prompt}}</h3>
 <p>{{entry.user_entry}}</p>
 
 {% endfor %}
 
-<form id="logout" action="/logout">
-    <div class="row">
-        <div class="col">
-            <button type="submit">Log Out</button>
-        </div>
-    </div>
-  
-</form>
 
 {% endblock %}
 

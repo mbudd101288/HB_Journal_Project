@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 
+{% block navbar %}
+    <span class="navbar-text">
+        <h1><u>Journal Community</u></h1>
+    </span>
+{% endblock %}
+
 {% block title %} Journal Community {% endblock %}
 
 {% block content %}   
 
-<ul><h1><u>Community</u></h1></ul>
 <div class="row">
     <div id="shared-entries" class="col"></div>
 
@@ -13,6 +18,5 @@
 {% endblock %}
 
 {% block footer %}
-<p>Current day: {{session['date']}}</p>
-<p>Active since {{user.sign_up}}</p>
+
 {% endblock %}

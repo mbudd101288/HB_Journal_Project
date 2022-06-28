@@ -1,6 +1,6 @@
 [
     {
-    "prompt": "List the things you only want to do if they can be done perfectly. What is one thing on your list you are willing to put time and effort into, even if you never reach perfection?", 
+    "prompt": "List the things you only want to do if they can be done perfectly. \n What is one thing on your list you are willing to put time and effort into, even if you never reach perfection?", 
     "week": 1, 
     "book": "52 Lists for Bravery by Moorea Seal; pg 76-77.", 
     "bonus_text": "The fact is, we often have to try something multiple times to get anywhere close to doing it well. Perseverance is more valuable than talent. Remember that. Some estimate that is takes ten thousand hours of practice to master something, and while enherent talent does make it easier, no one is talented in every area of life. What is one thing you are willing to put time and effort into, even if you never reach perfection?"
@@ -12,13 +12,13 @@
     "bonus_text": null 
     },
     {
-    "prompt": "How would your friends describe you? How do you feel about those descriptions", 
+    "prompt": "How would your friends describe you? \n How do you feel about those descriptions", 
     "week": 3,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 3", 
     "bonus_text": null 
     },
     {
-    "prompt": "What is a made-up rule about your life that you are applying to yourself? How has this held you back and how might you change it?",
+    "prompt": "What is a made-up rule about your life that you are applying to yourself? \n How has this held you back and how might you change it?",
     "week": 4,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 15", 
     "bonus_text": null 
@@ -30,13 +30,13 @@
     "bonus_text": "Pick the easiest thing on your list you can invest in this week. Put an asterisk next to it. Once you pursure it, writte down what you feel you gained from redirecting attention to something you already have."
     },
     {
-    "prompt": "What are 3-5 memories that would help someone understand who you are as a person? What emotions do you associate with each memory?",
+    "prompt": "What are 3-5 memories that would help someone understand who you are as a person? \n What emotions do you associate with each memory?",
     "week": 6,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 70", 
     "bonus_text": null 
     },
     {
-    "prompt": "When you were a child, how did you imagine your adult life? How does that compare to the way it is now?",
+    "prompt": "When you were a child, how did you imagine your adult life? \n How does that compare to the way it is now?",
     "week": 7, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 180", 
     "bonus_text": null 
@@ -115,87 +115,93 @@
     },
     {
     "prompt": "List the ways you have forgiven yourself",
-    "week": 21, 
+    "week": 20, 
     "book":  "52 Lists for Bravery by Moorea Seal; pg 138-139.",  
     "bonus_text": "Is it easier for you to forgive others or forgive yourself? A huge part of building resilience in yourself is to allow present you to fogive past you. You get to grow and change for the better. Equally, thos around you desrve the chance to try again, do better, and be better. If you have an easier time fogiving others, think of how you love them next time you are criticizing yourself, and apply that love to you. You are your greatest friend and family!"
     },
     {
     "prompt": "Write about something for which you would like to forgive yourself",
-    "week": 22, 
+    "week": 21, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 460", 
     "bonus_text": "Remember what you learned last week - A huge part of building resilience in yourself is to allow present you to fogive past you."
     },
     {
     "prompt": "Write 10 qualities that you appreciate in yourself (push youself to get to 10) and 2 that you'd like to change or work on.",
-    "week": 23, 
+    "week": 22, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 345", 
     "bonus_text": null 
     },
     {
     "prompt": "React to the following quote from Jim Butcher: 'When everything goes to hell, the people who stand by you wihtout flinching - they are your family'",
-    "week": 24,
+    "week": 23,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 205", 
     "bonus_text": "Having trouble getting started? List 3-5 difficult experiences in your life. List who was there to support you through those experiences and how they supported you."
     },
     {
     "prompt": "List 20 things that make you happy",
-    "week": 25,
+    "week": 24,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 225", 
     "bonus_text": "Make space in your life for the people, places, and activities that bring you joy. Consider if any activities on your list can be turned into healthful habits."
     },
     {
-    "prompt": "List the people you compare yourself to. Next to each person's name, write the emotion you typically feel when comparing yourself to them. How can you reframe how you view each person, from comparing to feeling empowered by observing the incredible people they are?",
-    "week": 26,
+    "prompt": "List the people you compare yourself to. In what ways do you compare yourself to them?",
+    "week": 25,
     "book":"52 Lists for Bravery by Moorea Seal; pg 70-71.",
-    "bonus_text": "Next to each person's name, write the emotion you typicall fell when comparing yourself to them. How can you reframe how you view each person, from comparing to feeling empowered by observing the incredible people they are? Other people's successes have no negative impact on the person you are. Every person's life is unique and every person you admire has secret struggles and advantages you may never know about. Transform their acheivements into your own inpsiration and self-empowerment."
+    "bonus_text": "Next to each person's name, write the emotion you typicall feel when comparing yourself to them. How can you reframe how you view each person, from comparing to feeling empowered by observing the incredible people they are? Other people's successes have no negative impact on the person you are. Every person's life is unique and every person you admire has secret struggles and advantages you may never know about. Transform their acheivements into your own inpsiration and self-empowerment."
     },
     {
     "prompt": "What is something you have a hard time being honest about, even to those you trust the most? Why?",
-    "week": 27, 
+    "week": 26, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 225", 
     "bonus_text": null
     },
     {
     "prompt": "List the things you would say if you were speaking your truth. Under each truth, list what you assume might happen if you spoke those truths.",
-    "week": 28, 
+    "week": 27, 
     "book": "52 Lists for Bravery by Moorea Seal; pg 64-65.", 
     "bonus_text": "On a scale of 1( not likely) and 10 (very likely), next to each assumption write the likelihood of your assumption coming true if you are truly open and honest. Know that when you take the risk of being open and honest with others, you gain power of influence. And no matter how they respond to your truth, by speaking openly and honesly, you are changing the world for good. Your risk, no matter the outcome, gains purpose."
     },
     {
     "prompt": "Write about a time that your own strength surprised you",
-    "week": 29, 
+    "week": 28, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 418", 
     "bonus_text": null 
     },
     {
-    "prompt": "",
-    "week": 30, 
-    "book": "", 
-    "bonus_text": ""
+    "prompt": "List the things you would tell your younger self to help them face the challenges or scary things in their life",
+    "week": 29, 
+    "book": "52 Lists for Bravery by Moorea Seal; pg 110-111.", 
+    "bonus_text": "Take five minutes today to close your eyes and visualize the younger you who still lives within you. All of our former selves still exist within us and deserve to receive the love, healing, and guidance that the grown-up you holds today. \n In your five miute meditation, visualize the younger you that still exists and tell them all of the things you wrote down in your list. You are your own greatest healer, helper, and advocate."
     },
     {
     "prompt": "How do you know when it is time to let something (or someone) go?",
-    "week": 31, 
+    "week": 30, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 302", 
     "bonus_text": "Feeling stuck? Write about a time you have let something (or someone) go. How did you feel about it at the time? How do you feel about it now?"
     },
     {
     "prompt": "",
-    "week": 32, 
+    "week": 31, 
     "book": "", 
     "bonus_text": ""
     },
     {
-    "prompt": "",
-    "week": 33, 
-    "book": "", 
-    "bonus_text": ""
+    "prompt": "List the labels people have given you and the ways they have tries to box you in.",
+    "week": 32, 
+    "book": "52 Lists for Bravery by Moorea Seal; pg 102-103.", 
+    "bonus_text": "We live in a society the tries to tell us wo we are based off of an impossible template. We all get placed in boxes by others with words like 'good' or 'bad', 'selfish' or 'self-sacrificing', 'strong' or 'weak.' A truly brave person can live outside of these binaries; it just takes practive believing in your own truth rather than other's labels. \n What is one affirming, positive, and powerful thing you know to be true about you."
     },
     {
     "prompt": "What is something that you are insecure about? What is something that you are confident in?",
-    "week": 34,
+    "week": 33,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 427", 
     "bonus_text": null 
+    },
+    {
+    "prompt": "List the things about yourself that you think are silly, goofy, and funny",
+    "week": 34, 
+    "book": "52 Lists for Bravery by Moorea Seal; pg 100-101.",  
+    "bonus_text": "Which of these things do you think are embarrassing to share with others? This week's challenge is to move past the embarrassment and get silly! Sometimes it takes a little bravery to let your hair down and get goofy. Laughter is such a great healer and stress reliever, so go ahead- get funny!"
     },
     {
     "prompt": "",
@@ -204,16 +210,16 @@
     "bonus_text": ""
     },
     {
-    "prompt": "",
-    "week": 36, 
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
     "prompt": "If you could talk to someone that you have lost for just five more minutes, what would you say?",
-    "week": 37,
+    "week": 36,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 449", 
     "bonus_text": "Loss may refer to someone who has passed away or someone who abruptly/unexpectedly is no longer in your life."
+    },
+    {
+    "prompt": "",
+    "week": 37, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
@@ -222,16 +228,16 @@
     "bonus_text": ""
     },
     {
-    "prompt": "",
-    "week": 39, 
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
-    "prompt": "What standards do you apply to yourself that you would never aply to others? ",
-    "week": 40,
+    "prompt": "What standards do you apply to yourself that you would never apply to others? ",
+    "week": 39,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 458", 
     "bonus_text": null 
+    },
+    {
+    "prompt": "",
+    "week": 40, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
@@ -241,21 +247,21 @@
     },
     {
     "prompt": "",
-    "week": 42, 
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
-    "prompt": "",
-    "week": 43,
+    "week": 42,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 460", 
     "bonus_text": null 
     },
     {
     "prompt": "What are your main coping mechanisms right now? How are they serving you?",
-    "week": 44,
+    "week": 43,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 473", 
     "bonus_text": "Give it a try! List 3-5 coping mechanisms you would like to try. What steps are needed to implement these coping mechanisms?"
+    },
+    {
+    "prompt": "",
+    "week": 44, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
@@ -270,16 +276,16 @@
     "bonus_text": ""
     },
     {
-    "prompt": "",
-    "week": 47, 
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
     "prompt": "How do you tend to respond to crises? Write about your response to one you can remember. How do you feel about that?",
-    "week": 48, 
+    "week": 47, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 478", 
     "bonus_text": null 
+    },
+    {
+    "prompt": "",
+    "week": 48, 
+    "book": "", 
+    "bonus_text": ""
     },
     {
     "prompt": "",
@@ -289,7 +295,7 @@
     },
     {
     "prompt": "",
-    "week": 50, 
+    "week": 50,
     "book": "", 
     "bonus_text": ""
     },

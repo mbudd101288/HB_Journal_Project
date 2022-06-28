@@ -57,11 +57,12 @@ for entry in entry_data:
     week = entry["week"]
     user_entry = entry["user_entry"]
     entry_date = datetime.strptime(entry["entry_date"], "%Y-%m-%d")
+    visibility = entry["visibility"]
     entry_modified = entry["entry_modified"]
     modified_date = entry["modified_date"]
-    visibility = entry["visibility"]
     
-    db_entry = crud.save_new_entry(user_id, week, user_entry, entry_date, entry_modified, modified_date, visibility)
+    
+    db_entry = crud.save_new_entry(user_id, week, user_entry, entry_date, visibility, entry_modified, modified_date)
     entries_in_db.append(db_entry)
 
 model.db.session.add_all(users_in_db)

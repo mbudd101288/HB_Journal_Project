@@ -4,81 +4,82 @@
     "week": "14", 
     "entry_date": "2022-04-03", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio morbi quis commodo odio aenean sed. Et odio pellentesque diam volutpat commodo. Nibh sed pulvinar proin gravida. Sit amet dictum sit amet justo donec enim.", 
+    "visibility": "Public",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Public"
+    "modified_date": null
+    
     },
     {
     "user_id": "1", 
     "week": "18", 
     "entry_date": "2022-05-03", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas sed. Sit amet venenatis urna cursus. Ut consequat semper viverra nam libero justo. Accumsan tortor posuere ac ut consequat. Aliquam faucibus purus in massa tempor. Facilisis sed odio morbi quis commodo odio. Id aliquet risus feugiat in ante metus dictum. Diam vel quam elementum pulvinar etiam non quam lacus suspendisse. Sed nisi lacus sed viverra tellus in. Sagittis id consectetur purus ut. Neque convallis a cras semper auctor neque. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Faucibus in ornare quam viverra. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Aliquam sem et tortor consequat. Mauris ultrices eros in cursus. Tincidunt eget nullam non nisi est sit amet. Facilisis volutpat est velit egestas dui. Vestibulum lectus mauris ultrices eros. \n \n Sed augue lacus viverra vitae congue eu consequat ac felis. Nunc eget lorem dolor sed. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Faucibus in ornare quam viverra orci sagittis. Sed nisi lacus sed viverra. Nunc scelerisque viverra mauris in aliquam sem fringilla. Consequat ac felis donec et odio. Vulputate eu scelerisque felis imperdiet. Blandit volutpat maecenas volutpat blandit. Non odio euismod lacinia at quis risus. Eget nunc lobortis mattis aliquam faucibus purus in. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Rhoncus dolor purus non enim praesent elementum facilisis leo vel.", 
+    "visibility": "Public",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Public"
+    "modified_date": null
     },
     {
     "user_id": "1", 
     "week": "24", 
     "entry_date": "2022-06-16", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris cursus mattis molestie a iaculis at. Arcu dui vivamus arcu felis. Sem et tortor consequat id porta nibh venenatis cras sed. Nibh praesent tristique magna sit amet purus gravida quis. Egestas fringilla phasellus faucibus scelerisque. Vitae suscipit tellus mauris a diam. Egestas sed sed risus pretium quam vulputate dignissim. Nulla pellentesque dignissim enim sit amet venenatis urna. Nullam ac tortor vitae purus faucibus ornare. Consequat ac felis donec et odio. Iaculis eu non diam phasellus vestibulum lorem sed. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Consectetur lorem donec massa sapien faucibus et molestie. Interdum posuere lorem ipsum dolor.\n \n A pellentesque sit amet porttitor eget dolor morbi non arcu. Neque viverra justo nec ultrices dui sapien eget mi. Lacus sed viverra tellus in hac habitasse. Sagittis purus sit amet volutpat. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Tincidunt vitae semper quis lectus nulla. Vestibulum lorem sed risus ultricies. Ac turpis egestas sed tempus urna et pharetra. Turpis cursus in hac habitasse platea dictumst quisque. Ultrices tincidunt arcu non sodales. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Nunc sed id semper risus in hendrerit gravida. Dignissim diam quis enim lobortis scelerisque. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget.\n \n Commodo ullamcorper a lacus vestibulum sed arcu non. Eu sem integer vitae justo. A pellentesque sit amet porttitor eget dolor. Orci phasellus egestas tellus rutrum tellus pellentesque. Et odio pellentesque diam volutpat commodo sed egestas. Vulputate enim nulla aliquet porttitor. A scelerisque purus semper eget duis at tellus. Neque convallis a cras semper. Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Ultricies leo integer malesuada nunc vel risus commodo viverra. Iaculis eu non diam phasellus. Sed libero enim sed faucibus turpis. Viverra justo nec ultrices dui sapien eget mi proin sed. Donec ultrices tincidunt arcu non. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Sed felis eget velit aliquet.", 
+    "visibility": "Public",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Public"
+    "modified_date": null
     },
     {
     "user_id": "2", 
     "week": "2", 
     "entry_date": "2022-01-11", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Ullamcorper morbi tincidunt ornare massa eget egestas. Gravida cum sociis natoque penatibus et magnis dis. Et malesuada fames ac turpis. Vitae proin sagittis nisl rhoncus mattis.", 
+    "visibility": "Private",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Private"
+    "modified_date": null
     },
     {
     "user_id": "2", 
     "week": "7", 
     "entry_date": "2022-02-14", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Sit amet volutpat consequat mauris nunc. Velit sed ullamcorper morbi tincidunt ornare massa.", 
+    "visibility": "Private",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Private"
+    "modified_date": null
     },
     {
     "user_id": "2", 
     "week": "10", 
     "entry_date": "2022-03-10", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam. At imperdiet dui accumsan sit amet. Sit amet luctus venenatis lectus magna fringilla urna. Facilisis gravida neque convallis a cras semper auctor. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Id consectetur purus ut faucibus pulvinar elementum. Risus nullam eget felis eget nunc lobortis. Ac tortor vitae purus faucibus. Ultricies leo integer malesuada nunc vel risus. Aliquam etiam erat velit scelerisque. Tempor orci dapibus ultrices in iaculis nunc sed. Integer malesuada nunc vel risus commodo viverra maecenas accumsan. Et netus et malesuada fames ac turpis egestas. Lectus mauris ultrices eros in cursus turpis massa tincidunt. Non diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Tellus mauris a diam maecenas sed enim ut sem. Egestas congue quisque egestas diam in arcu cursus euismod quis. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Pellentesque diam volutpat commodo sed. Quis viverra nibh cras pulvinar mattis. Ut pharetra sit amet aliquam id. Nibh nisl condimentum id venenatis a. Nunc congue nisi vitae suscipit. Tristique magna sit amet purus gravida quis blandit turpis. Purus faucibus ornare suspendisse sed nisi lacus sed. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Et malesuada fames ac turpis egestas sed. Erat imperdiet sed euismod nisi porta. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Vitae suscipit tellus mauris a diam maecenas. At quis risus sed vulputate odio ut enim. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Risus feugiat in ante metus. Euismod lacinia at quis risus sed vulputate. Cursus mattis molestie a iaculis at. Adipiscing diam donec adipiscing tristique risus nec. Habitant morbi tristique senectus et netus et.", 
+    "visibility": "Public",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Public"
+    "modified_date": null
     },
     {
     "user_id": "3", 
     "week": "2", 
     "entry_date": "2022-01-15", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non arcu risus quis. Neque sodales ut etiam sit amet nisl purus in. Turpis massa tincidunt dui ut. Sit amet aliquam id diam maecenas ultricies. Massa vitae tortor condimentum lacinia quis vel. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Dolor purus non enim praesent elementum. Purus semper eget duis at tellus at urna condimentum mattis. Non nisi est sit amet facilisis magna. Sit amet nisl purus in mollis nunc sed id semper. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Tortor condimentum lacinia quis vel eros donec ac odio. Imperdiet dui accumsan sit amet nulla. Integer vitae justo eget magna fermentum iaculis eu non diam. \n \n Augue interdum velit euismod in pellentesque massa placerat duis ultricies. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Diam donec adipiscing tristique risus nec feugiat in fermentum. Massa eget egestas purus viverra accumsan. Senectus et netus et malesuada. Neque gravida in fermentum et. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. Bibendum enim facilisis gravida neque. Tortor aliquam nulla facilisi cras fermentum. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. \n \nCras pulvinar mattis nunc sed blandit. Vestibulum sed arcu non odio euismod lacinia. Augue mauris augue neque gravida in fermentum et. Est velit egestas dui id ornare. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Interdum velit laoreet id donec. Ut eu sem integer vitae justo eget. Blandit turpis cursus in hac habitasse platea dictumst quisque. Morbi enim nunc faucibus a pellentesque sit amet porttitor. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Fames ac turpis egestas sed tempus. Rhoncus dolor purus non enim praesent elementum. Venenatis urna cursus eget nunc. Posuere ac ut consequat semper viverra nam libero justo laoreet. Auctor urna nunc id cursus metus aliquam. Pharetra massa massa ultricies mi quis. Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Neque egestas congue quisque egestas diam.\n Odio tempor orci dapibus ultrices. Parturient montes nascetur ridiculus mus mauris vitae. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Massa placerat duis ultricies lacus. Vitae aliquet nec ullamcorper sit amet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Ac tortor vitae purus faucibus ornare. Lacinia at quis risus sed vulputate. Massa vitae tortor condimentum lacinia quis. Risus nullam eget felis eget nunc lobortis mattis aliquam. Sit amet porttitor eget dolor morbi. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Eu scelerisque felis imperdiet proin. Faucibus turpis in eu mi. Praesent elementum facilisis leo vel. Metus dictum at tempor commodo. Amet risus nullam eget felis eget.", 
+    "visibility": "Private",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Private"
+    "modified_date": null
     },
     {
     "user_id": "3", 
     "week": "5", 
     "entry_date": "2022-02-04", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    "visibility": "Friends",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Friends"
+    "modified_date": null
     },
     {
     "user_id": "3", 
     "week": "7", 
     "entry_date": "2022-02-19", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    "visibility": "Public",
     "entry_modified": false, 
-    "modified_date": null,
-    "visibility": "Public"
+    "modified_date": null
     }
 ] 
 

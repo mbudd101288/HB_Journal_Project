@@ -40,7 +40,7 @@ class JournalEntry(db.Model):
     user = db.relationship('User', backref = 'entries')
 
     def __repr__(self):
-        return f"<JournalEntry user_id = {self.user_id} journal_id = {self.journal_id} entry_date = {self.entry_date} user_entry = {self.user_entry} visibility = {self.visibility}>"
+        return f"<JournalEntry user_id = {self.user_id} journal_id = {self.id} entry_date = {self.entry_date} user_entry = {self.user_entry} visibility = {self.visibility}>"
 
 class JournalPrompt(db.Model):
 

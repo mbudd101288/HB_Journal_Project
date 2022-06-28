@@ -108,7 +108,7 @@ def create_current_entry():
 
     text_entry = request.form.get('entry')
     visibility = request.form.get('visibility')
-
+    print("***", text_entry)
     if "entry_id" in request.form:
         entry_id = request.form.get('entry_id')
         entry = crud.get_entry_by_id(entry_id)
@@ -119,7 +119,7 @@ def create_current_entry():
     
     else:
         user = crud.get_user_by_email(session['user'])
-        new_entry = crud.save_new_entry(user.id, session['week'], text_entry, session['date'], entry_modified, date_modified, visibility)
+        new_entry = crud.save_new_entry(user.id, session['week'], text_entry, session['date'], visibility, entry_modified = False, modified_date= None)
         db.session.add(new_entry)
     db.session.commit()
     
@@ -142,6 +142,8 @@ def edit_entry(week):
     user = crud.get_user_by_email(session['user'])
     prompt = crud.get_prompt_by_week(week)
     entry = crud.get_entry_by_user_and_week(user.id, week)
+    print(user)
+    print(entry)
 
     return render_template('my-journal.html', user = user, prompt = prompt, entry = entry)
 
