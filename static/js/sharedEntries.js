@@ -5,7 +5,6 @@ const setUpCollapsibleEntries = () => {
     
 
     for (const button of coll) {
-        console.log(button.id)
         button.addEventListener("click", function() {
         // this.classList.toggle("active");
 
@@ -32,36 +31,39 @@ const displaySharedEntries = () => {
     .then((sharedEntries) => {
         const sharedEntriesContainer = document.querySelector('#shared-entries');
         let sharedEntryData = ''
-        let currentWeek = 0
+        let entryDiv = ''
+        let weeks = new Set()
         for (const entry of sharedEntries) {
+            console.log("Week", entry.week);
+            console.log("Name", entry.fname);
 
-            //  const entryDiv = `
-            //     <div>
-            //         <h3> 
-            //              <a id=${entry.prompt_week} href="/update-prompt-entry/${entry.prompt_week}">Week ${entry.prompt_week}</a> 
-            //               : ${entry.prompt}
-            //         </h3>
-            //         <p class=entry id="display_entry_text"> 
-            //             ${entry['entry']}
-            //             ~ <a id=${entry.user_id} href="/entry/${entry.user_id}">${entry.fname}</a> 
-            //         </p>
-            //     </div>`
-                // <button class='view-entry' id="${entry.week}">View Entry</button>
                
-            
-            const entryDiv = `
-                
+            if (!weeks.has(entry.week)) {
+                sharedEntriesContainer.insertAdjacentHTML('beforeend', `
                 <button id="${entry.week}" type="button" class="collapsible"> Week ${entry.week} : ${entry.prompt} </button>
-                <div id="entry_${entry.week}" class="content">
-                    <p class=entry id="display_entry_text"> 
+                    <div id="entry_${entry.week}" class="content">
+                        <p class=entry id="display_entry_text"> 
+                            ${entry['entry']}
+                            ~ <a id=${entry.user_id} href="/entry/${entry.user_id}">${entry.fname}</a> 
+                        </p>
+                    </div>`)
+
+                weeks.add(entry.week)
+                
+            }
+            else {
+                console.log("ALREADY", weeks.has(entry.week))
+                let collapsibleBtn = document.getElementById(`entry_${entry.week}`)
+                collapsibleBtn.insertAdjacentHTML('beforeend',  
+                
+                    `<p class=entry id="display_entry_text"> 
                         ${entry['entry']}
                         ~ <a id=${entry.user_id} href="/entry/${entry.user_id}">${entry.fname}</a> 
-                    </p>
-                </div>`
-                
-            sharedEntryData += entryDiv
+                    </p>`
+                )
+            }  
+    
         }
-        sharedEntriesContainer.innerHTML = sharedEntryData
         setUpCollapsibleEntries()
     });
     

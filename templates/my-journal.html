@@ -23,6 +23,7 @@
     {% else %}
         <label for="journal_entry"></label>
         <textarea  class="entry" id="journal_entry" name="entry" rows="20" cols="100" ></textarea><br>
+        <input type="hidden" name="prompt_week" value={{prompt.week}}>
     {% endif %}
 
     <label for="entry_visibility">Entry Visibility</label>
