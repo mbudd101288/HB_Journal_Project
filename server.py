@@ -120,8 +120,9 @@ def create_current_entry():
         entry.user_entry = request.form.get('entry')
     
     else:
+        prompt_week = request.form.get('prompt_week')
         user = crud.get_user_by_email(session['user'])
-        new_entry = crud.save_new_entry(user.id, session['week'], text_entry, session['date'], visibility, entry_modified = False, modified_date= None)
+        new_entry = crud.save_new_entry(user.id, prompt_week, text_entry, session['date'], visibility, entry_modified = False, modified_date= None)
         db.session.add(new_entry)
     db.session.commit()
     
