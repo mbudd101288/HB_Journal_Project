@@ -7,15 +7,26 @@ html {
 h1, p, #entry {
     color: black;
     font-weight: bolder;
-    font-family: cursive;
+    font-family: marker felt, fantasy;
     text-align: center;
 }
 
 form, h3, .flash-msg, #journal_entry {
     color: black;
     font-weight: bolder;
-    font-family: cursive;
+    font-family: marker felt, fantasy;
     border-color: solid,  black;
+    }
+    
+#scroll_journal_entry {
+    display: inline-block;
+    justify-content: right;
+    color: maroon;
+    padding: 10px;
+    font: 28px aerial;
+    width: 800px;
+    height: 400px;
+    overflow-y: scroll;
     }
 
 /* #mountain {
@@ -33,7 +44,7 @@ form, h3, .flash-msg, #journal_entry {
     height: 80px;;
   } 
 
-#navbar_supported_content { 
+/* #navbar_supported_content { 
   font-family: cursive;
   font-weight: bolder; 
   color: black;
@@ -42,29 +53,30 @@ form, h3, .flash-msg, #journal_entry {
   background-image: url(/static/images/dropdown_sky.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .navbar {
   background-image: url(/static/images/sky.png);
+  height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
-  font-family: cursive;
-  font-weight: bolder;
+  font-family: marker felt, fantasy;
+  font-weight: bold;
+  font-size: 20pt;
 }
-
+/* 
 .active, .collapsible:hover {
   background-image: url(/static/images/dropdown_sky.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 #homepage_button {
   background-color: white;
   border: solid 4px navy;
-  font-weight: bold;
   color: navy;
-  font-family: cursive;
+  font-family: marker felt, fantasy;
 }
 
 #entry_visibility {
@@ -72,7 +84,7 @@ form, h3, .flash-msg, #journal_entry {
     border: solid 4px maroon;
     font-weight: bold;
     color: black;
-    font-family: cursive;
+    font-family: marker felt, fantasy;
   }
 
 #bonus_text_button {
@@ -80,7 +92,15 @@ form, h3, .flash-msg, #journal_entry {
     border: solid 2px black;
     font-weight: bold;
     color: maroon;
-    font-family: cursive;
+    font-family: marker felt, fantasy;
+}
+
+button {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  color: maroon;
+  font-family: marker felt, fantasy;
 }
 
 #display_entry_text, #link_to_author_user_page {
@@ -108,6 +128,6 @@ form, h3, .flash-msg, #journal_entry {
   .content {
     padding: 0 18px;
     display: none;
-    overflow: hidden;
+    overflow: scroll;
     background-color: #f1f1f1;
   }

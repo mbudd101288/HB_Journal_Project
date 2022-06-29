@@ -180,10 +180,10 @@
     "bonus_text": "Feeling stuck? Write about a time you have let something (or someone) go. How did you feel about it at the time? How do you feel about it now?"
     },
     {
-    "prompt": "",
+    "prompt": "List the movies and tv shows that bring you calm",
     "week": 31, 
-    "book": "", 
-    "bonus_text": ""
+    "book": "52 Lists for Calm: Journaling Inspiration for Soothing Anxiety and Creating a Peaceful Life by Moorea Seal; pg 80-81.", 
+    "bonus_text": "Watch one of your favorite calming movies or TV shows tonight! Bonus points if you also make yourself a drink that soothes you and cozy up in a space that brings you calm."
     },
     {
     "prompt": "List the labels people have given you and the ways they have tries to box you in.",
@@ -222,10 +222,10 @@
     "bonus_text": ""
     },
     {
-    "prompt": "",
+    "prompt": "List the feelings and thoughts that come up when you are avoiding something or procrastinating.",
     "week": 38, 
-    "book": "", 
-    "bonus_text": ""
+    "book": "52 Lists for Calm: Journaling Inspiration for Soothing Anxiety and Creating a Peaceful Life by Moorea Seal; pg 40-41", 
+    "bonus_text": "Do you prefer to break up projects into smaller tasks that you can do day to day? Or do you prefer to have one big chunk of time to power through the whole thing? \n Either way is okay! Some people are able to chip away at big projects whereas others are sprinters, which means they get their best work done, get the most inspiration, and feel the most satisfied when they work fast and hard. \n The next time you feel anxiety rising from putting something off, instead remember how you work best, and assign yourself a day (or a series of days) and place to work on that thing."
     },
     {
     "prompt": "What standards do you apply to yourself that you would never apply to others? ",
@@ -234,34 +234,34 @@
     "bonus_text": null 
     },
     {
-    "prompt": "",
-    "week": 40, 
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
-    "prompt": "",
-    "week": 41, 
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
-    "prompt": "",
-    "week": 42,
-    "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 460", 
-    "bonus_text": null 
+    "prompt": "Lise 5 activities you enjoy that you'd ideally like to spend more time doing",
+    "week": 40,
+    "book": null, 
+    "bonus_text": "What is preventing you from doing those activities? How can you make more time for those activites in your life?"
     },
     {
     "prompt": "What are your main coping mechanisms right now? How are they serving you?",
-    "week": 43,
+    "week": 41,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 473", 
     "bonus_text": "Give it a try! List 3-5 coping mechanisms you would like to try. What steps are needed to implement these coping mechanisms?"
     },
     {
+    "prompt": "List the ways you can love yourself more.",
+    "week": 42,
+    "book": "The 52 Lists Project: A Year of Weekly Journaling Inspiration by Moorea Seal; pg 108-109.",  
+    "bonus_text": "Start a weekly habit that is all about self-love that you will carry out until the end of the year (10 weeks). Try going for a hike, cooking a meal from scratch, or whatever speaks to you to symbolize your personal investment."
+    },
+    {
     "prompt": "",
-    "week": 44, 
+    "week": 43, 
     "book": "", 
     "bonus_text": ""
+    },
+    {
+    "prompt": "List all the things you would like to be able to do with more ease and lightness, and less worry, anxiety, or fear.",
+    "week": 44, 
+    "book": "52 Lists for Calm: Journaling Inspiration for Soothing Anxiety and Creating a Peaceful Life by Moorea Seal; pg 42-43.", 
+    "bonus_text": "These are your goals as you move through the rest of this year. Choose one thing you want to focus on for the next two months and put an asterisk next to it. \n It takes thirty days to break a habit, and thirty more days to establish a new healthy pattern. \n What is one little thing you can practice doing to make that item on you list feel a little bit lighter, easier, and calmer?"
     },
     {
     "prompt": "",
@@ -270,22 +270,22 @@
     "bonus_text": ""
     },
     {
-    "prompt": "",
-    "week": 46, 
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
     "prompt": "How do you tend to respond to crises? Write about your response to one you can remember. How do you feel about that?",
-    "week": 47, 
+    "week": 46, 
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 478", 
     "bonus_text": null 
     },
     {
-    "prompt": "",
+    "prompt": "List the beliefs and values that influence your decision making.",
+    "week": 47,
+    "book": "52 Lists for Calm: Journaling Inspiration for Soothing Anxiety and Creating a Peaceful Life by Moorea Seal; pg 52-53.", 
+    "bonus_text": "Reflect on some of the big and little decisions you have made in the last week. Do those decisions align with the things you just listed about your personal values? Guess what - no one lives by the ideals they hold themselves to 100 percent of the time, and that is okay! \n It does not make you a bad person; it makes you human, beautifully flawed and worthy of self-acceptance, compassion, and understanding. Your imperfection is what makes you human, not a robot, so perhaps you can ease up a little on how much you expect of yourself. You're doing a great job!"
+    },
+    {
+    "prompt": "List the things you have been told not to do.",
     "week": 48, 
-    "book": "", 
-    "bonus_text": ""
+    "book": "52 Lists for Calm: Journaling Inspiration for Soothing Anxiety and Creating a Peaceful Life by Moorea Seal; pg 106-107", 
+    "bonus_text": "Look at your list and ask yourself, 'Who is the true person stopping me from doing these thing?' It's not the person who told you no; only you are the final decision maker in control of your actions and thoughts. \n Review your list of your beliefs and values from last week. Are there thing on the list you've been told not to do that alight with your values - and that you actually might want to do? \n Make a plan to do one thing on your list that feels safe and positive to you. Remember you get to live your life by your own standards."
     },
     {
     "prompt": "",
@@ -293,22 +293,22 @@
     "book": "", 
     "bonus_text": ""
     },
-    {
+     {
     "prompt": "",
-    "week": 50,
-    "book": "", 
-    "bonus_text": ""
-    },
-    {
-    "prompt": "",
-    "week": 51,
+    "week": 50, 
     "book": "", 
     "bonus_text": ""
     },
     {
     "prompt": "React to the following quote from The Perks of Being a Wallflower by Stephen Chbosky: 'We accept the love we think we deserve.",
-    "week": 52,
+    "week": 51,
     "book": "500 Journal Prompts For Mental Health, Creativity, and Personal Exploration by Robert Duff, PH.D.; prompt 464", 
     "bonus_text": "What emotions does this bring up for you. Does this make you think of a specific person and/or situation?"
+    },
+    {
+    "prompt": "List the most memorable moments of your year.",
+    "week": 52,
+    "book": "The 52 Lists Project: A Year of Weekly Journaling Inspiration by Moorea Seal; pg 142-143.", 
+    "bonus_text": "What a year it has been! Like any year, there were ups and downs, highs and lows. But because you took the time to write out your thoughts and feelings each week through this journal, you now have an incredible documentation of all the ways you have processed and grown. Take some time this week to read through your past pages and revel in the personal growth and joy you have experienced. You did it!"
     }
 ]

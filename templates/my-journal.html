@@ -17,8 +17,9 @@
 
     {% if entry%}
         <label for="journal_entry"></label>
-        <textarea  class="entry" id="journal_entry" name="entry" rows="20" cols="100"> {{entry.user_entry}}</textarea><br>
+        <textarea class="entry" id="journal_entry" name="entry" rows="20" cols="100" style="border: none";> {{entry.user_entry}}</textarea><br>
         <input type="hidden" name="entry_id" value={{entry.id}}>
+        
     {% else %}
         <label for="journal_entry"></label>
         <textarea  class="entry" id="journal_entry" name="entry" rows="20" cols="100" ></textarea><br>

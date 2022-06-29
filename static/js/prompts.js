@@ -1,5 +1,31 @@
 "use strict"
 
+const setUpCollapsiblePrompts = () => {
+    const acc = document.getElementsByClassName("collapsible");
+    
+
+    for (const button of acc) {
+        console.log("button", button)
+        button.addEventListener("click", function() {
+        // this.classList.toggle("active");
+
+        const contents = document.querySelectorAll('div.content')
+        contents.forEach((content) => {
+    	    content.style.display = "none"
+        })
+
+        // const content = this.nextElementSibling;
+        const contentPrompt= document.querySelector(`#entry_${button.id}`)
+        console.log("***contentPrompt", contentPrompt)
+        if (contentPrompt.style.display === "block") {
+            contentPrompt.style.display = "none";
+        } else {
+            contentPrompt.style.display = "block";
+        }
+    });
+    }
+}
+
 const displayPrompts = () => {
 
     fetch("/get-user-entries.json")
@@ -21,20 +47,22 @@ const displayPrompts = () => {
             // promptsContainer.appendChild(promptDiv)
 
             if (prompt.entry === null) {
-                promptData +=
-                `<div>
-                    <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
-                    <button onclick="location.href='/update-prompt-entry/${prompt['week']}'">Create Entry</button>
+                promptData +=`
+                <button id="${prompt.week}" type="button" class="collapsible" style="background-color: gray" > Week ${prompt.week} : ${prompt.prompt} </button>
+                <div id="entry_${prompt.week}" class="content">
+                    <button onclick="location.href='/update-prompt-entry/${prompt.week}'">Create Entry</button>
                 </div>`
             } else {
                 promptData +=
-                `<div>
-                    <p>Week ${prompt['week']}: ${prompt['prompt']}</p>
-                    <button onclick="location.href='/update-prompt-entry/${prompt['week']}'">Edit Entry</button>
+                `<button id="${prompt.week}" type="button" class="collapsible"> Week ${prompt.week} : ${prompt.prompt} </button>
+                <div id="entry_${prompt.week}" class="content">
+                    <p>${prompt.entry}</p>
+                    <button onclick="location.href='/update-prompt-entry/${prompt.week}'">Edit Entry</button>
                 </div>`
             } 
         }
         promptsContainer.innerHTML = promptData
+        setUpCollapsiblePrompts()
     }); 
 }
 displayPrompts()

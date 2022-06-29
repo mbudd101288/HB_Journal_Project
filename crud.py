@@ -62,7 +62,7 @@ def prompts_available_to_user(user_id):
     current_week = session['week']
     sign_up_week = datetime.strftime(user.sign_up, ("%U"))
 
-    available_prompts= JournalPrompt.query.filter((JournalPrompt.week >= sign_up_week) & (JournalPrompt.week <= current_week)).all()
+    available_prompts= JournalPrompt.query.filter((JournalPrompt.week >= sign_up_week) & (JournalPrompt.week <= current_week)).order_by(JournalPrompt.week.desc()).all()
 
     return available_prompts
 
@@ -73,7 +73,7 @@ def prompts_available_to_user_json(user_id):
     current_week = session['week']
     sign_up_week = datetime.strftime(user.sign_up, ("%U"))
 
-    available_prompts= JournalPrompt.query.filter((JournalPrompt.week >= sign_up_week) & (JournalPrompt.week <= current_week)).all()
+    available_prompts= JournalPrompt.query.filter((JournalPrompt.week >= sign_up_week) & (JournalPrompt.week <= current_week)).order_by(JournalPrompt.week.desc()).all()
     json = []
     for prompt in available_prompts:
         prompt_dict = {

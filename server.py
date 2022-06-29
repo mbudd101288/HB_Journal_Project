@@ -74,6 +74,8 @@ def show_user_journal():
     else:
         session['date'] = date.today()
         session['week'] = strftime("%U")
+        # session['week'] = 52
+
         user = crud.get_user_by_email(session['user'])
         current_prompt = crud.get_prompt_by_week(session['week'])
         return redirect(f"/update-prompt-entry/{session['week']}")
@@ -123,17 +125,8 @@ def create_current_entry():
         db.session.add(new_entry)
     db.session.commit()
     
-    
     flash(f'Journal Entry saved. Visibility: {visibility}')
     return redirect('/entry')
-    # return render_template('user-page.html', new_entry = new_entry, user = user)
-
-    # In the server, access the entry_id using request.form
-    # If an entry_id exists, use a crud function to get the entry by id
-    #   update the entry_modified field and the user_entry field using inputs from the form.
-    # How to update a record in a db:
-    # example_entry.entry_modified = True
-    # example_entry…. Update other fields
 
 
 @app.route("/update-prompt-entry/<week>")
@@ -146,14 +139,6 @@ def edit_entry(week):
     print(entry)
 
     return render_template('my-journal.html', user = user, prompt = prompt, entry = entry)
-
-# @app.route("/create-prompt-entry/<week>")
-# def create_entry(week):
-#     """Can select a prompt to create an entry for - will render on the my-journal.html"""
-#     user = crud.get_user_by_email(session['user'])
-#     prompt = crud.get_prompt_by_week(week)
-
-#     return render_template('my-journal.html', user = user, prompt = prompt)
 
 @app.route("/get-shared-entries.json")
 def get_community_journal_entries ():
