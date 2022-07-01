@@ -21,6 +21,10 @@ def get_user_by_email(email):
 
     return User.query.filter_by(email = email).first()
 
+def get_users_with_twilio_alert():
+
+    return User.query.filter(User.twilio_alert == "Yes").all()
+
 def get_user_by_id(id):
 
     return User.query.get(id)
