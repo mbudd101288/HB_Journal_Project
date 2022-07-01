@@ -10,10 +10,10 @@ import time
 from model import db, User, JournalPrompt, JournalEntry, connect_to_db
 
 
-def create_user(email, password, fname, lname, sign_up, profile_pic):
+def create_user(email, password, fname, lname, sign_up, profile_pic, twilio_alert):
     """Create and return a new user."""
 
-    user = User(email = email, password = password, fname = fname, lname = lname, sign_up = sign_up, profile_pic = profile_pic)
+    user = User(email = email, password = password, fname = fname, lname = lname, sign_up = sign_up, profile_pic = profile_pic, twilio_alert = twilio_alert)
 
     return user
 

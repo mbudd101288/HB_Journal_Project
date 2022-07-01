@@ -16,6 +16,7 @@ class User(db.Model):
     password = db.Column(db.String(), nullable = False)
     profile_pic = db.Column(db.String(), default = None)
     sign_up = db.Column(db.Date, default = date.today())
+    twilio_alert = db.Column(db.String, default = 'No')
 
     #entries = db.relationship('JournalEntry', backref = 'user')
 

@@ -43,8 +43,9 @@ for user in user_data:
     lname = user["lname"]
     sign_up = datetime.strptime(user["sign_up"], "%Y-%m-%d")
     profile_pic = user["profile_pic"]
+    twilio_alert= user["twilio_alert"]
     
-    db_user = crud.create_user(email, password, fname, lname, sign_up, profile_pic) 
+    db_user = crud.create_user(email, password, fname, lname, sign_up, profile_pic, twilio_alert) 
     users_in_db.append(db_user)
 
 with open('data/entries.json') as e:
