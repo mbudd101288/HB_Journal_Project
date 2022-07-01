@@ -5,7 +5,8 @@
     "lname": "Budd.", 
     "password": "1234", 
     "profile_pic": "", 
-    "sign_up": "2022-04-02"
+    "sign_up": "2022-04-02", 
+    "twilio_alert": "yes"
     },
     {
     "email": "kellibudd@test.com", 
@@ -13,7 +14,8 @@
     "lname": "Holland", 
     "password": "1234", 
     "profile_pic": "", 
-    "sign_up": "2022-01-01"
+    "sign_up": "2022-02-01",
+    "twilio_alert": "no"
     },
     {
     "email": "erinlavery@test.com", 
@@ -21,6 +23,16 @@
     "lname": "Lavery", 
     "password": "1234", 
     "profile_pic": "", 
-    "sign_up": "2022-01-09" 
+    "sign_up": "2022-01-09",
+    "twilio_alert": "no"
+    },
+    {
+    "email": "euniceunicorn@test.com", 
+    "fname": "Eunice", 
+    "lname": "Unicorn", 
+    "password": "1234", 
+    "profile_pic": "", 
+    "sign_up": "2022-01-01",
+    "twilio_alert": "no" 
     }
 ] 

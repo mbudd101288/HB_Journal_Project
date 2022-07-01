@@ -8,10 +8,10 @@ const setUpCollapsibleEntries = () => {
         button.addEventListener("click", function() {
         // this.classList.toggle("active");
 
-        const contents = document.querySelectorAll('div.content')
-        contents.forEach((content) => {
-    	    content.style.display = "none"
-        })
+        // const contents = document.querySelectorAll('div.content')
+        // contents.forEach((content) => {
+    	//     content.style.display = "none"
+        // })
 
         // const content = this.nextElementSibling;
         const content= document.querySelector(`#entry_${button.id}`)
@@ -52,9 +52,8 @@ const displaySharedEntries = () => {
                 
             }
             else {
-                console.log("ALREADY", weeks.has(entry.week))
-                let collapsibleBtn = document.getElementById(`entry_${entry.week}`)
-                collapsibleBtn.insertAdjacentHTML('beforeend',  
+                let collapsibleDiv = document.getElementById(`entry_${entry.week}`)
+                collapsibleDiv.insertAdjacentHTML('beforeend',  
                 
                     `<p class=entry id="display_entry_text"> 
                         ${entry['entry']}

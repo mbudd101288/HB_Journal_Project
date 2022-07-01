@@ -29,15 +29,6 @@
     },
     {
     "user_id": "2", 
-    "week": "2", 
-    "entry_date": "2022-01-11", 
-    "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Ullamcorper morbi tincidunt ornare massa eget egestas. Gravida cum sociis natoque penatibus et magnis dis. Et malesuada fames ac turpis. Vitae proin sagittis nisl rhoncus mattis.", 
-    "visibility": "Private",
-    "entry_modified": false, 
-    "modified_date": null
-    },
-    {
-    "user_id": "2", 
     "week": "7", 
     "entry_date": "2022-02-14", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Sit amet volutpat consequat mauris nunc. Velit sed ullamcorper morbi tincidunt ornare massa.", 
@@ -77,6 +68,15 @@
     "week": "7", 
     "entry_date": "2022-02-19", 
     "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    "visibility": "Public",
+    "entry_modified": false, 
+    "modified_date": null
+    }, 
+    {
+    "user_id": "4", 
+    "week": "2", 
+    "entry_date": "2022-01-11", 
+    "user_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Ullamcorper morbi tincidunt ornare massa eget egestas. Gravida cum sociis natoque penatibus et magnis dis. Et malesuada fames ac turpis. Vitae proin sagittis nisl rhoncus mattis.", 
     "visibility": "Public",
     "entry_modified": false, 
     "modified_date": null
