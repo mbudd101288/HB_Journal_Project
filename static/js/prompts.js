@@ -56,7 +56,7 @@ const displayPrompts = () => {
                 promptData +=
                 `<button id="${prompt.week}" type="button" class="collapsible"> Week ${prompt.week} : ${prompt.prompt} </button>
                 <div id="entry_${prompt.week}" class="content">
-                    <p>${prompt.entry}</p>
+                    <p id="display_entry_text">  ${prompt.entry}</p>
                     <button onclick="location.href='/update-prompt-entry/${prompt.week}'">Edit Entry</button>
                 </div>`
             } 

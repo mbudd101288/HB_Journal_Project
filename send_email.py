@@ -6,8 +6,8 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To
 from model import connect_to_db, db, JournalEntry, JournalPrompt, User
 # 0 9 * * 0 sudo /Users/mollibudd/src/HB-project/env/bin/python3 /src/HB-project/send_email.py
-# app = Flask(__name__)
-# app.secret_key = "SECRET_KEY"
+app = Flask(__name__)
+app.secret_key = "SECRET_KEY"
 
 
 def send_email():

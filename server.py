@@ -4,6 +4,7 @@ from flask import Flask, redirect, request, render_template, session, flash, jso
 from jinja2 import StrictUndefined
 import os
 import crud
+from passlib.hash import argon2
 from model import connect_to_db, db
 
 app = Flask(__name__)
@@ -26,15 +27,19 @@ def homepage():
 def new_user():
     
     email = request.form.get("email")
-    password = request.form.get("password")
+    input_password = request.form.get("password")
     fname = request.form.get("fname")
     lname = request.form.get("lname")
+    twilio_alert = request.form.get("twilio_alert")
+
+    password = argon2.hash(input_password)
+    print(password)
 
     user = crud.get_user_by_email(email)
     if user:
         flash("Email already exists. Try again.")
     else:
-        user = crud.create_user(email, password, fname, lname, sign_up= date.today(), profile_pic = None)
+        user = crud.create_user(email, password, fname, lname, sign_up= date.today(), profile_pic = None, twilio_alert= twilio_alert)
         session['user'] = user.email
         db.session.add(user)
         db.session.commit()
@@ -47,12 +52,11 @@ def get_login_info():
 
     email = request.form.get("email")
     password = request.form.get("password") 
-    
 
     user = crud.get_user_by_email(email)
     
     if user:
-        if password == user.password:
+        if argon2.verify(password, user.password):
             session['user']= user.email
             return redirect ("/my-journal")
             # week = session['week']

@@ -8,6 +8,7 @@
 <h1>{{prompt.prompt}}</h1>
 
 {% if prompt.bonus_text %}
+    
     <button id="bonus_text_button" type="button">Final Thoughts</button>
 
     <p id="additional_info"></p>
@@ -39,10 +40,13 @@
 
 
 {% if prompt.book %}
-<!-- <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content={{prompt.book}}>Journal Prompt Source</button> -->
-    <button id="source_button" type="button">Journal Prompt Source</button>
 
-    <p id="source"></p>
+    <button id="source_button" type="button" class="btn btn-secondary ms-2" data-bs-toggle="popover"  title={{prompt.book}}>
+        Journal Prompt Source
+      </button>
+    <!-- <button id="source_button" type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-placement="bottom" data-content={{prompt.book}}> -->
+        <!-- Journal Prompt Source -->
+    <!-- </button> -->
 {% endif %}
 
 <!-- <form id = logout action="/logout">
@@ -55,13 +59,21 @@
     const targetBtn = document.querySelector("#bonus_text_button");
     targetBtn.addEventListener('click', (evt) => {
         document.querySelector('#additional_info').innerHTML = `{{prompt.bonus_text}}`;
+        targetBtn.hidden = "hidden"
         });
+        
 </script>
-<script> 
+<!-- <script> 
     const sourceBtn = document.querySelector("#source_button");
     sourceBtn.addEventListener('click', (evt) => {
         document.querySelector('#source').innerHTML = `{{prompt.book}}`;
         });
+</script> -->
+<script>
+    $(document).ready(function(){
+        // Enable popovers everywhere
+        $('[data-bs-toggle="popover"]').popover();  
+    });
 </script>
 
 
@@ -73,3 +85,4 @@
 <p>Current week: {{session['week']}}</p>
 <p>Active since {{user.sign_up}}</p>
 {% endblock %}
+
