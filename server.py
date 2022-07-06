@@ -33,7 +33,7 @@ def new_user():
     twilio_alert = request.form.get("twilio_alert")
 
     password = argon2.hash(input_password)
-    print(password)
+    
 
     user = crud.get_user_by_email(email)
     if user:
