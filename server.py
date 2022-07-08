@@ -153,12 +153,12 @@ def get_community_journal_entries ():
 
     return jsonify(shared_entries)
    
-@app.route("/shared-entries", methods=['GET'])
+@app.route("/community", methods=['GET'])
 def view_community_journal_entries ():
 
     user = crud.get_user_by_email(session['user'])
    
-    return render_template ('shared-entries.html', user = user)
+    return render_template ('community.html', user = user)
 
 @app.route("/update_following", methods=["POST"])
 def follow():
