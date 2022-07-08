@@ -76,7 +76,7 @@ def show_user_journal():
         print('not in session')
         return render_template("homepage.html")
     else:
-        session['date'] = date.today()
+        session['date'] = date.today().strftime('%Y-%m-%d')
         session['week'] = strftime("%U")
         # session['week'] = 52
 
@@ -103,6 +103,7 @@ def get_additional_entries_by_user(user_id):
     else:
         return render_template ('user-page.html', user = user, entries = entries)
 
+        
 @app.route("/entry", methods=['GET'])
 def show_user_entries ():
     user = crud.get_user_by_email(session['user'])
@@ -159,7 +160,35 @@ def view_community_journal_entries ():
    
     return render_template ('shared-entries.html', user = user)
 
-    
+@app.route("/update_following", methods=["POST"])
+def follow():
+    """Follow a user."""
+
+    following = request.json.get("friend")
+    friend = crud.get_user_by_id(following)
+
+    user = crud.get_user_by_email(session['user'])
+
+    if friend in user.following:
+        user.following.remove(friend)
+        db.session.add(user)
+        db.session.commit()
+        return {
+            "follow_msg": f"You are no longer following {friend.fname}",
+             "button_text": "Follow"
+             }
+
+    else: 
+        user.following.append(friend)
+        db.session.add(user)
+        db.session.commit()
+        return {
+            "follow_msg": f"You are now following {friend.fname}",
+             "button_text": "Unfollow"
+             }
+
+
+
 @app.route("/logout")
 def logout ():
 

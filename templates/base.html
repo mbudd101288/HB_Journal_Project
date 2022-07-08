@@ -12,14 +12,17 @@
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <!-- Your custom styles -->
         <link rel="stylesheet" href="/static/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        </style>
     </head>
     <body>
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="d-inline-flex">  
-                    <a class="nav-link active" aria-current="page" href="/my-journal">My Journal</a> 
-                    <a class="nav-link active" aria-current="page" href="/entry">{{user.fname}}'s Entries</a>
-                    <a class="nav-link active" aria-current="page" href="/shared-entries">Journal Community</a>
+                    <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px></span>My Entries</a>
+                    <a class="nav-link active" aria-current="page" href="/my-journal"><span><img src="/static/images/read.png" alt="book img" width=40px height=40px></span>Journal</a> 
+                    <a class="nav-link active" aria-current="page" href="/shared-entries"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
                     
                   </div>
                   <a class="nav-link active" style="justify-content: end" href="/logout">Logout</a>

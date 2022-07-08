@@ -1,24 +1,30 @@
 {% extends 'base.html' %}
 
-
-{% block title %} {{user.fname}} Journal Entries {% endblock %}
-
-{% block navbar %} {{user.fname}}'s' Journal Entries {% endblock %}
+{% block title %} {{user.fname}}'s Journal Entries {% endblock %}
 
 {% block content %} 
 
+<h1>{{user.fname}}'s Journal </h1>
+<button id="follow_button">Follow</button>
 
 {%for entry in entries %}
-<h3>Week {{entry.prompt.week}}: {{entry.prompt.prompt}}</h3>
-<p>{{entry.user_entry}}</p>
+
+<button id={{entry.week}} type="button" class="collapsible"> Week {{entry.prompt.week}} : {{entry.prompt.prompt}} </button>
+<div id='user_entry_coll' class="content">
+    <p class="entry" id="display_entry_text"> {{entry.user_entry}}</p>
+ </div>
+<!-- <h3>Week {{entry.prompt.week}}: {{entry.prompt.prompt}}</h3>
+<p>{{entry.user_entry}}</p> -->
 
 {% endfor %}
 
+<!-- <div class="row"> -->
+    <!-- <div id="shared-user-entries" class="col"></div> -->
 
+
+<script src='/static/js/shared-user.js'></script> 
 {% endblock %}
 
 {% block footer %}
-<p>Current day: {{session['date']}}</p>
-<p>Current week: {{session['week']}}</p>
 <p>Active since {{user.sign_up}}</p>
 {% endblock %}
