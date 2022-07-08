@@ -5,6 +5,13 @@ from datetime import date
 
 db = SQLAlchemy()
 
+friend = db.Table(
+    'friends',
+    db.Column('friend_id', db.Integer, primary_key = True), 
+    db.Column('f1_id', db.Integer, db.ForeignKey('users.id')),
+    db.Column('f2_id', db.Integer, db.ForeignKey('users.id'))
+    )
+
 class User(db.Model):
 
     __tablename__='users'
@@ -17,6 +24,17 @@ class User(db.Model):
     profile_pic = db.Column(db.String(), default = None)
     sign_up = db.Column(db.Date, default = date.today())
     twilio_alert = db.Column(db.String, default = 'No')
+
+    following = db.relationship(
+        'User',
+        secondary=friend,
+        primaryjoin=id == friend.c.f1_id,
+        secondaryjoin=id == friend.c.f2_id,
+        backref='followers'
+    )
+    def get_all_friends(self):
+        """ Get all friends, those you are following AND those following you. """
+        return self.following + self.followers
 
     #entries = db.relationship('JournalEntry', backref = 'user')
 
@@ -51,9 +69,6 @@ class JournalPrompt(db.Model):
     prompt = db.Column(db.String)
     book = db.Column(db.String(), default = None)
     bonus_text = db.Column(db.String(), default = None)
-  
-
-    
 
     #entries = db.relationship('JournalEntry', backref = 'prompt')
 

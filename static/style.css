@@ -4,11 +4,47 @@ html {
     background-size: cover;
 }
 
-h1, p, #entry {
+h1, h2, p, #entry {
     color: black;
     font-weight: bolder;
     font-family: marker felt, fantasy;
     text-align: center;
+}
+
+#login_title {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+
+.typed-out {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  font-size: 1.6rem;
+  width: 0;
+  animation: typing 3s steps(50, end) forwards;
+}
+
+.typewriter-container {
+  display: inline-block;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#icon_calendar {
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+}
+
+#source_button{
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  color: maroon;
+  font-family: marker felt, fantasy;
 }
 
 form, h3, .flash-msg, #journal_entry {

@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 
-
 {% block title %} {{user.fname}}'s Journal {% endblock %}
 
 {% block content %}     
 
-<h1>{{prompt.prompt}}</h1>
+<h1>Week {{prompt.week}}</h1>
+<h2>{{prompt.prompt}}</h2>
 
 {% if prompt.bonus_text %}
     
-    <button id="bonus_text_button" type="button">Final Thoughts</button>
-
+    <button id="bonus_text_button" type="button">More Food for Thought </button>
     <p id="additional_info"></p>
+
 {% endif %}
 
 <form id = entry action="/entry" method="POST">
@@ -38,22 +38,13 @@
 
 </form>
 
-
 {% if prompt.book %}
 
-    <button id="source_button" type="button" class="btn btn-secondary ms-2" data-bs-toggle="popover"  title={{prompt.book}}>
-        Journal Prompt Source
-      </button>
-    <!-- <button id="source_button" type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-placement="bottom" data-content={{prompt.book}}> -->
-        <!-- Journal Prompt Source -->
-    <!-- </button> -->
-{% endif %}
-
-<!-- <form id = logout action="/logout">
-    
-    <button type="submit">Log Out</button> -->
+     <button id="source_button" type="button" class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="{{prompt.book}}">
+        <span><img src="/static/images/book_info_icon.png" title="{{prompt.book}}" alt="tooltip img" width=40px height=40px></span>Prompt Source
+    </button>
   
-
+{% endif %}
 
 <script> 
     const targetBtn = document.querySelector("#bonus_text_button");
@@ -63,26 +54,18 @@
         });
         
 </script>
-<!-- <script> 
-    const sourceBtn = document.querySelector("#source_button");
-    sourceBtn.addEventListener('click', (evt) => {
-        document.querySelector('#source').innerHTML = `{{prompt.book}}`;
-        });
-</script> -->
-<script>
-    $(document).ready(function(){
-        // Enable popovers everywhere
-        $('[data-bs-toggle="popover"]').popover();  
-    });
-</script>
-
 
 <script src='/static/js/button.js'></script>
 {% endblock %}
 
 {% block footer %}
-<p>Current day: {{session['date']}}</p>
 <p>Current week: {{session['week']}}</p>
-<p>Active since {{user.sign_up}}</p>
 {% endblock %}
+
+
+<!-- <img id="icon_calendar" src="/static/images/clock_schedule_icon.png" alt="tooltip date img" title="
+Current day: {{session['date']}}
+Current week: {{session['week']}}
+Active since {{user.sign_up}}
+"> -->
 
