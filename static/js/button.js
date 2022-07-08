@@ -12,6 +12,26 @@ entryBtn.addEventListener('click', (evt) => {
 
 
 
+const followBtn = document.querySelector('#follow_button');
+followBtn.addEventListener('click', (evt) => {
+        evt.preventDefault();
+      
+        const formInputs = {
+          friend: Yes,
+        };
+      
+        fetch('/start_following', {
+          method: 'POST',
+          body: JSON.stringify(formInputs),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
+          .then((response) => response.json())
+          .then((responseJson) => {
+            alert(responseJson.status);
+          });
+      });
 
 // const editBtn = document.querySelector("#edit_entry_button");
 // entryBtn.addEventListener('click', (evt) => {
@@ -23,5 +43,5 @@ entryBtn.addEventListener('click', (evt) => {
 //     })
 
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

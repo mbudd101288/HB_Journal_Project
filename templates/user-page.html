@@ -14,13 +14,9 @@
 <div class="row">
     <div id="user-prompts" class="col"></div>
 
-  
-</form>
-<script src='/static/js/prompts.js'></script>
+<script src='/static/js/user-page.js'></script>
 {% endblock %}
 
 {% block footer %}
-<p>Current day: {{session['date']}}</p>
-<p>Current week: {{session['week']}}</p>
 <p>Active since {{user.sign_up}}</p>
 {% endblock %}
