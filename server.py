@@ -149,9 +149,14 @@ def edit_entry(week):
 @app.route("/get-shared-entries.json")
 def get_community_journal_entries ():
 
-    shared_entries = crud.get_public_entries_json()
-
+    is_everyone = request.args.get("communityView")
+    if is_everyone == True:
+        shared_entries = crud.get_public_entries_json()
+    else:
+        shared_entries = crud.get_friend_entries_json()
+    
     return jsonify(shared_entries)
+
    
 @app.route("/community", methods=['GET'])
 def view_community_journal_entries ():

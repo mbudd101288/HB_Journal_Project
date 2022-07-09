@@ -16,23 +16,6 @@ h1, h2, p, #entry {
 }
 
 
-.typed-out {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  font-size: 1.6rem;
-  width: 0;
-  animation: typing 3s steps(50, end) forwards;
-}
-
-.typewriter-container {
-  display: inline-block;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
 #icon_calendar {
   width: 70px;
   height: 70px;
@@ -125,7 +108,7 @@ form, h3, .flash-msg, #journal_entry {
 
 #bonus_text_button {
     background-color: white;
-    border: solid 2px black;
+    border: none;
     font-weight: bold;
     color: maroon;
     font-family: marker felt, fantasy;

@@ -11,28 +11,6 @@ entryBtn.addEventListener('click', (evt) => {
     })
 
 
-
-const followBtn = document.querySelector('#follow_button');
-followBtn.addEventListener('click', (evt) => {
-        evt.preventDefault();
-      
-        const formInputs = {
-          friend: Yes,
-        };
-      
-        fetch('/start_following', {
-          method: 'POST',
-          body: JSON.stringify(formInputs),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        })
-          .then((response) => response.json())
-          .then((responseJson) => {
-            alert(responseJson.status);
-          });
-      });
-
 // const editBtn = document.querySelector("#edit_entry_button");
 // entryBtn.addEventListener('click', (evt) => {
 //     const entryInput = document.querySelector('textarea[name="entry"]');

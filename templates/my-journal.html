@@ -5,14 +5,30 @@
 {% block content %}     
 
 <h1>Week {{prompt.week}}</h1>
-<h2>{{prompt.prompt}}</h2>
+<h2>
+    <span>
+        {% if prompt.book %}
 
+    <button id="source_button" type="button" class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="{{prompt.book}}">
+       <span><img src="/static/images/book_info_icon.png" title="{{prompt.book}}" alt="tooltip img" width=40px height=40px></span>
+   </button>
+ 
+    {% endif %}
+    </span>
+    
+    {{prompt.prompt}}
+
+<span>
 {% if prompt.bonus_text %}
     
-    <button id="bonus_text_button" type="button">More Food for Thought </button>
-    <p id="additional_info"></p>
+    <button id="bonus_text_button" type="button"> + </button>
+    
 
 {% endif %}
+</span>
+</h2>
+
+<p id="additional_info"></p>
 
 <form id = entry action="/entry" method="POST">
 
@@ -29,22 +45,22 @@
 
     <label for="entry_visibility">Entry Visibility</label>
   <select id= "entry_visibility" name="visibility">
-      <option value="Private">Keep this entry private</option>
-      <option value="Friends">Share this entry with friends</option>
-      <option value="Public">Share this entry with everyone</option>
+      <option value="Private">Private</option>
+      <!-- <option value="Friends">Share this entry with friends</option> -->
+      <option value="Public">Public</option>
   </select>
  
   <button class="save_entry" id="entry_button" >Save</button>
 
 </form>
 
-{% if prompt.book %}
+<!-- {% if prompt.book %}
 
      <button id="source_button" type="button" class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="{{prompt.book}}">
         <span><img src="/static/images/book_info_icon.png" title="{{prompt.book}}" alt="tooltip img" width=40px height=40px></span>Prompt Source
     </button>
   
-{% endif %}
+{% endif %} -->
 
 <script> 
     const targetBtn = document.querySelector("#bonus_text_button");

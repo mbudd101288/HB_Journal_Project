@@ -1,5 +1,15 @@
 "use strict"
 
+const everyoneDisplayBtn = document.getElementsByName('community-view');
+const radioDiv=document.getElementById("radio-container")
+
+radioDiv.addEventListener('click', (evt) => {
+        evt.preventDefault();
+       
+        displaySharedEntries(everyoneDisplayBtn[0].checked)
+    })
+
+
 const setUpCollapsibleEntries = () => {
     const coll = document.getElementsByClassName("collapsible");
     
@@ -24,9 +34,10 @@ const setUpCollapsibleEntries = () => {
     }
 }
 
-const displaySharedEntries = () => {
+const displaySharedEntries = (isEveryone) => {
     
-    fetch("/get-shared-entries.json")
+    const url = `/get-shared-entries.json?communityView=${isEveryone}`
+    fetch(url)
     .then((response) => response.json())
     .then((sharedEntries) => {
         const sharedEntriesContainer = document.querySelector('#shared-entries');
@@ -67,4 +78,4 @@ const displaySharedEntries = () => {
     });
     
 }
-displaySharedEntries()
+displaySharedEntries(true)

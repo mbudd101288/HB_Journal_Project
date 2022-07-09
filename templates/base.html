@@ -21,7 +21,7 @@
                     <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px></span>My Entries</a>
                     <a class="nav-link active" aria-current="page" href="/my-journal"><span><img src="/static/images/read.png" alt="book img" width=40px height=40px></span>Journal</a> 
                     <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
-                    <a class="nav-link active" aria-current="page" href="/friends"><span><img src="/static/images/friends.png" alt="friends img" width=40px height=40px></span>Connections</a>
+                    <!-- <a class="nav-link active" aria-current="page" href="/friends"><span><img src="/static/images/friends.png" alt="friends img" width=40px height=40px></span>Connections</a> -->
                   </div>
                   <a class="nav-link active" style="justify-content: end" href="/logout">Logout</a>
              </div>
@@ -67,12 +67,7 @@
 
         {% endblock %}
 
-        <script>
-            $(document).ready(function(){
-                // Enable popovers everywhere
-                $('[data-bs-toggle="popover"]').popover();  
-            });
-        </script>
+
     </body>
     <footer>
         {% block footer %}
