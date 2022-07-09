@@ -1,67 +1,8 @@
 html {
-    background-image: url(static/images/forest.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
 }
 
-h1, h2, p, #entry {
-    color: black;
-    font-weight: bolder;
-    font-family: marker felt, fantasy;
-    text-align: center;
-}
-
-#login_title {
-  font-family: 'Fredericka the Great', cursive;
-}
-
-
-#icon_calendar {
-  width: 70px;
-  height: 70px;
-  justify-content: center;
-}
-
-#source_button{
-  background-color: white;
-  border: none;
-  font-weight: bold;
-  color: maroon;
-  font-family: marker felt, fantasy;
-}
-
-form, h3, .flash-msg, #journal_entry {
-    color: black;
-    font-weight: bolder;
-    font-family: marker felt, fantasy;
-    border-color: solid,  black;
-    }
-    
-#scroll_journal_entry {
-    display: inline-block;
-    justify-content: right;
-    color: maroon;
-    padding: 10px;
-    font: 28px aerial;
-    width: 800px;
-    height: 400px;
-    overflow-y: scroll;
-    }
-
-/* #mountain {
-    height: 400px;
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    box-shadow: 10px 10px 10px 15px navy;
-   } */
-
-  #icon {
-    width: 70px;
-    height: 80px;;
-  } 
+/* Navbar CSS */
 
 /* #navbar_supported_content { 
   font-family: cursive;
@@ -84,28 +25,101 @@ form, h3, .flash-msg, #journal_entry {
   font-weight: bold;
   font-size: 20pt;
 }
-/* 
-.active, .collapsible:hover {
-  background-image: url(/static/images/dropdown_sky.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+#home_button_bar {
+  background-color: black;
+}
+  /* img CSS */
 
-#homepage_button {
-  background-color: white;
-  border: solid 4px navy;
-  color: navy;
+  #icon_calendar {
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  }
+
+icon {
+  width: 70px;
+  height: 80px;;
+  } 
+
+#home_img{
+  width: 100vw; 
+  height: 100vh;
+  background-repeat: no-repeat;
+  
+}
+
+/* #mountain {
+    height: 400px;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    box-shadow: 10px 10px 10px 15px navy;
+   } */
+
+/* text CSS */
+
+h1, h2, p, #entry {
+  color: black;
+  font-weight: bolder;
   font-family: marker felt, fantasy;
+  text-align: center;
+}
+
+#login_title, #login_title_1 {
+font-family: 'Fredericka the Great', cursive;
+}
+
+form, h3, .flash-msg, #journal_entry {
+  color: black;
+  font-weight: bolder;
+  font-family: marker felt, fantasy;
+  border-color: solid,  black;
+}
+  
+#scroll_journal_entry {
+  display: inline-block;
+  justify-content: right;
+  color: maroon;
+  padding: 10px;
+  font: 28px aerial;
+  width: 800px;
+  height: 400px;
+  overflow-y: scroll;
+
+}
+
+#display_entry_text, #link_to_author_user_page {
+  white-space: pre-line; 
+  text-align: left;
+  padding-left: 15px; 
 }
 
 #entry_visibility {
-    background-color: white;
-    border: solid 4px maroon;
-    font-weight: bold;
-    color: black;
-    font-family: marker felt, fantasy;
-  }
+  background-color: white;
+  border: solid 4px maroon;
+  font-weight: bold;
+  color: black;
+  font-family: marker felt, fantasy;
+}
 
+/* button CSS */
+
+#source_button{
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  color: maroon;
+  font-family: marker felt, fantasy;
+}
+
+#homepage_button, #close_button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-family: marker felt, fantasy;
+}
 #bonus_text_button {
     background-color: white;
     border: none;
@@ -122,12 +136,8 @@ button {
   font-family: marker felt, fantasy;
 }
 
-#display_entry_text, #link_to_author_user_page {
-  white-space: pre-line; 
-  text-align: left;
-  padding-left: 15px; 
-}
 
+/* collasible button CSS */
 .collapsible {
     background-color: coral;
     color: white;
@@ -140,9 +150,6 @@ button {
     font-size: 15px;
   }
   
-  /* .active, .collapsible:hover {
-    background-color: gray;
-  } */
   
   .content {
     padding: 0 18px;
