@@ -5,7 +5,15 @@
 {% block content %} 
 
 <h1>{{user.fname}}'s Journal </h1>
-<button id="follow_button">Follow</button>
+
+{% if user in current_user.following %}
+    <button id="follow_button">Unfollow</button>
+
+    {% else %}
+    <button id="follow_button">Follow</button>
+
+{% endif %}
+
 
 {%for entry in entries %}
 
