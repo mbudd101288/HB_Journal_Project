@@ -2,6 +2,10 @@
 
 {% block title %} Journal Community {% endblock %}
 
+{% block body %}
+    <body style="background-color: #FFF5EE">
+{% endblock %}
+
 {% block nav %}
     <div class="col-4">  
         <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px>My Entries</span></a>
@@ -19,17 +23,20 @@
 {% endblock %}
 
 {% block content %}   
-
-<h1> Journal Community</h1>
-
-<div id="radio-container">
-  
-    <input type="radio" name="community-view" value="everyone" id="community-everyone" checked>
-    <label for="community-everyone">Everyone</label>
-  
-    <input type="radio" name="community-view" value="connections" id="community-connections">
-    <label for="community-connections">Connections Only</label>
-
+<div class="fluid-container">
+<div class="row" style="color: black" id="radio-container">
+    <div class="col-3 offset-2">
+        <p> Community View:</p>
+    </div>
+    <div class="col-2">
+        <input type="radio" name="community-view" value="everyone" id="community-everyone" checked>
+        <label for="community-everyone">Everyone</label>
+    </div>
+    <div class="col-3">
+        <input type="radio" name="community-view" value="connections" id="community-connections">
+        <label for="community-connections">Connections Only</label>
+    </div>
+</div>
 </div>
 
 <div class="row">

@@ -1,6 +1,6 @@
-html {
+/* html {
     background-color: black;
-}
+} */
 
 /* Navbar CSS */
 
@@ -17,34 +17,37 @@ html {
 
 .navbar {
   background-image: url(/static/images/sky.png);
-  height: 100px;
+  height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
   font-family: marker felt, fantasy;
   font-weight: bold;
   font-size: 20pt;
+  margin-bottom: 25px;
 }
 #home_button_bar {
   background-color: black;
 }
   /* img CSS */
 
-  #icon_calendar {
+#icon_calendar {
   width: 70px;
   height: 70px;
   justify-content: center;
-  }
+}
 
 icon {
   width: 70px;
   height: 80px;;
-  } 
+} 
 
 #home_img{
-  width: 100vw; 
-  height: 100vh;
-  background-repeat: no-repeat;
+  width: 50%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   
 }
 
@@ -60,6 +63,26 @@ icon {
 
 /* text CSS */
 
+.centered {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#entry {
+  background-color: #FFF5EE;
+}
+.flash-msg {
+  position: absolute;
+  top: 5%;
+  font-size: 15pt;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fredericka the Great', cursive;
+  color: #FFF5EE;
+}
+
 h1, h2, p, #entry {
   color: black;
   font-weight: bolder;
@@ -67,9 +90,14 @@ h1, h2, p, #entry {
   text-align: center;
 }
 
-#login_title, #login_title_1, .flash-msg{
+textarea {
+  margin-bottom: 25px;
+  background-color: white;
+}
+
+#login_title, #login_title_1 {
 font-family: 'Fredericka the Great', cursive;
-color: white;
+color: #FFF5EE;
 }
 
 form, h3, #journal_entry {
@@ -98,17 +126,18 @@ form, h3, #journal_entry {
 }
 
 #entry_visibility {
-  background-color: white;
+  background-color: #FFF5EE;
   border: solid 4px maroon;
   font-weight: bold;
   color: black;
   font-family: marker felt, fantasy;
+  margin-bottom: 30px;
 }
 
 /* button CSS */
 
 #source_button{
-  background-color: white;
+  background-color: #FFF5EE;
   border: none;
   font-weight: bold;
   color: maroon;
@@ -116,7 +145,7 @@ form, h3, #journal_entry {
 }
 
 .modal-content{
-  background-color:white;
+  background-color: white;
   border: none;
   color: black;
   font-family: marker felt, fantasy;
@@ -128,15 +157,16 @@ form, h3, #journal_entry {
   font-family: marker felt, fantasy;
 }
 #bonus_text_button {
-    background-color: white;
+    background-color: #FFF5EE;
     border: none;
     font-weight: bold;
     color: maroon;
+    font-size: 20pt;
     font-family: marker felt, fantasy;
 }
 
 button {
-  background-color: white;
+  background-color: #FFF5EE;
   border: none;
   font-weight: bold;
   color: maroon;
@@ -146,8 +176,8 @@ button {
 
 /* collasible button CSS */
 .collapsible {
-    background-color: coral;
-    color: white;
+    background-color: black;
+    color: #FFF5EE;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -162,5 +192,5 @@ button {
     padding: 0 18px;
     display: none;
     overflow: scroll;
-    background-color: #f1f1f1;
+    background-color: #FFF5EE;
   }

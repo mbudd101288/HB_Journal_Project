@@ -2,6 +2,10 @@
 
 {% block title %} {{user.fname}}'s Journal {% endblock %}
 
+{% block body %}
+    <body style="background-color:#FFF5EE">
+{% endblock %}
+
 {% block nav %}
     <div class="col-4">  
         <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px>My Entries</span></a>
@@ -25,23 +29,23 @@
     <span>
         {% if prompt.book %}
 
-    <button id="source_button" type="button" class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="{{prompt.book}}">
-       <span><img src="/static/images/book_info_icon.png" title="{{prompt.book}}" alt="tooltip img" width=40px height=40px></span>
-   </button>
+        <button id="source_button" type="button" class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="{{prompt.book}}">
+            <span><img src="/static/images/book_info_icon.png" alt="tooltip img" width=40px height=40px></span>
+        </button>
  
-    {% endif %}
+        {% endif %}
     </span>
     
     {{prompt.prompt}}
 
-<span>
-{% if prompt.bonus_text %}
+    <span>
+        {% if prompt.bonus_text %}
     
-    <button id="bonus_text_button" type="button"> + </button>
+         <button id="bonus_text_button" type="button" class="btn btn-primary" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Additional Prompt Info"> + </button>
     
 
-{% endif %}
-</span>
+        {% endif %}
+    </span>
 </h2>
 
 <p id="additional_info"></p>
