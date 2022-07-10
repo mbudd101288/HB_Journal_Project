@@ -20,11 +20,18 @@ followBtn.addEventListener('click', (evt) => {
             alert(responseJson.follow_msg);
             followBtn.innerHTML = responseJson.button_text
         
+            if (responseJson.button_text === "Unfollow") {
+                followBtn.innerHTML = `
+                <span><img src="/static/images/unfriend_icon.png" alt="unfriend img" width=40px height=40px></span>
+                `
+            }
+            else if (responseJson.button_text ==="Follow") {
+                followBtn.innerHTML = ` 
+                     <span><img src="/static/images/friend_icon.png" alt="friend img" width=40px height=40px></span>
+                     `
+            }
           });
       });
-
-
-
 
 
 const setUpCollapsibleEntries = () => {
@@ -50,3 +57,7 @@ const setUpCollapsibleEntries = () => {
 }
 
 setUpCollapsibleEntries()
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+

@@ -165,6 +165,9 @@ form, h3, #journal_entry {
     font-family: marker felt, fantasy;
 }
 
+#follow_button {
+  font-size: 14pt;
+}
 button {
   background-color: #FFF5EE;
   border: none;
@@ -172,7 +175,6 @@ button {
   color: maroon;
   font-family: marker felt, fantasy;
 }
-
 
 /* collasible button CSS */
 .collapsible {
@@ -187,10 +189,11 @@ button {
     font-size: 15px;
   }
   
-  
   .content {
     padding: 0 18px;
     display: none;
     overflow: scroll;
     background-color: #FFF5EE;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }

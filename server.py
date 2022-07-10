@@ -97,9 +97,10 @@ def get_user_entries():
 def get_additional_entries_by_user(user_id):
     """Can view more entries from a specific user on their user-page"""
     user = crud.get_user_by_id(user_id)
+    current_user = crud.get_user_by_email(session['user'])
     entries = crud.get_all_user_entries(user_id)
     if user.email != session['user']:
-        return render_template('shared-user-page.html', user = user, entries = entries)
+        return render_template('shared-user-page.html', user = user, entries = entries, current_user = current_user)
     else:
         return render_template ('user-page.html', user = user, entries = entries)
 
@@ -150,10 +151,14 @@ def edit_entry(week):
 def get_community_journal_entries ():
 
     is_everyone = request.args.get("communityView")
-    if is_everyone == True:
-        shared_entries = crud.get_public_entries_json()
-    else:
-        shared_entries = crud.get_friend_entries_json()
+    
+    user = crud.get_user_by_email(session['user'])
+
+    # if is_everyone == False:
+    #     print("hi")
+    # shared_entries = crud.get_friend_entries_json(user)
+    # else:
+    shared_entries = crud.get_public_entries_json()
     
     return jsonify(shared_entries)
 

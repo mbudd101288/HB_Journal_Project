@@ -25,15 +25,19 @@
 
 {% block content %} 
 
-<h1>{{user.fname}}'s Journal </h1>
-
-{% if user in current_user.following %}
-    <button id="follow_button">Unfollow</button>
-
+<h1>{{user.fname}}'s Journal 
+  <span>
+    {% if user in current_user.following %}
+        <button id="follow_button">
+            <span><img src="/static/images/unfriend_icon.png" title="unfollow" alt="unfriend img" width=40px height=40px></span>
+        </button>
     {% else %}
-    <button id="follow_button">Follow</button>
-
-{% endif %}
+        <button id="follow_button">
+            <span><img src="/static/images/friend_icon.png" title="follow" alt="friend img" width=40px height=40px></span>
+        </button>
+    {% endif %}
+</span>
+</h1>
 
 
 {%for entry in entries %}
@@ -42,13 +46,9 @@
 <div id='user_entry_coll' class="content">
     <p class="entry" id="display_entry_text"> {{entry.user_entry}}</p>
  </div>
-<!-- <h3>Week {{entry.prompt.week}}: {{entry.prompt.prompt}}</h3>
-<p>{{entry.user_entry}}</p> -->
+
 
 {% endfor %}
-
-<!-- <div class="row"> -->
-    <!-- <div id="shared-user-entries" class="col"></div> -->
 
 
 <script src='/static/js/shared-user.js'></script> 
@@ -57,3 +57,5 @@
 {% block footer %}
 <p>Active since {{user.sign_up}}</p>
 {% endblock %}
+
+<!-- Use in place of line 28 once shared-user.js fixed to accomodate icon change -->
