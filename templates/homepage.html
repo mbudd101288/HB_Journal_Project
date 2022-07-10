@@ -17,31 +17,42 @@
 </head>
 
 
-<!-- Button trigger modal Create User -->
-<div id="home_button_bar" class="row">
-  <div class="col-2 offset-8">
-    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#create-user">
-      Create Account
-    </button>
-  </div>
-
-<!-- Button modal Login -->
-  <div class="col-2">
-    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#user-login">
-      Log In
-    </button>
-  </div>
-</div>
-<div id="home_img_block" class="row">
-  <div class="col-10">
-  <div id="home_img" class="bg-image" style="background-image: url('/static/images/rupi.png')" ></div>
-</div>
-</div>
-
 <body>
-<h1 id="login_title_1">Growth Mindfulness</h1>
-<h2 id="login_title"></h2>
-  
+
+  <!-- Button trigger modal Create User -->
+  <div id="home_button_bar" class="row">
+    <div class="col-2 offset-8">
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#create-user">
+        Create Account
+      </button>
+    </div>
+
+  <!-- Button modal Login -->
+    <div class="col-2">
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#user-login">
+       Log In
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row" style="background-color: black; font-size: 20pt; font-family: 'Fredericka';">
+      {% for msg in get_flashed_messages() %}
+        <p class="flash-msg">
+            {{ msg }}
+        </p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="home_img_block" class="row" style="background-color: black">
+    <div class="col-10">
+      <div id="home_img" class="bg-image" style="background-image: url('/static/images/rupi.png')" ></div>
+        <h1 id="login_title_1">Growth Mindset</h1>
+        <h2 id="login_title"></h2>
+      </div>
+    </div>
+  </div>
 
  <!-- Modal Create User -->
 <div class="modal fade" id="create-user" tabindex="-1" aria-labelledby="Create New Account" aria-hidden="true">
@@ -59,7 +70,7 @@
             </div>
             <div class="mb-2">
               <label for="user_password" class="form-label">Password:</label>
-              <input type="text" name="password" class="form-control" id="user_password"/>
+              <input type="password" name="password" class="form-control" id="user_password"/>
             </div>
             <div class="mb-2">
               <label for="user_fname" class="form-label">First Name:</label>
@@ -113,7 +124,7 @@
           </div>
           <div class="mb-2">
             <label for="user_password" class="form-label">Password:</label>
-            <input type="text" name="password" class="form-control" id="user_password" required/>
+            <input type="password" name="password" class="form-control" id="user_password" required/>
           </div>
           <div class="row">
             <div class="col-1 col-sm-6">

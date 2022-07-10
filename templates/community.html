@@ -2,13 +2,29 @@
 
 {% block title %} Journal Community {% endblock %}
 
+{% block nav %}
+    <div class="col-4">  
+        <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px>My Entries</span></a>
+    </div>
+    <div class="col-3">  
+        <a class="nav-link active" aria-current="page" href="/my-journal"><span><img src="/static/images/read.png" alt="book img" width=40px height=40px>Journal</span></a> 
+    </div>
+    <div class="col-4">  
+        <a class="nav-link active" aria-current="page" href="/community"><span style="color: maroon"><img src="/static/images/community.png" alt="pen img" width=40px height=40px>Community</span></a>
+        <!-- <a class="nav-link active" aria-current="page" href="/friends"><span><img src="/static/images/friends.png" alt="friends img" width=40px height=40px></span>Connections</a> -->
+    </div>
+    <div class="col-1 text-right">  
+        <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
+    </div>
+{% endblock %}
+
 {% block content %}   
 
 <h1> Journal Community</h1>
 
 <div id="radio-container">
   
-    <input type="radio" name="community-view" value="everyone" id="community-everyone">
+    <input type="radio" name="community-view" value="everyone" id="community-everyone" checked>
     <label for="community-everyone">Everyone</label>
   
     <input type="radio" name="community-view" value="connections" id="community-connections">
