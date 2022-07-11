@@ -155,6 +155,30 @@ def get_public_entries_json():
     print(json)
     return json
 
+
+def get_friend_entries_json(user):
+    
+    public_entry = JournalEntry.query.filter(JournalEntry.visibility == 'Public').order_by(JournalEntry.week.desc()).all()
+    
+    json = []
+    
+    # for friend in user.following:
+    for entry in public_entry:
+        # if the entry is written by someone in user.following
+        if entry.user_id in user.following:
+            following_entry_dict = {
+                "fname": entry.user.fname, 
+                "user_id":entry.user.id,
+                "entry": entry.user_entry,
+                "week": entry.week,
+                "prompt_week": entry.prompt.week,
+                "prompt": entry.prompt.prompt,
+                "visibility": entry.visibility
+            }
+            json.append(following_entry_dict)
+    print(json)
+    return json
+
 def delete_journal_entry(entry_id):
 
     entry = JournalEntry.query.get(entry_id)
