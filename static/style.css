@@ -81,6 +81,10 @@
   min-height: 100%;
 }
 
+.background-video {
+  position: relative;
+}
+
 .background-video video {
   position: absolute;
   top: 0;
@@ -102,8 +106,6 @@
   text-align: left;
   padding-left: 15px; 
 }
-
-
 
 /* text CSS */
 
