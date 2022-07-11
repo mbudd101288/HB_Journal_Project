@@ -1,12 +1,5 @@
 "use strict"
 
-// const radioDiv=document.getElementById("radio-container")
-// radioDiv.addEventListener('click', (evt) => {
-//         evt.preventDefault();
-       
-//         displaySharedEntries(everyoneDisplayBtn[0].checked)
-//     })
-
 const radios = document.querySelectorAll('input')
 for (const radio of radios) {
   radio.onclick = (e) => {
@@ -21,14 +14,12 @@ const setUpCollapsibleEntries = () => {
 
     for (const button of coll) {
         button.addEventListener("click", function() {
-        // this.classList.toggle("active");
 
-        // const contents = document.querySelectorAll('div.content')
-        // contents.forEach((content) => {
-    	//     content.style.display = "none"
-        // })
+        const contents = document.querySelectorAll('div.content')
+        contents.forEach((content) => {
+    	    content.style.display = "none"
+        })
 
-        // const content = this.nextElementSibling;
         const content= document.querySelector(`#entry_${button.id}`)
         if (content.style.display === "block") {
             content.style.display = "none";

@@ -3,7 +3,7 @@
 {% block title %} {{user.fname}}'s Journal {% endblock %}
 
 {% block body %}
-    <body style="background-color:#FFF5EE">
+    <body id="my_journal_body">
 {% endblock %}
 
 {% block nav %}
@@ -42,7 +42,6 @@
         {% if prompt.bonus_text %}
     
          <button id="bonus_text_button" type="button" class="btn btn-primary" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Additional Prompt Info"> + </button>
-    
 
         {% endif %}
     </span>
@@ -51,7 +50,6 @@
 <p id="additional_info"></p>
 
 <form id = entry action="/entry" method="POST">
-
     {% if entry%}
         <label for="journal_entry"></label>
         <textarea class="entry" id="journal_entry" name="entry" rows="20" cols="100" style="border: none";> {{entry.user_entry}}</textarea><br>
@@ -64,23 +62,13 @@
     {% endif %}
 
     <label for="entry_visibility">Entry Visibility</label>
-  <select id= "entry_visibility" name="visibility">
-      <option value="Private">Private</option>
-      <!-- <option value="Friends">Share this entry with friends</option> -->
-      <option value="Public">Public</option>
-  </select>
- 
-  <button class="save_entry" id="entry_button" >Save</button>
-
+        <select id= "entry_visibility" name="visibility">
+            <option value="Private">Private</option>
+            <!-- <option value="Friends">Share this entry with friends</option> -->
+             <option value="Public">Public</option>
+        </select>
+    <button class="save_entry" id="entry_button" >Save</button>
 </form>
-
-<!-- {% if prompt.book %}
-
-     <button id="source_button" type="button" class="btn btn-primary" data-bs-placement="top" data-bs-toggle="tooltip" title="{{prompt.book}}">
-        <span><img src="/static/images/book_info_icon.png" title="{{prompt.book}}" alt="tooltip img" width=40px height=40px></span>Prompt Source
-    </button>
-  
-{% endif %} -->
 
 <script> 
     const targetBtn = document.querySelector("#bonus_text_button");
@@ -88,7 +76,6 @@
         document.querySelector('#additional_info').innerHTML = `{{prompt.bonus_text}}`;
         targetBtn.hidden = "hidden"
         });
-        
 </script>
 
 <script src='/static/js/button.js'></script>
@@ -97,11 +84,4 @@
 {% block footer %}
 <p>Current week: {{session['week']}}</p>
 {% endblock %}
-
-
-<!-- <img id="icon_calendar" src="/static/images/clock_schedule_icon.png" alt="tooltip date img" title="
-Current day: {{session['date']}}
-Current week: {{session['week']}}
-Active since {{user.sign_up}}
-"> -->
 

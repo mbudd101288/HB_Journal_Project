@@ -1,5 +1,4 @@
-
-
+"use strict"
 
 const entryBtn = document.querySelector("#entry_button");
 entryBtn.addEventListener('click', (evt) => {
@@ -9,7 +8,6 @@ entryBtn.addEventListener('click', (evt) => {
         alert("Please enter text to save an entry 🤗")
         }
     })
-
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

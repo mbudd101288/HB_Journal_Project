@@ -41,10 +41,10 @@ const setUpCollapsibleEntries = () => {
     for (const button of coll) {
         button.addEventListener("click", function() {
 
-        // const contents = document.querySelectorAll('div.content')
-        // contents.forEach((content) => {
-    	//     content.style.display = "none"
-        // })
+        const contents = document.querySelectorAll('div.content')
+        contents.forEach((content) => {
+    	    content.style.display = "none"
+        })
 
         const content= document.querySelector("#user_entry_coll")
         if (content.style.display === "block") {

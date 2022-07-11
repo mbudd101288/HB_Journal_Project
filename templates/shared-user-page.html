@@ -3,7 +3,7 @@
 {% block title %} {{user.fname}}'s Journal Entries {% endblock %}
 
 {% block body %}
-    <body style="background-color: #FFF5EE">
+    <body id="shared_user_body">
 {% endblock %}
 
 
@@ -16,7 +16,6 @@
     </div>
     <div class="col-4">  
         <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
-        <!-- <a class="nav-link active" aria-current="page" href="/friends"><span><img src="/static/images/friends.png" alt="friends img" width=40px height=40px></span>Connections</a> -->
     </div>
     <div class="col-1 text-right">  
         <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
@@ -26,30 +25,27 @@
 {% block content %} 
 
 <h1>{{user.fname}}'s Journal 
-  <span>
-    {% if user in current_user.following %}
-        <button id="follow_button">
-            <span><img src="/static/images/unfriend_icon.png" title="unfollow" alt="unfriend img" width=40px height=40px></span>
-        </button>
-    {% else %}
-        <button id="follow_button">
-            <span><img src="/static/images/friend_icon.png" title="follow" alt="friend img" width=40px height=40px></span>
-        </button>
-    {% endif %}
-</span>
+    <span>
+        {% if user in current_user.following %}
+            <button id="follow_button">
+                <span><img src="/static/images/unfriend_icon.png" title="unfollow" alt="unfriend img" width=40px height=40px></span>
+            </button>
+        {% else %}
+            <button id="follow_button">
+                <span><img src="/static/images/friend_icon.png" title="follow" alt="friend img" width=40px height=40px></span>
+         </button>
+        {% endif %}
+    </span>
 </h1>
-
 
 {%for entry in entries %}
 
-<button id={{entry.week}} type="button" class="collapsible"> Week {{entry.prompt.week}} : {{entry.prompt.prompt}} </button>
-<div id='user_entry_coll' class="content">
-    <p class="entry" id="display_entry_text"> {{entry.user_entry}}</p>
- </div>
-
+    <button id={{entry.week}} type="button" class="collapsible"> Week {{entry.prompt.week}} : {{entry.prompt.prompt}} </button>
+    <div id='user_entry_coll' class="content">
+        <p class="entry" id="display_entry_text"> {{entry.user_entry}}</p>
+    </div>
 
 {% endfor %}
-
 
 <script src='/static/js/shared-user.js'></script> 
 {% endblock %}
@@ -58,4 +54,4 @@
 <p>Active since {{user.sign_up}}</p>
 {% endblock %}
 
-<!-- Use in place of line 28 once shared-user.js fixed to accomodate icon change -->
+

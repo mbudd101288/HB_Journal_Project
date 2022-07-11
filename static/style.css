@@ -153,6 +153,10 @@ form, h3, #journal_entry {
 
 /* My Journal CSS*/
 
+#my_journal_body {
+  background-color:#FFF5EE
+}
+
 #entry_visibility {
   background-color: #FFF5EE;
   border: solid 4px maroon;
@@ -189,8 +193,18 @@ button {
 
 /* shared-user page CSS */
 
+#shared_user_body {
+  background-color: #FFF5EE;
+}
+
 #follow_button {
   font-size: 14pt;
+}
+
+/* user-page CSS */
+
+#user_page_body {
+  background-color: #FFF5EE"
 }
 
 /* collasible button CSS */

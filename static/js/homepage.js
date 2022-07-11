@@ -42,6 +42,9 @@ function scaleVideo() {
     document.querySelector('.background-video video').setAttribute('height', innerHeight);
     document.querySelector('.background-video video').setAttribute('width', '');
   }
+  const videoHeight = getComputedStyle(document.querySelector('.background-video video')).height;
+  document.querySelector('header').style.height = videoHeight;
+
 }
 
 // // Caveat: this causes the page to look wonky on initial load.
@@ -49,4 +52,6 @@ window.onload = scaleVideo;
 
 // // Resize the video if the window is resized
 window.onresize = scaleVideo;
+
+
 

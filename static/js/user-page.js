@@ -7,14 +7,12 @@ const setUpCollapsiblePrompts = () => {
     for (const button of acc) {
         console.log("button", button)
         button.addEventListener("click", function() {
-        // this.classList.toggle("active");
 
         const contents = document.querySelectorAll('div.content')
         contents.forEach((content) => {
     	    content.style.display = "none"
         })
 
-        // const content = this.nextElementSibling;
         const contentPrompt= document.querySelector(`#entry_${button.id}`)
         console.log("***contentPrompt", contentPrompt)
         if (contentPrompt.style.display === "block") {
@@ -34,17 +32,6 @@ const displayPrompts = () => {
         const promptsContainer = document.querySelector('#user-prompts');
         let promptData = ''
         for (const prompt of prompts) {
-            // const promptDiv = document.createElement("div");
-            // promptDiv.class = 'card'
-            // const promptDescription = document.createElement("p");
-            // promptDescription.innerHTML = `Week ${prompt['week']} : ${prompt['prompt']}`;
-            // const createPromptEntryButton = document.createElement("button")
-            // createPromptEntryButton.innerHTML = "Create Entry"
-            // createPromptEntryButton.id = prompt['week']
-            // createPromptEntryButton.class = 'create-entry'
-            // promptDiv.appendChild(promptDescription)
-            // promptDiv.appendChild(createPromptEntryButton)
-            // promptsContainer.appendChild(promptDiv)
 
             if (prompt.entry === null) {
                 promptData +=`
