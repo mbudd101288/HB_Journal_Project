@@ -31,7 +31,6 @@
                     </div>
                     <div class="col-4">  
                         <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
-                    <!-- <a class="nav-link active" aria-current="page" href="/friends"><span><img src="/static/images/friends.png" alt="friends img" width=40px height=40px></span>Connections</a> -->
                     </div>
                     <div class="col-1 text-right">  
                         <a class="nav-link active" aria-current="page"  href="/logout">Logout</a>
@@ -41,48 +40,9 @@
             </div>
         </nav>
         
-              
-                  <!-- <nav class="navbar">
-                    <div class="container-fluid">
-                         <a class="navbar-brand" href="/my-journal">
-                            <img id="icon" src="/static/images/moleskine_pure.png" alt="" Style="color: white" class="d-inline-block"> My Journal</a>
-                             --> 
-              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_supported_content" aria-controls="navbar_supported_content" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> -->
-            <!-- <div class="collapse navbar-collapse" id="navbar_supported_content"> -->
-                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </ul> -->
-            <!-- <div class="nav_bar" id="navbar_supported_content">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/entry">{{user.fname}}'s Entries</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/shared-entries">{{user.fname}}'s Journal Community</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/logout">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-
-        {% for msg in get_flashed_messages() %}
-        <p class="flash-msg">
-          {{ msg }}
-        </p>
-        {% endfor %}
-
         {% block content %}
     
-
         {% endblock %}
-
-
     </body>
     <footer>
         {% block footer %}

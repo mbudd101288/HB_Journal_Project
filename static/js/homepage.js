@@ -13,10 +13,12 @@ function typeWriter() {
 typeWriter()
 
 
-
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
 myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
+
+
+const myVid = document.getElementById('myVideo').play();
