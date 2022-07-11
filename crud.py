@@ -157,15 +157,20 @@ def get_public_entries_json():
 
 
 def get_friend_entries_json(user):
-    
     public_entry = JournalEntry.query.filter(JournalEntry.visibility == 'Public').order_by(JournalEntry.week.desc()).all()
-    
+    users = []
+
+    for user in user.following:
+        users.append(user.id)
+
+    # print("THESE ARE USERS", users)
+
     json = []
     
     # for friend in user.following:
     for entry in public_entry:
         # if the entry is written by someone in user.following
-        if entry.user_id in user.following:
+        if entry.user_id in users:
             following_entry_dict = {
                 "fname": entry.user.fname, 
                 "user_id":entry.user.id,

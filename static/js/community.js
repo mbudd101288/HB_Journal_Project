@@ -1,14 +1,19 @@
 "use strict"
 
-const everyoneDisplayBtn = document.getElementsByName('community-view');
-const radioDiv=document.getElementById("radio-container")
-
-radioDiv.addEventListener('click', (evt) => {
-        evt.preventDefault();
+// const radioDiv=document.getElementById("radio-container")
+// radioDiv.addEventListener('click', (evt) => {
+//         evt.preventDefault();
        
-        displaySharedEntries(everyoneDisplayBtn[0].checked)
-    })
+//         displaySharedEntries(everyoneDisplayBtn[0].checked)
+//     })
 
+const radios = document.querySelectorAll('input')
+for (const radio of radios) {
+  radio.onclick = (e) => {
+    console.log(e.target.value);
+    displaySharedEntries(e.target.value);
+  }
+}
 
 const setUpCollapsibleEntries = () => {
     const coll = document.getElementsByClassName("collapsible");
@@ -40,8 +45,8 @@ const displaySharedEntries = (isEveryone) => {
     fetch(url)
     .then((response) => response.json())
     .then((sharedEntries) => {
-        const sharedEntriesContainer = document.querySelector('#shared-entries');
-        let sharedEntryData = ''
+        let sharedEntriesContainer = document.querySelector('#shared-entries');
+        sharedEntriesContainer.innerHTML = ''
         let entryDiv = ''
         let weeks = new Set()
         for (const entry of sharedEntries) {

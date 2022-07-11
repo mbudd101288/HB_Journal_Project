@@ -151,14 +151,15 @@ def edit_entry(week):
 def get_community_journal_entries ():
 
     is_everyone = request.args.get("communityView")
+    print("#######", is_everyone)
     
     user = crud.get_user_by_email(session['user'])
 
-    # if is_everyone == False:
-    #     print("hi")
-    # shared_entries = crud.get_friend_entries_json(user)
-    # else:
-    shared_entries = crud.get_public_entries_json()
+    if is_everyone == "connections":
+        print("Are you here God ")
+        shared_entries = crud.get_friend_entries_json(user)
+    else:
+        shared_entries = crud.get_public_entries_json()
     
     return jsonify(shared_entries)
 
