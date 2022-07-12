@@ -35,16 +35,16 @@ const displayPrompts = () => {
 
             if (prompt.entry === null) {
                 promptData +=`
-                <button id="${prompt.week}" type="button" class="collapsible" style="background-color: white; color: black" > Week ${prompt.week} : ${prompt.prompt} </button>
+                <button id="${prompt.week}" type="button" class="collapsible empty-entry"> Week ${prompt.week} : ${prompt.prompt} </button>
                 <div id="entry_${prompt.week}" class="content">
-                    <button style="background-color: white;" onclick="location.href='/update-prompt-entry/${prompt.week}'">Create Entry</button>
+                    <button onclick="location.href='/update-prompt-entry/${prompt.week}'">Create Entry</button>
                 </div>`
             } else {
                 promptData +=
-                `<button id="${prompt.week}" type="button" class="collapsible"> Week ${prompt.week} : ${prompt.prompt} </button>
+                `<button id="${prompt.week}" type="button" class="collapsible complete-entry"> Week ${prompt.week} : ${prompt.prompt} </button>
                 <div id="entry_${prompt.week}" class="content">
                     <p id="display_entry_text">  ${prompt.entry}</p>
-                    <button style="background-color: white;" onclick="location.href='/update-prompt-entry/${prompt.week}'">Edit Entry</button>
+                    <button onclick="location.href='/update-prompt-entry/${prompt.week}'">Edit Entry</button>
                 </div>`
             } 
         }

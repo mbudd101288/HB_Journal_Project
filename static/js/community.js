@@ -47,7 +47,7 @@ const displaySharedEntries = (isEveryone) => {
                
             if (!weeks.has(entry.week)) {
                 sharedEntriesContainer.insertAdjacentHTML('beforeend', `
-                <button id="${entry.week}" type="button" class="collapsible"> Week ${entry.week} : ${entry.prompt} </button>
+                <button id="${entry.week}" type="button" class="collapsible complete-entry"> Week ${entry.week} : ${entry.prompt} </button>
                     <div id="entry_${entry.week}" class="content">
                         <p class=entry id="display_entry_text"> 
                             ${entry['entry']}

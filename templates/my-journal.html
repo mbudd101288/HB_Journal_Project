@@ -3,7 +3,7 @@
 {% block title %} {{user.fname}}'s Journal {% endblock %}
 
 {% block body %}
-    <body id="my_journal_body">
+    <body id="my_journal_body" style="background-image: '/static/images/path.jpeg'">
 {% endblock %}
 
 {% block nav %}
@@ -49,6 +49,8 @@
 
 <p id="additional_info"></p>
 
+<div class="container-fluid">
+    <div class="row">
 <form id = entry action="/entry" method="POST">
     {% if entry%}
         <label for="journal_entry"></label>
@@ -69,6 +71,8 @@
         </select>
     <button class="save_entry" id="entry_button" >Save</button>
 </form>
+</div>
+</div>
 
 <script> 
     const targetBtn = document.querySelector("#bonus_text_button");

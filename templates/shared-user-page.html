@@ -38,14 +38,21 @@
     </span>
 </h1>
 
-{%for entry in entries %}
 
-    <button id={{entry.week}} type="button" class="collapsible"> Week {{entry.prompt.week}} : {{entry.prompt.prompt}} </button>
-    <div id='user_entry_coll' class="content">
-        <p class="entry" id="display_entry_text"> {{entry.user_entry}}</p>
+    {%for entry in entries %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+
+                <button id={{entry.week}} type="button" class="collapsible complete-entry"> Week {{entry.prompt.week}} : {{entry.prompt.prompt}} </button>
+                <div id='user_entry_coll' class="content">
+                    <p class="entry" id="display_entry_text"> {{entry.user_entry}}</p>
+                </div>
+            </div>
+         </div>
     </div>
-
-{% endfor %}
+    {% endfor %}
+    
 
 <script src='/static/js/shared-user.js'></script> 
 {% endblock %}

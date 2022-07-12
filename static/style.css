@@ -12,17 +12,17 @@
 } */
 
 .navbar {
-  background-image: url(/static/images/sky.jpeg);
+  background-image: url(/static/images/navbar.jpeg);
   height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
+  /* color: rgb(50, 81, 50) */
   font-family: marker felt, fantasy;
   font-weight: bold;
   font-size: 20pt;
   margin-bottom: 25px;
 }
-
 
 /* Homepage CSS */
 
@@ -116,9 +116,6 @@
   transform: translate(-50%, -50%);
 }
 
-#entry {
-  background-color: white;
-}
 
 h1, h2, p, #entry {
   color: black;
@@ -142,7 +139,7 @@ form, h3, #journal_entry {
 #scroll_journal_entry {
   display: inline-block;
   justify-content: right;
-  color: maroon;
+  color: darkgreen;
   padding: 10px;
   font: 28px aerial;
   width: 800px;
@@ -153,24 +150,35 @@ form, h3, #journal_entry {
 
 /* My Journal CSS*/
 
-#my_journal_body {
-  background-color:white
+#my_journal_body, #entry{
+  background-color:#f5f6f8;
 }
 
-#entry_visibility {
+#entry_visibility, button {
   background-color: white;
-  border: solid 4px maroon;
+  border: solid 1px darkgreen;
   font-weight: bold;
-  color: black;
+  color: darkgreen;
   font-family: marker felt, fantasy;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 
-#source_button{
-  background-color: white;
+#source_button {
+  background-color: #f5f6f8;
   border: none;
+  margin-top: 20px;
   font-weight: bold;
-  color: maroon;
+  color: darkgreen;
+  font-family: marker felt, fantasy;
+}
+
+.save_entry {
+  background-color: #f5f6f8;
+  border: none;
+  font-size: 14pt;
+  font-weight: bold;
+  color: darkgreen;
   font-family: marker felt, fantasy;
 }
 
@@ -178,23 +186,15 @@ form, h3, #journal_entry {
     background-color: white;
     border: none;
     font-weight: bold;
-    color: maroon;
+    color: darkgreen;
     font-size: 20pt;
     font-family: marker felt, fantasy;
-}
-
-button {
-  background-color: white;
-  border: none;
-  font-weight: bold;
-  color: maroon;
-  font-family: marker felt, fantasy;
 }
 
 /* shared-user page CSS */
 
 #shared_user_body {
-  background-color: white;
+  background-color: #f5f6f8;
 }
 
 #follow_button {
@@ -204,27 +204,48 @@ button {
 /* user-page CSS */
 
 #user_page_body {
-  background-color: white"
+  background-color: #f5f6f8;
 }
 
 /* collasible button CSS */
-.collapsible {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+.empty-entry {
+  border-left: solid 10px rgb(139, 186, 139);
+  background-color: white; 
+  color: black;
+  border-top: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+  border-collapse: separate;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.complete-entry {
+    
+  background-color: white;
+  border-left: solid 10px rgb(25, 71, 25);
+  border-top: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+  border-collapse: separate;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 8px;
 }
   
 .content {
   padding: 0 18px;
   display: none;
   overflow: scroll;
-  background-color: white;
+  background-color: #f5f6f8;
   margin-top: 10px;
   margin-bottom: 10px;
 }
