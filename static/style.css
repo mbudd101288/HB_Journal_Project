@@ -12,7 +12,7 @@
 } */
 
 .navbar {
-  background-image: url(/static/images/sky.png);
+  background-image: url(/static/images/sky.jpeg);
   height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,13 +50,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Fredericka the Great', cursive;
-  color: #FFF5EE; 
+  color: white; 
   font-size: 20pt;
 }
 
 #login_title, #login_title_1 {
   font-family: 'Fredericka the Great', cursive;
-  color: #FFF5EE;
+  color: white;
 }
 
 .modal-content{
@@ -94,7 +94,7 @@
 
 /* Community page CSS */
 #community_body {
-  background-color: #FFF5EE;
+  background-color: white;
 }
 
 #radio_container {
@@ -117,7 +117,7 @@
 }
 
 #entry {
-  background-color: #FFF5EE;
+  background-color: white;
 }
 
 h1, h2, p, #entry {
@@ -154,11 +154,11 @@ form, h3, #journal_entry {
 /* My Journal CSS*/
 
 #my_journal_body {
-  background-color:#FFF5EE
+  background-color:white
 }
 
 #entry_visibility {
-  background-color: #FFF5EE;
+  background-color: white;
   border: solid 4px maroon;
   font-weight: bold;
   color: black;
@@ -167,7 +167,7 @@ form, h3, #journal_entry {
 }
 
 #source_button{
-  background-color: #FFF5EE;
+  background-color: white;
   border: none;
   font-weight: bold;
   color: maroon;
@@ -175,7 +175,7 @@ form, h3, #journal_entry {
 }
 
 #bonus_text_button {
-    background-color: #FFF5EE;
+    background-color: white;
     border: none;
     font-weight: bold;
     color: maroon;
@@ -184,7 +184,7 @@ form, h3, #journal_entry {
 }
 
 button {
-  background-color: #FFF5EE;
+  background-color: white;
   border: none;
   font-weight: bold;
   color: maroon;
@@ -194,7 +194,7 @@ button {
 /* shared-user page CSS */
 
 #shared_user_body {
-  background-color: #FFF5EE;
+  background-color: white;
 }
 
 #follow_button {
@@ -204,13 +204,13 @@ button {
 /* user-page CSS */
 
 #user_page_body {
-  background-color: #FFF5EE"
+  background-color: white"
 }
 
 /* collasible button CSS */
 .collapsible {
     background-color: black;
-    color: #FFF5EE;
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -224,7 +224,7 @@ button {
   padding: 0 18px;
   display: none;
   overflow: scroll;
-  background-color: #FFF5EE;
+  background-color: white;
   margin-top: 10px;
   margin-bottom: 10px;
 }
