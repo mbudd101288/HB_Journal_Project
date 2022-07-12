@@ -94,7 +94,7 @@
 
 /* Community page CSS */
 #community_body {
-  background-color: white;
+  background-color: #f5f6f8;
 }
 
 #radio_container {
@@ -104,7 +104,8 @@
 #display_entry_text, #link_to_author_user_page {
   white-space: pre-line; 
   text-align: left;
-  padding-left: 15px; 
+  padding-left: 50px; 
+  padding-right: 50px;
 }
 
 /* text CSS */
@@ -160,7 +161,7 @@ form, h3, #journal_entry {
   font-weight: bold;
   color: darkgreen;
   font-family: marker felt, fantasy;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
@@ -174,19 +175,19 @@ form, h3, #journal_entry {
 }
 
 .save_entry {
-  background-color: #f5f6f8;
-  border: none;
-  font-size: 14pt;
+  background-color: white;
+  border: solid 1px darkgreen;
+  font-size: 12pt;
   font-weight: bold;
   color: darkgreen;
   font-family: marker felt, fantasy;
 }
 
 #bonus_text_button {
-    background-color: white;
-    border: none;
+    background-color: #f5f6f8;
     font-weight: bold;
-    color: darkgreen;
+    border: none;
+    color:maroon;
     font-size: 20pt;
     font-family: marker felt, fantasy;
 }
