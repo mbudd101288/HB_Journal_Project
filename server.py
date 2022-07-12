@@ -43,7 +43,6 @@ def new_user():
         session['user'] = user.email
         db.session.add(user)
         db.session.commit()
-        flash(f"User created. Welcome {user.fname}")
     
     return redirect('/my-journal')
 
@@ -73,19 +72,23 @@ def get_login_info():
 @app.route("/my-journal")
 def show_user_journal():
     if 'user' not in session:
-        print('not in session')
+        flash("Please log in")
         return render_template("homepage.html")
     else:
         session['date'] = date.today().strftime('%Y-%m-%d')
         session['week'] = strftime("%U")
-        # session['week'] = 52
 
         user = crud.get_user_by_email(session['user'])
         current_prompt = crud.get_prompt_by_week(session['week'])
+
         return redirect(f"/update-prompt-entry/{session['week']}")
 
 @app.route("/get-user-entries.json")
 def get_user_entries():
+
+    if 'user' not in session:
+        flash("Please log in")
+        return render_template("homepage.html")
 
     user = crud.get_user_by_email(session['user'])
     user_id = user.id
@@ -96,17 +99,29 @@ def get_user_entries():
 @app.route("/entry/<user_id>")
 def get_additional_entries_by_user(user_id):
     """Can view more entries from a specific user on their user-page"""
-    user = crud.get_user_by_id(user_id)
-    current_user = crud.get_user_by_email(session['user'])
-    entries = crud.get_all_user_entries(user_id)
-    if user.email != session['user']:
-        return render_template('shared-user-page.html', user = user, entries = entries, current_user = current_user)
-    else:
-        return render_template ('user-page.html', user = user, entries = entries)
+    
+    if 'user' not in session:
+        flash("Please log in")
+        return render_template("homepage.html")
+
+    else: 
+        user = crud.get_user_by_id(user_id)
+        current_user = crud.get_user_by_email(session['user'])
+        entries = crud.get_all_user_entries(user_id)
+       
+        if user.email != session['user']:
+            return render_template('shared-user-page.html', user = user, entries = entries, current_user = current_user)
+        else:
+            return render_template ('user-page.html', user = user, entries = entries)
 
         
 @app.route("/entry", methods=['GET'])
 def show_user_entries ():
+    
+    if 'user' not in session:
+        flash("Please log in")
+        return render_template("homepage.html")
+    
     user = crud.get_user_by_email(session['user'])
 
     return render_template ('user-page.html', user = user)
@@ -139,33 +154,46 @@ def create_current_entry():
 @app.route("/update-prompt-entry/<week>")
 def edit_entry(week):
     """Can complete or edit an existing entry which will render on the my-journal.html"""
+
+    if 'user' not in session:
+        flash("Please log in")
+        return render_template("homepage.html")
+
     user = crud.get_user_by_email(session['user'])
     prompt = crud.get_prompt_by_week(week)
     entry = crud.get_entry_by_user_and_week(user.id, week)
-    print(user)
-    print(entry)
+    
 
     return render_template('my-journal.html', user = user, prompt = prompt, entry = entry)
 
 @app.route("/get-shared-entries.json")
 def get_community_journal_entries ():
 
-    is_everyone = request.args.get("communityView")
-    print("#######", is_everyone)
-    
-    user = crud.get_user_by_email(session['user'])
+    if 'user' not in session:
+        flash("Please log in")
+        return render_template("homepage.html")
 
-    if is_everyone == "connections":
-        print("Are you here God ")
-        shared_entries = crud.get_friend_entries_json(user)
     else:
-        shared_entries = crud.get_public_entries_json()
+        is_everyone = request.args.get("communityView")
+        print("#######", is_everyone)
+    
+        user = crud.get_user_by_email(session['user'])
+
+        if is_everyone == "connections":
+            print("Are you here God ")
+            shared_entries = crud.get_friend_entries_json(user)
+        else:
+            shared_entries = crud.get_public_entries_json()
     
     return jsonify(shared_entries)
 
    
 @app.route("/community", methods=['GET'])
 def view_community_journal_entries ():
+
+    if 'user' not in session:
+        flash("Please log in")
+        return render_template("homepage.html")
 
     user = crud.get_user_by_email(session['user'])
    
@@ -197,7 +225,6 @@ def follow():
             "follow_msg": f"You are now following {friend.fname}",
              "button_text": "Unfollow"
              }
-
 
 
 @app.route("/logout")
