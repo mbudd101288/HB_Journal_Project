@@ -67,7 +67,7 @@
 }
 
 #homepage_button, #close_button {
-  background-color: black;
+
   border: none;
   color: white;
   font-family: marker felt, fantasy;
@@ -155,16 +155,6 @@ form, h3, #journal_entry {
   background-color:#f5f6f8;
 }
 
-#entry_visibility, button {
-  background-color: white;
-  border: solid 1px darkgreen;
-  font-weight: bold;
-  color: darkgreen;
-  font-family: marker felt, fantasy;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
 #source_button {
   background-color: #f5f6f8;
   border: none;
@@ -174,12 +164,12 @@ form, h3, #journal_entry {
   font-family: marker felt, fantasy;
 }
 
-.save_entry {
+.save_entry, #entry_visibility {
   background-color: white;
-  border: solid 1px darkgreen;
+  border: solid 1px maroon;
   font-size: 12pt;
   font-weight: bold;
-  color: darkgreen;
+  color: maroon;
   font-family: marker felt, fantasy;
 }
 
@@ -190,6 +180,16 @@ form, h3, #journal_entry {
     color:maroon;
     font-size: 20pt;
     font-family: marker felt, fantasy;
+}
+
+button {
+  background-color: white;
+  border: solid 1px darkgreen;
+  font-weight: bold;
+  color: darkgreen;
+  font-family: marker felt, fantasy;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 /* shared-user page CSS */

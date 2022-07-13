@@ -9,18 +9,18 @@
     "twilio_alert": "Yes"
     },
     {
-    "email": "kellibudd@test.com", 
-    "fname": "Kelli", 
-    "lname": "Holland", 
+    "email": "winifredsanderson@test.test", 
+    "fname": "Winifred", 
+    "lname": "Sanderson", 
     "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
     "profile_pic": "", 
     "sign_up": "2022-02-01",
     "twilio_alert": "No"
     },
     {
-    "email": "erinlavery@test.com", 
-    "fname": "Erin", 
-    "lname": "Lavery", 
+    "email": "marlasnger@test.test", 
+    "fname": "Marla", 
+    "lname": "Singer", 
     "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
     "profile_pic": "", 
     "sign_up": "2022-01-09",
@@ -34,5 +34,14 @@
     "profile_pic": "", 
     "sign_up": "2022-01-01",
     "twilio_alert": "Yes" 
+    },
+    {
+    "email": "gogoyubari@test.test", 
+    "fname": "Gogo", 
+    "lname": "Yubari", 
+    "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
+    "profile_pic": "", 
+    "sign_up": "2022-01-01",
+    "twilio_alert": "no" 
     }
 ] 

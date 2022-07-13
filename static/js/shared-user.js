@@ -46,10 +46,13 @@ const setUpCollapsibleEntries = () => {
     	    content.style.display = "none"
         })
 
-        const content= document.querySelector("#user_entry_coll")
+        const content= document.querySelector(`#entry_${button.id}`)
+        
         if (content.style.display === "block") {
+            console.log("Is this working?")
             content.style.display = "none";
         } else {
+            console.log("Mayybe not working?")
             content.style.display = "block";
         }
     });
