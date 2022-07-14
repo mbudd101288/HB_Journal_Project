@@ -20,8 +20,7 @@
   /* color: rgb(50, 81, 50) */
   font-family:  'Arvo', serif;
   font-weight: bold;
-  font-size: 20pt;
-  text-align: right;
+  font-size: 18pt;
   margin-bottom: 25px;
 }
 
@@ -207,8 +206,11 @@ button {
   background-color: #f5f6f8;
 }
 
-#follow_button {
-  font-size: 14pt;
+#follow_button, #follow, #unfollow {
+  border: none;
+  background-color: #f5f6f8;
+  width:25px;
+  height:25px; 
 }
 
 /* user-page CSS */

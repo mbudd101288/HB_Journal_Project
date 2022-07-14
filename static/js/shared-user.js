@@ -22,12 +22,12 @@ followBtn.addEventListener('click', (evt) => {
         
             if (responseJson.button_text === "Unfollow") {
                 followBtn.innerHTML = `
-                <span><img src="/static/images/unfriend_icon.png" alt="unfriend img" width=40px height=40px></span>
+                <span><img id="unfollow" src="/static/images/unfriend_icon.png" alt="unfriend img"></span>
                 `
             }
             else if (responseJson.button_text ==="Follow") {
                 followBtn.innerHTML = ` 
-                     <span><img src="/static/images/friend_icon.png" alt="friend img" width=40px height=40px></span>
+                     <span><img id="follow" src="/static/images/friend_icon.png" alt="friend img"></span>
                      `
             }
           });

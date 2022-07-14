@@ -8,17 +8,17 @@
 
 
 {% block nav %}
-    <div class="col-4">  
+    <div>  
         <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px>My Entries</span></a>
     </div>
-    <div class="col-3">  
+    <div>  
         <a class="nav-link active" aria-current="page" href="/my-journal"><span><img src="/static/images/read.png" alt="book img" width=40px height=40px>Journal</span></a> 
     </div>
-    <div class="col-4">  
+    <div>  
         <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
     </div>
-    <div class="col-1 text-right">  
-        <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
+    <div>  
+        <a class="nav-link active" aria-current="page" href="/logout"><span><img src="/static/images/b_logout.png" alt="book img" width=30px height=30px>Logout</span></span></a>
     </div>
 {% endblock %}
 
@@ -28,11 +28,11 @@
     <span>
         {% if user in current_user.following %}
             <button id="follow_button">
-                <span><img src="/static/images/unfriend_icon.png" title="unfollow" alt="unfriend img" width=40px height=40px></span>
+                <span><img id="unfollow" src="/static/images/unfriend_icon.png" title="unfollow" alt="unfriend img" ></span>
             </button>
         {% else %}
             <button id="follow_button">
-                <span><img src="/static/images/friend_icon.png" title="follow" alt="friend img" width=40px height=40px></span>
+                <span><img id="follow" src="/static/images/friend_icon.png" title="follow" alt="friend img"></span>
          </button>
         {% endif %}
     </span>
