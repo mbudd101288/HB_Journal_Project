@@ -22,19 +22,19 @@
     <body>
 {% endblock %}
         <nav class="navbar sticky-top">
-            <div class="container">
-                <div class="d-flex justify-content-end">
+            <div class="container" style="display: flex; justify-content: flex-end;">
+                <div style="display: flex; justify-content: flex-end;">
                     {% block nav %}
-                    <div>  
+                    <div class="navbar_link">  
                         <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px></span>My Entries</a>
                     </div>
-                    <div>  
+                    <div class="navbar_link">  
                         <a class="nav-link active" aria-current="page" href="/my-journal"><span><img src="/static/images/read.png" alt="book img" width=40px height=40px></span>Journal</a> 
                     </div>
-                    <div>  
+                    <div class="navbar_link">  
                         <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
                     </div>
-                    <div>  
+                    <div class="navbar_link">  
                         <a class="nav-link active" aria-current="page"  href="/logout">Logout</a>
                     </div>
                     {% endblock %}

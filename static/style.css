@@ -24,6 +24,9 @@
   margin-bottom: 25px;
 }
 
+.navbar_link{
+  margin: 0 20px;
+}
 /* Homepage CSS */
 
 #homepage_body {
