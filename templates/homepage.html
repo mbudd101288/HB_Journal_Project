@@ -11,11 +11,10 @@
         <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
         <!-- Your custom styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-  </style>
-
 
 
 </head>
@@ -23,7 +22,7 @@
 
 <body id="homepage_body">
 
-  <div class="container-fluid">
+  <div class="container-fluid justify-content-centeralign-items-center">
     <div class="row">
       {% for msg in get_flashed_messages() %}
         <p class="flash-msg">
@@ -39,35 +38,34 @@
     </video>
   </div>
       <!-- <img id="home_img" class="bg-image" src='/static/images/mind.png' > -->
-<header class="container-fluid d-flex justify-content-center align-items-center
-  text-light">
-<div class="row">
-<div class="col">
-  <h1 id="login_title_1">Mindful Growth</h1>
-  <h2 id="login_title"></h2>
-</div>
-</div>
-</header>
 
-      
-   
-<div class="container-fluid">
+         
+
+<div class="modal-btn">
   <div class="row">
-<!-- Button trigger modal Create User -->
+
+    <!-- Button modal Login -->
     <div class="col-2 offset-8">
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#user-login">
+        Log In
+      </button>
+    </div>
+    
+<!-- Button trigger modal Create User -->
+    <div class="col-2">
       <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#create-user">
         Create Account
       </button>
     </div>
-
-  <!-- Button modal Login -->
-    <div class="col-2">
-      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#user-login">
-       Log In
-      </button>
-    </div>
   </div>
 </div>
+
+
+    <div class="overlay">
+      <h1 id="login_title_1">Mindful Growth</h1>
+     <h2 id="login_title"></h2>
+    </div>
+  
 
  <!-- Modal Create User -->
 <div class="modal fade" id="create-user" tabindex="-1" aria-labelledby="Create New Account" aria-hidden="true">

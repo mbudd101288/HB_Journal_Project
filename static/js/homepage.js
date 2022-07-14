@@ -44,8 +44,8 @@ function scaleVideo() {
   }
   const videoHeight = getComputedStyle(document.querySelector('.background-video video')).height;
   document.querySelector('header').style.height = videoHeight;
-
 }
+
 
 // // Caveat: this causes the page to look wonky on initial load.
 window.onload = scaleVideo;

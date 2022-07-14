@@ -147,7 +147,6 @@ def create_current_entry():
         db.session.add(new_entry)
     db.session.commit()
     
-    flash(f'Journal Entry saved. Visibility: {visibility}')
     return redirect('/entry')
 
 

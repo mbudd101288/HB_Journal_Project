@@ -11,6 +11,9 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <!-- Your custom styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/static/style.css">
        
     </head>
@@ -19,7 +22,7 @@
     <body>
 {% endblock %}
         <nav class="navbar sticky-top">
-            <div class="container-fluid">
+            <div class="container mr-auto text-right">
                 <div class="row">
                     {% block nav %}
                     <div class="col-4">  
@@ -31,7 +34,7 @@
                     <div class="col-4">  
                         <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
                     </div>
-                    <div class="col-1 text-right">  
+                    <div class="col-1">  
                         <a class="nav-link active" aria-current="page"  href="/logout">Logout</a>
                     </div>
                     {% endblock %}

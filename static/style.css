@@ -18,19 +18,16 @@
   background-size: cover;
   color: black;
   /* color: rgb(50, 81, 50) */
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
   font-weight: bold;
   font-size: 20pt;
+  text-align: right;
   margin-bottom: 25px;
 }
 
 /* Homepage CSS */
 
 #homepage_body {
-  background-color: black;
-}
-
-#home_button_bar {
   background-color: black;
 }
 
@@ -49,44 +46,48 @@
   font-size: 15pt;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Fredericka the Great', cursive;
+  font-family:  'Arvo', serif;
   color: white; 
   font-size: 20pt;
 }
 
+
+
 #login_title, #login_title_1 {
-  font-family: 'Fredericka the Great', cursive;
+  font-family:  'Arvo', serif;
   color: white;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+  z-index: 100;
+}
+
+#login_title_1 {
+  top: 90%;
 }
 
 .modal-content{
   background-color: white;
   border: none;
   color: black;
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
 }
 
 #homepage_button, #close_button {
-
+  background-color: black;
   border: none;
   color: white;
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
 }
 
-#myVideo {
+
+video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.background-video {
-  position: relative;
-}
-
-.background-video video {
-  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -121,19 +122,21 @@
 h1, h2, p, #entry {
   color: black;
   font-weight: bolder;
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
   text-align: center;
 }
 
 textarea {
   margin-bottom: 25px;
   background-color: white;
+  padding-left: 50px; 
+  padding-right: 50px;
 }
 
 form, h3, #journal_entry {
   color: black;
   font-weight: bolder;
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
   border-color: solid,  black;
 }
   
@@ -158,10 +161,9 @@ form, h3, #journal_entry {
 #source_button {
   background-color: #f5f6f8;
   border: none;
-  margin-top: 20px;
   font-weight: bold;
   color: darkgreen;
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
 }
 
 .save_entry, #entry_visibility {
@@ -170,7 +172,7 @@ form, h3, #journal_entry {
   font-size: 12pt;
   font-weight: bold;
   color: maroon;
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
 }
 
 #bonus_text_button {
@@ -179,7 +181,14 @@ form, h3, #journal_entry {
     border: none;
     color:maroon;
     font-size: 20pt;
-    font-family: marker felt, fantasy;
+    font-family:  'Arvo', serif;
+}
+
+#additional_info {
+  white-space: pre-line; 
+  text-align: center;
+  padding-left: 75px; 
+  padding-right: 75px;
 }
 
 button {
@@ -187,7 +196,7 @@ button {
   border: solid 1px darkgreen;
   font-weight: bold;
   color: darkgreen;
-  font-family: marker felt, fantasy;
+  font-family:  'Arvo', serif;
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -221,7 +230,7 @@ button {
   padding: 18px;
   width: 100%;
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 8px;
 }
 
@@ -238,7 +247,7 @@ button {
   padding: 18px;
   width: 100%;
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 8px;
 }
   
@@ -249,6 +258,8 @@ button {
   background-color: #f5f6f8;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 /* misc img CSS */
