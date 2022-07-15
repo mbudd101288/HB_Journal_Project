@@ -37,7 +37,7 @@ def new_user():
 
     user = crud.get_user_by_email(email)
     if user:
-        flash("Email already exists. Try again.")
+        flash("Account with that email already exists.")
     else:
         user = crud.create_user(email, password, fname, lname, sign_up= date.today(), profile_pic = None, twilio_alert= twilio_alert)
         session['user'] = user.email
@@ -72,7 +72,6 @@ def get_login_info():
 @app.route("/my-journal")
 def show_user_journal():
     if 'user' not in session:
-        flash("Please log in")
         return render_template("homepage.html")
     else:
         session['date'] = date.today().strftime('%Y-%m-%d')
@@ -87,7 +86,6 @@ def show_user_journal():
 def get_user_entries():
 
     if 'user' not in session:
-        flash("Please log in")
         return render_template("homepage.html")
 
     user = crud.get_user_by_email(session['user'])
@@ -101,7 +99,6 @@ def get_additional_entries_by_user(user_id):
     """Can view more entries from a specific user on their user-page"""
     
     if 'user' not in session:
-        flash("Please log in")
         return render_template("homepage.html")
 
     else: 
@@ -119,7 +116,6 @@ def get_additional_entries_by_user(user_id):
 def show_user_entries ():
     
     if 'user' not in session:
-        flash("Please log in")
         return render_template("homepage.html")
     
     user = crud.get_user_by_email(session['user'])
@@ -155,7 +151,6 @@ def edit_entry(week):
     """Can complete or edit an existing entry which will render on the my-journal.html"""
 
     if 'user' not in session:
-        flash("Please log in")
         return render_template("homepage.html")
 
     user = crud.get_user_by_email(session['user'])
@@ -169,7 +164,6 @@ def edit_entry(week):
 def get_community_journal_entries ():
 
     if 'user' not in session:
-        flash("Please log in")
         return render_template("homepage.html")
 
     else:
@@ -191,7 +185,6 @@ def get_community_journal_entries ():
 def view_community_journal_entries ():
 
     if 'user' not in session:
-        flash("Please log in")
         return render_template("homepage.html")
 
     user = crud.get_user_by_email(session['user'])

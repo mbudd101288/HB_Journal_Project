@@ -27,6 +27,11 @@
 .navbar_link{
   margin: 0 20px;
 }
+
+button {
+  border-radius: 5px;
+}
+
 /* Homepage CSS */
 
 #homepage_body {
@@ -44,30 +49,34 @@
 
 .flash-msg {
   position: absolute;
-  top: 5%;
-  font-size: 15pt;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family:  'Arvo', serif;
-  color: white; 
-  font-size: 20pt;
+  color: maroon; 
+  font-size: 12pt;
+  top: 2%;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
+  z-index: 100; */
 }
-
-
 
 #login_title, #login_title_1 {
   font-family:  'Arvo', serif;
   color: white;
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
   z-index: 100;
+  border-radius: 50px ;
 }
 
-#login_title_1 {
-  top: 90%;
+.title-container{
+  display: flex;
+  justify-content: center;
+}
+
+.title-container-2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 94vh;
 }
 
 .modal-content{
@@ -77,6 +86,15 @@
   font-family:  'Arvo', serif;
 }
 
+
+.inner-modal-btn {
+  margin: 0px 20px;
+}
+
+.inner-modal-btn-create {
+  margin: 20px 20px;
+}
+
 #homepage_button, #close_button {
   background-color: black;
   border: none;
@@ -84,6 +102,10 @@
   font-family:  'Arvo', serif;
 }
 
+.modal-btn{
+  margin: 10px 20px;
+  top: 2%;
+}
 
 video{
   width: 100vw;
@@ -193,14 +215,14 @@ form, h3, #journal_entry {
   padding-right: 75px;
 }
 
-button {
+#user-entry-btn {
   background-color: white;
   border: solid 1px darkgreen;
   font-weight: bold;
   color: darkgreen;
   font-family:  'Arvo', serif;
   margin-bottom: 10px;
-  border-radius: 5px;
+  padding: 18px;
 }
 
 /* shared-user page CSS */
@@ -237,6 +259,8 @@ button {
   text-align: left;
   font-size: 16px;
   margin-bottom: 8px;
+  font-weight: bold;
+  font-family:  'Arvo', serif;
 }
 
 .complete-entry {
@@ -254,6 +278,8 @@ button {
   text-align: left;
   font-size: 16px;
   margin-bottom: 8px;
+  font-weight: bold;
+  font-family:  'Arvo', serif;
 }
   
 .content {
@@ -279,3 +305,4 @@ icon {
   width: 70px;
   height: 80px;;
 } 
+

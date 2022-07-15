@@ -37,14 +37,14 @@ const displayPrompts = () => {
                 promptData +=`
                 <button id="${prompt.week}" type="button" class="collapsible empty-entry"> Week ${prompt.week} : ${prompt.prompt} </button>
                 <div id="entry_${prompt.week}" class="content">
-                    <button onclick="location.href='/update-prompt-entry/${prompt.week}'">Create Entry</button>
+                    <button id="user-entry-btn" onclick="location.href='/update-prompt-entry/${prompt.week}'">Create Entry</button>
                 </div>`
             } else {
                 promptData +=
                 `<button id="${prompt.week}" type="button" class="collapsible complete-entry"> Week ${prompt.week} : ${prompt.prompt} </button>
                 <div id="entry_${prompt.week}" class="content">
                     <p id="display_entry_text">  ${prompt.entry}</p>
-                    <button onclick="location.href='/update-prompt-entry/${prompt.week}'">Edit Entry</button>
+                    <button id="user-entry-btn" onclick="location.href='/update-prompt-entry/${prompt.week}'">Edit Entry</button>
                 </div>`
             } 
         }
