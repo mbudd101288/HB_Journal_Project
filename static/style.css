@@ -151,8 +151,8 @@ h1, h2, p, #entry {
 textarea {
   margin-bottom: 25px;
   background-color: white;
-  padding-left: 50px; 
-  padding-right: 50px;
+  padding: 25px;
+  
 }
 
 form, h3, #journal_entry {

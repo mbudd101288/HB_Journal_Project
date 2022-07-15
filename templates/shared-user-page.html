@@ -9,16 +9,16 @@
 
 {% block nav %}
     <div class="navbar_link">  
-        <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px>My Entries</span></a>
+        <a class="nav-link active" aria-current="page" href="/entry"><span><img src="/static/images/pen.png" alt="pen img" width=40px height=40px>  My Entries</span></a>
     </div>
     <div class="navbar_link"> 
-        <a class="nav-link active" aria-current="page" href="/my-journal"><span><img src="/static/images/read.png" alt="book img" width=40px height=40px>Journal</span></a> 
+        <a class="nav-link active" aria-current="page" href="/my-journal"><span><img src="/static/images/read.png" alt="book img" width=40px height=40px>  Journal</span></a> 
     </div>
     <div class="navbar_link"> 
-        <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>Community</a>
+        <a class="nav-link active" aria-current="page" href="/community"><span><img src="/static/images/community.png" alt="pen img" width=40px height=40px></span>  Community</a>
     </div>
     <div class="navbar_link">  
-        <a class="nav-link active" aria-current="page" href="/logout"><span><img src="/static/images/b_logout.png" alt="book img" width=30px height=30px>Logout</span></span></a>
+        <a class="nav-link active" aria-current="page" href="/logout"><span><img src="/static/images/b_logout.png" alt="book img" width=30px height=30px>  Logout</span></span></a>
     </div>
 {% endblock %}
 
@@ -41,8 +41,8 @@
 
     {%for entry in entries %}
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
+        <div class="row flex justify-content-center">
+            <div class="col-11">
 
                 <button id={{entry.week}} type="button" class="collapsible complete-entry"> Week {{entry.prompt.week}} : {{entry.prompt.prompt}} </button>
                 <div id='entry_{{entry.week}}' class="content">
