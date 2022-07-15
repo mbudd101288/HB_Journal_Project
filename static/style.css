@@ -222,7 +222,7 @@ form, h3, #journal_entry {
   color: darkgreen;
   font-family:  'Arvo', serif;
   margin-bottom: 10px;
-  padding: 18px;
+  margin-left: 45px;
 }
 
 /* shared-user page CSS */
