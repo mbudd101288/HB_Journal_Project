@@ -92,7 +92,6 @@ button {
   margin-left: 15px;
 }
 
-
 #homepage_button, #close_button {
   background-color: black;
   border: none;
@@ -139,7 +138,6 @@ video{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 h1, h2, p, #entry {
   color: black;
