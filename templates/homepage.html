@@ -79,41 +79,40 @@
         <form id="create-user-form" action="/users" method="POST">
             <div class="mb-2">
               <label for="user_id" class="form-label">Email:</label>
-              <input type="text" name="email" class="form-control" id="user_id"/>
+              <input type="text" name="email" class="form-control" id="user_id" required/>
             </div>
             <div class="mb-2">
               <label for="user_password" class="form-label">Password:</label>
-              <input type="password" name="password" class="form-control" id="user_password"/>
+              <input type="password" name="password" class="form-control" id="user_password" required/>
             </div>
             <div class="mb-2">
               <label for="user_fname" class="form-label">First Name:</label>
-              <input type="text" name="fname" class="form-control" id="user_fname"/>
+              <input type="text" name="fname" class="form-control" id="user_fname" required/>
             </div>
             <div class="mb-2">
               <label for="user_lname" class="form-label">Last Name:</label>
               <input type="text" name="lname" class="form-control" id="user_lname"/>
             </div>
-            <div class="row">
+            <div class="row" style="margin-left: 10px">
               Would you like to be alerted via email when a new entry is released?
               <div class="row">
                 <div class="col-8 col-sm-6">
-                  <input type="radio" name="twilio_alert" value="Yes" id="yes_twilio">
+                  <input type="radio" name="twilio_alert" value="Yes" id="yes_twilio" style="margin-bottom: 20px">
                   <label for="yes_twilio">Yes</label>
                 </div>
                 <div class="col-4 col-sm-6">
-                  <input type="radio" name="twilio_alert" value="No" id="no_twilio">
+                  <input type="radio" name="twilio_alert" value="No" id="no_twilio" style="margin-bottom: 20px">
                   <label for="no_twilio">No</label>
                 </div>
               </div>
             </div>
-            <div class="container" style="display: flex; justify-content: flex-end;">
-              <div style="display: flex; justify-content: flex-end;">
-                <div class="inner-modal-btn-create"></div>
+            <div class="container" style="display: flex; justify-content: right;">
+              <!-- <div style="display: flex;"> -->
+                <div class="inner-modal-btn">
                   <button type="button" data-bs-dismiss="modal" class="btn btn-secondary" id="close_button">Close</button>
                 </div>
-              </div>
-              <div class="inner-modal-btn-create">
-                <button type="submit" data-bs-dismiss="modal" class="btn btn-primary" id="homepage_button">Create Account</button>
+                <div class="inner-modal-btn">
+                  <button type="submit" data-bs-dismiss="modal" class="btn btn-primary" id="homepage_button">Create Account</button>
               </div>  
             </div>
           </div>

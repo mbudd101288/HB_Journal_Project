@@ -55,16 +55,18 @@ button {
   color: maroon; 
   font-size: 12pt;
   top: 2%;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
-  z-index: 100; */
 }
 
 #login_title, #login_title_1 {
   font-family:  'Arvo', serif;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
   z-index: 100;
   border-radius: 50px ;
+}
+
+#login_title_1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
 }
 
 .title-container{
@@ -86,14 +88,10 @@ button {
   font-family:  'Arvo', serif;
 }
 
-
-.inner-modal-btn {
-  margin: 0px 20px;
+.inner-modal-btn, .inner-modal-btn-2 {
+  margin-left: 15px;
 }
 
-.inner-modal-btn-create {
-  margin: 20px 20px;
-}
 
 #homepage_button, #close_button {
   background-color: black;
