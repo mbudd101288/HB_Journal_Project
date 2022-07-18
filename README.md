@@ -1,5 +1,5 @@
 # Mindful Growth
->Mindful Growth is an online journaling app that releases scheduled weekly prompts. Users are able to maintain a private journal and/or connect and share entries with other users. The app also utilizes the Twilio SendGrid API and a Cron Job to send out a weekly reminder that a new journal prompt is available. 
+>Mindful Growth is an online journaling app that releases scheduled weekly prompts. Users are able to maintain a private journal and/or connect and share entries with other users. The app also utilizes the Twilio SendGrid API in conjunction with a Cron Job to send an optional weekly email alerting a user that a new journal prompt is available. 
 
 ## Technologies
 Tech Stack: 
