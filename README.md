@@ -1,21 +1,54 @@
-Technologies Used
-Python
-Flask
-Flask SQLAlchemy
-Javascript/jQuery
-AJAX/JSON
-Jinja2
-Twilio SendGrid
-Cronjob
-HTML/CSS
-Bootstrap
-Argon2
+# Mindful Growth
 
-Installation
-To install Mindful Growth on your local machine, pip install -r requirements.txt. 
+## Technologies
+Tech Stack: Python, Javascript/jQuery, Flask, SQLAlchemy, AJAX/JSON, Jinja2, HTML/CSS, Bootstrap, Argon2, Cron
+API: Twilio SendGrid
 
-Next Steps
-Once deployed, a more versatile cronjob will be implemented to call the new server as opposed to a local server. Twilio Sendgrid will be updated to include a link to the Mindful Growth login page. 
+## Features
 
-About the Developer
+## Installation
+
+Prerequisites:
+* Sign up for Twilio SendGrid to receive API key - https://www.twilio.com/sendgrid/email-api
+
+Clone Repository: 
+```
+$ git clone https://github.com/mbudd101288/HB_Journal_Project
+```
+
+Create and activate a virtual environment in your journal project directory:
+```
+$ virtualenv
+$ source env/bin/activate
+```
+
+Install requirements:
+```
+$pip3 install -r requirements.txt
+```
+
+Create secrets.sh file to store sensitive keys:
+* Flask app secret key 
+* Twilio SendGrid secret key
+
+Activate secrets in virtual environment
+```
+$ source secrets.sh
+```
+
+Seed the database with prompts from prompts.json (may omit entries.json and users.json):
+```
+$ python3 seed.py
+```
+
+Run the server:
+```
+$ python3 server.py
+```
+
+
+## Next Steps
+Once deployed, the Cron Job will be updated to improve functionality by calling the cloud server as opposed to my local (intermittently running) server. Twilio Sendgrid will be updated to include a link to the Mindful Growth login page. 
+
+## About the Developer
 Molli Budd is a software engineer living in Omaha, NE. She created her first project, Mindful Growth, during her fellowship at Hackbright Academy.
