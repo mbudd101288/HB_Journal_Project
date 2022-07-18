@@ -1,8 +1,20 @@
 # Mindful Growth
 
 ## Technologies
-Tech Stack: Python, Javascript/jQuery, Flask, SQLAlchemy, AJAX/JSON, Jinja2, HTML/CSS, Bootstrap, Argon2, Cron
-API: Twilio SendGrid
+Tech Stack: 
+* Python
+* Javascript/jQuery
+* Flask
+* SQLAlchemy
+* AJAX/JSON
+* Jinja2
+* HTML/CSS
+* Bootstrap
+* Argon2
+* Cron
+
+API: 
+* Twilio SendGrid
 
 ## Features
 
@@ -31,7 +43,7 @@ Create secrets.sh file to store sensitive keys:
 * Flask app secret key 
 * Twilio SendGrid secret key
 
-Activate secrets in virtual environment
+Activate secrets in virtual environment:
 ```
 $ source secrets.sh
 ```
