@@ -127,7 +127,7 @@
     "modified_date": null
     },
     {
-    "user_id": "4", 
+    "user_id": "5", 
     "week": "26", 
     "entry_date": "2022-06-27", 
     "user_entry": "It's hard to talk about my own insecurity because I know no matter how supportive they are, ultimately I am the only person who can control it. So I just tend to shut down and not talk about it instead.", 
@@ -136,7 +136,7 @@
     "modified_date": null
     },
     {
-    "user_id": "4", 
+    "user_id": "5", 
     "week": "28", 
     "entry_date": "2022-07-10", 
     "user_entry": "Moving to a new country on my own and facing the ups and downs of this journey. There were unprecedented moments of loneliness, sadness, and fear, but I persevered into: getting to know myself and knowing I was absolutely enough to deal with whatever feelings or issues came up. Today, I look back and realize how much I’ve grown through that.", 
@@ -158,6 +158,24 @@
     "week": "20", 
     "entry_date": "2022-05-18", 
     "user_entry": "I tell myself that the choices I made back then were probably the best choices I had. Even though in retrospect it was a mistake, bygones are bygones, I learn from it and move on", 
+    "visibility": "Public",
+    "entry_modified": false, 
+    "modified_date": null
+    },
+   {
+    "user_id": "5", 
+    "week": "27", 
+    "entry_date": "2022-07-17", 
+    "user_entry": "I am unhappy and don't know if I am capable of true happiness. I am not even sure I know what that would look like. \r- 'Everyone feels that way'\r- 'You need to see a therapist'\r- 'You need different medication'\r- People would think of me differently and not want to be around me\r- I would cause people undue worry because they would worry that I might hurt myself\n\rI am afraid that I will always be the only person I can rely on. \r- 'That is unfair and hurtful to those who care about you'\r- 'You do this to yourself by isolating yourself'\r- Nothing would change\n\rI don't think anyone in my life loves me as much as I love them. \r- People would think I was throwing a pity party\r- It would quickly get dismissed as untrue without even seriously being considered\r- Nothing would change", 
+    "visibility": "Public",
+    "entry_modified": false, 
+    "modified_date": null
+    },
+    {
+    "user_id": "5", 
+    "week": "29", 
+    "entry_date": "2022-07-17", 
+    "user_entry": "People are not born brave. It is a decision. Every situation you are confronted with is an opportunity for bravery. You get to decide how you will handle it... will you face it or run away? \n\rConsistently push yourself to do things outside of your comfort zone.  When you are confronted with something big, it will not seem so scary or unachievable because you have continued to achieve small things over and over that you never thought you could. All of the hills you climbed have prepared you to climb a mountain. \n\r Quality over quantity --> Find the people who will be there for you in good times and in bad.  You don't have to have a big support network, you just have to have a reliable one. Know who you can count on. Invest more energy into those relationships. They will help you grow into a stronger person, but will also provide you with the support you need when the time comes.", 
     "visibility": "Public",
     "entry_modified": false, 
     "modified_date": null
