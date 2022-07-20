@@ -21,15 +21,20 @@ API:
 
 ####Sign up for Twilio SendGrid email notifications of new prompts
 
-####Create entry for current journal prompt; save entry visibility as 'Public' or 'Private'
+Create entry for current journal prompt; save entry visibility as 'Public' or 'Private'
 ![journal](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/Journal.gif)
-####View all available prompts (from sign up week through current week)
 
-####View public entries written by other users
+View all available prompts (from sign up week through current week)
+![user_prompts](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/My_Entries.gif)
 
-####View all public entries by a user; follow or unfollow user
+View public entries written by other users
+![community](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/community.gif)
 
-####Toggle between all public entries and public entries for users you follow
+View all public entries by a user; follow or unfollow user
+![follow](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/follow_user.png)
+
+Toggle between all public entries and public entries for users you follow
+![connection](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/connections_toggle.gif)
 
 ## Installation
 
@@ -80,3 +85,11 @@ Molli Budd is a software engineer living in Omaha, NE. She created her first pro
 
 
 [journal]: <https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/Journal.gif>
+
+[user_prompts]: <https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/My_Entries.gif>
+
+[community]: <https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/community.gif>
+
+[follow]: <https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/follow_user.png>
+
+[connection]: <https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/connections_toggle.gif>
