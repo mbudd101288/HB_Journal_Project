@@ -19,7 +19,7 @@ API:
 
 ## Features
 
-Sign up for Twilio SendGrid email notifications of new prompts
+Sign up for Twilio SendGrid email notifications 
 ![twilio](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/twilio.png)
 
 Create entry for current journal prompt; save entry visibility as 'Public' or 'Private'
@@ -34,7 +34,7 @@ View public entries written by other users
 View all public entries by a user; follow or unfollow user
 ![follow](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/follow_user.png)
 
-Toggle between all public entries and public entries for users you follow
+Toggle between 'Everyone' (ALL public entries) and 'Connections only' (public entries for users you follow)
 ![connection](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/connections_toggle.gif)
 
 ## Installation
