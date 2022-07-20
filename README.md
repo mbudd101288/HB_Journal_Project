@@ -19,7 +19,8 @@ API:
 
 ## Features
 
-####Sign up for Twilio SendGrid email notifications of new prompts
+Sign up for Twilio SendGrid email notifications of new prompts
+![twilio](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/twilio.png)
 
 Create entry for current journal prompt; save entry visibility as 'Public' or 'Private'
 ![journal](https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/Journal.gif)
@@ -83,6 +84,8 @@ Once deployed, the Cron Job will be updated to improve functionality by calling 
 ## About the Developer
 Molli Budd is a software engineer living in Omaha, NE. She created her first project, Mindful Growth, during her fellowship at Hackbright Academy.
 
+
+[twilio]: <https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/twilio.png>
 
 [journal]: <https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/Journal.gif>
 
