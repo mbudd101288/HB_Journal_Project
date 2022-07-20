@@ -19,6 +19,18 @@ API:
 
 ## Features
 
+####Sign up for Twilio SendGrid email notifications of new prompts
+
+####Create entry for current journal prompt; save entry visibility as 'Public' or 'Private'
+(https://github.com/mbudd101288/HB_Journal_Project/blob/main/static/images/Journal.gif)
+####View all available prompts (from sign up week through current week)
+
+####View public entries written by other users
+
+####View all public entries by a user; follow or unfollow user
+
+####Toggle between all public entries and public entries for users you follow
+
 ## Installation
 
 Prerequisites:
