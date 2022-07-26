@@ -76,8 +76,18 @@ class JournalPrompt(db.Model):
          return f"<JournalPrompt prompt = {self.prompt}: release_week= {self.week}>"
 
 
-def connect_to_db(flask_app, db_uri="postgresql:///journals?host=localhost&user=caseyholland", echo=True):
-    # make sure db is called journals or else need to change above
+# def connect_to_db(flask_app, db_uri="postgresql:///journals?host=localhost&user=caseyholland", echo=True):
+#     # make sure db is called journals or else need to change above
+#     flask_app.config["SQLALCHEMY_DATABASE_URI"] = db_uri
+#     flask_app.config["SQLALCHEMY_ECHO"] = echo
+#     flask_app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+#     db.app = flask_app
+#     db.init_app(flask_app)
+
+#     print("Connected to the db!")
+
+def connect_to_db(flask_app, db_uri="postgresql:///journals", echo=True):
     flask_app.config["SQLALCHEMY_DATABASE_URI"] = db_uri
     flask_app.config["SQLALCHEMY_ECHO"] = echo
     flask_app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
