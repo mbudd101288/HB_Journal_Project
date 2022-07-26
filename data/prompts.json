@@ -310,5 +310,11 @@
     "week": 52,
     "book": "The 52 Lists Project: A Year of Weekly Journaling Inspiration by Moorea Seal; pg 142-143.", 
     "bonus_text": "What a year it has been! Like any year, there were ups and downs, highs and lows. But because you took the time to write out your thoughts and feelings each week through this journal, you now have incredible documentation of all the ways you have processed and grown. Take some time this week to read through your past pages and revel in the personal growth and joy you have experienced. You did it!"
+    },
+    {
+    "prompt": "What memories, wisdom, and goals would you like to carry into the upcoming year and what would you like to leave behind.",
+    "week": 53,
+    "book": null, 
+    "bonus_text": null
     }
 ]
