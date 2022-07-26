@@ -3,45 +3,9 @@
     "email": "mbudd101288@gmail.com", 
     "fname": "Molli", 
     "lname": "Budd.", 
-    "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
+    "password": "$argon2id$v=19$m=65536,t=3,p=4$wfg/p9QaYwxhjFFKyRnD2A$ufAi1yOoGgg8pvc7bgFPt4tFndMYTNG/+fajd+fi4HA", 
     "profile_pic": "", 
     "sign_up": "2022-04-02", 
     "twilio_alert": "Yes"
-    },
-    {
-    "email": "winifredsanderson@test.test", 
-    "fname": "Winifred", 
-    "lname": "Sanderson", 
-    "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
-    "profile_pic": "", 
-    "sign_up": "2022-02-01",
-    "twilio_alert": "No"
-    },
-    {
-    "email": "marlasnger@test.test", 
-    "fname": "Marla", 
-    "lname": "Singer", 
-    "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
-    "profile_pic": "", 
-    "sign_up": "2022-01-09",
-    "twilio_alert": "No"
-    },
-    {
-    "email": "mtb28544@gmail.com", 
-    "fname": "Eunice", 
-    "lname": "Unicorn", 
-    "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
-    "profile_pic": "", 
-    "sign_up": "2022-01-01",
-    "twilio_alert": "Yes" 
-    },
-    {
-    "email": "gogoyubari@test.test", 
-    "fname": "Gogo", 
-    "lname": "Yubari", 
-    "password": "$argon2id$v=19$m=65536,t=3,p=4$ce49x3gvRQihtPYew3jPGQ$xX6pV2ZhfXSfOtCLeiJWqzeuY/TVJchn/zYy7TlEDC4", 
-    "profile_pic": "", 
-    "sign_up": "2022-01-01",
-    "twilio_alert": "no" 
     }
-] 
+]
