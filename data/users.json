@@ -7,5 +7,14 @@
     "profile_pic": "", 
     "sign_up": "2022-04-02", 
     "twilio_alert": "Yes"
+    }, 
+    {
+    "email": "buddkelli1@gmail.com", 
+    "fname": "Kelli", 
+    "lname": "Budd Holland", 
+    "password": "$argon2id$v=19$m=65536,t=3,p=4$wfg/p9QaYwxhjFFKyRnD2A$ufAi1yOoGgg8pvc7bgFPt4tFndMYTNG/+fajd+fi4HA", 
+    "profile_pic": "", 
+    "sign_up": "2022-06-02", 
+    "twilio_alert": "Yes"
     }
 ]
